@@ -145,7 +145,6 @@ cp -r $HOME/gitprojects/main/wallpapers $HOME/Pictures
 #cp -r $HOME/gitprojects/main/ulauncher $HOME/.config
 
 
-
 # setup GRC colors
 log "setting up GRC colors..."
 cd $HOME/gitprojects
@@ -171,17 +170,19 @@ sudo ./install.sh -s 1080p -b -t whitesur
 log "Installing GTFOB..."
 pipx install git+https://github.com/nccgroup/GTFOBLookup.git
 
+# Binsider 
+cargo install binsider
+
+# Install atuin
+curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh
 
 # Final update and clean up
 log "Final update and clean up..."
-sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y && notify-send -e "success" || notify-send -e "failed"
+sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y 
 
 # Source .bashrc
 log "Sourcing .bashrc..."
 source $HOME/.bashrc 
-
-# Install atuin
-curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh
 
 
 # Display message
