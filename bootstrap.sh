@@ -65,6 +65,9 @@ gsettings set org.gnome.desktop.default-applications.terminal exec /usr/bin/tili
 gsettings set org.gnome.desktop.default-applications.terminal exec-arg "-x"
 sudo update-alternatives --set x-terminal-emulator /usr/bin/tilix.wrapper
 
+#Brightness control from keybaord
+gsettings set org.gnome.settings-daemon.plugins.media-keys screen-brightness-up "['<Ctrl><Super>Up']"
+gsettings set org.gnome.settings-daemon.plugins.media-keys screen-brightness-down "['<Ctrl><Super>Down']"
 
 # Install Hack Nerd Font
 log "Installing Hack Nerd Font..."
@@ -113,7 +116,11 @@ git clone https://github.com/d4rkb4sh8/main.git
 git clone https://github.com/d4rkb4sh8/learn.git
 
 #dotfiles
-rm $HOME/.bashrc
+rm -rf $HOME/.bashrc
+rm -rf $HOME/.config/GNOME-xdg-terminals.list
+rm -rf $HOME/.config/gtk-3.0
+rm -rf $HOME/.config/gtk-4.0
+rm -rf $HOME/.config/xdg-terminals.list
 cd $HOME
 git clone https://github.com/d4rkb4sh8/dotfiles.git
 cd dotfiles
