@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 set -e  # Exit immediately if a command exits with a non-zero status
 
@@ -172,6 +172,9 @@ pipx install git+https://github.com/nccgroup/GTFOBLookup.git
 
 # Binsider 
 cargo install binsider
+
+#Install tgpt
+curl -sSL https://raw.githubusercontent.com/aandrew-me/tgpt/main/install | bash -s /usr/local/bin
 
 # Install atuin
 curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh
