@@ -12,6 +12,12 @@ alias ff='fastfetch --logo $HOME/.config/fastfetch/h4cker_ascii.txt'
 alias ffa='fastfetch -c all --logo $HOME/.config/fastfetch/h4cker_ascii.txt'
 alias rcedit='$EDITOR $HOME/.bashrc'
 
+# cd
+alias ..="cd .."
+alias cd..="cd .."
+alias ...="cd ../../"
+alias ....="cd ../../../"
+
 #colorize output
 alias env='grc env'
 alias w='grc w'
