@@ -180,6 +180,10 @@ sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt 
 log "Sourcing .bashrc..."
 source $HOME/.bashrc 
 
+# Install atuin
+curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh
+
+
 # Display message
 figlet "The Machine is Ready." | lolcat
 
