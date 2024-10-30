@@ -6,17 +6,35 @@ alias numFiles='echo $(ls -1 | wc -l)'       # numFiles:     Count of non-hidden
 alias make1mb='truncate -s 1m ./1MB.dat'     # make1mb:      Creates a file of 1mb size (all zeros)
 alias make5mb='truncate -s 5m ./5MB.dat'     # make5mb:      Creates a file of 5mb size (all zeros)
 alias make10mb='truncate -s 10m ./10MB.dat'  # make10mb:     Creates a file of 10mb size (all zeros)
-alias z='zoxide'
+#alias z='zoxide'
 alias bat='batcat --theme=Coldark-Dark  --style=full'
 alias ff='fastfetch --logo $HOME/.config/fastfetch/h4cker_ascii.txt'
 alias ffa='fastfetch -c all --logo $HOME/.config/fastfetch/h4cker_ascii.txt'
 alias rcedit='$EDITOR $HOME/.bashrc'
+
+#   -------------------------------
+#  2. SAVE COPYING
+#   -------------------------------
+
+alias cp='cp -vi'
+alias mv='mv -vi'
+
+# Better copying
+alias cpv='rsync -avh --info=progress2'
+
+#   -------------------------------
+# 3. CD
+#   -------------------------------
 
 # cd
 alias ..="cd .."
 alias cd..="cd .."
 alias ...="cd ../../"
 alias ....="cd ../../../"
+
+#   -------------------------------
+# 4. COLOR
+#   -------------------------------
 
 #colorize output
 alias env='grc env'
@@ -25,17 +43,18 @@ alias who='grc who'
 alias free='free -h'
 alias ifconfig='grc ifconfig'
 
+#git add all files, commit and push
 alias gitup='git add .; git commit -m "updated"; git push'
 
 #   ---------------------------
-#   2.  SEARCHING
+# 5.  SEARCHING
 #   ---------------------------
 alias fd='fdfind '
 alias qfind="find . -name "                 # qfind:    Quickly search for file
 alias grep='grep --color=always'
 
 #   ---------------------------
-#   3.  PROCESS MANAGEMENT
+# 6.  PROCESS MANAGEMENT
 #   ---------------------------
 
 #   memHogsTop, memHogsPs:  Find memory hogs
@@ -60,7 +79,7 @@ alias grep='grep --color=always'
 
 
 #   ---------------------------
-#   4.  NETWORKING
+#  7.  NETWORKING
 #   ---------------------------
 
 alias netCons='lsof -i'                         # netCons:      Show all open TCP/IP sockets
@@ -75,14 +94,14 @@ alias myip='curl ip-api.com'
 
 
 #   ---------------------------------------
-#   5.  SYSTEMS OPERATIONS & INFORMATION
+#  8.  SYSTEMS OPERATIONS & INFORMATION
 #   ---------------------------------------
 
 alias mountReadWrite='mount -uw /'    # mountReadWrite:   For use when booted into single-user
 alias showpath='echo $PATH | sed "s/:/\n/g" | sort'
 
 #   ---------------------------------------
-#   6.  DATE & TIME MANAGEMENT
+#  9.  DATE & TIME MANAGEMENT
 #   ---------------------------------------
 
 alias bdate="date '+%a, %b %d %Y %T %Z'"
@@ -99,7 +118,7 @@ alias weeknum='date +%V'
 
 
 #   ---------------------------------------
-#   8.  WEB DEVELOPMENT
+#  10.  WEB DEVELOPMENT
 #   ---------------------------------------
 
 alias editHosts='sudo edit /etc/hosts'                  # editHosts:        Edit /etc/hosts file
@@ -111,10 +130,9 @@ alias editHosts='sudo edit /etc/hosts'                  # editHosts:        Edit
 
 
 #   ---------------------------------------
-#   9.  OTHER ALIASES
+#  11.  OTHER ALIASES
 #   ---------------------------------------
 
-# Aliases by Jacob Hrbek
 # Outputs List of Loadable Modules (llm) for current kernel
 alias llm="find /lib/modules/$(uname -r) -type f -name '*.ko*'"
 
@@ -130,7 +148,7 @@ alias mx='chmod a+x'                        # ---x--x--x (user: --x, group: --x,
 alias ux='chmod u+x'                        # ---x------ (user: --x, group: -, other: -)
 
 #-----------------------------------------------------------------------
-#GENERAL_TOOLS
+# 12.  GENERAL_TOOLS
 #-----------------------------------------------------------------------
 # update
 alias update='sudo nala upgrade -y && sudo apt full-upgrade -y && flatpak upgrade && sudo snap refresh && rustup update && brew update && brew upgrade && sudo updatedb;figlet "machine is updated !"|lolcat'
@@ -174,41 +192,12 @@ alias fix_term='echo -e "\033c"'            # fix_term:     Reset the conosle.  
 alias cic='bind "set completion-ignore-case on"' # cic:          Make tab-completion case-insensitive
 alias src='source ~/.bashrc'                # src:          Reload .bashrc file
 
-#-------------------------------------------------------------------------
-#DEBIAN_ALIASES
-#-------------------------------------------------------------------------
-alias apup='sudo apt update'
-alias apug='sudo apt upgrade'
-alias apuu='sudo apt update && sudo apt upgrade'
-alias apfu='sudo apt full-upgrade'
-
-alias apin='sudo apt install'
-alias apri='sudo apt install --reinstall'
-
-alias aprm='sudo apt remove'
-alias apur='sudo apt purge'
-alias apar='sudo apt autoremove'
-alias apcl='sudo apt-get autoclean'
-
-alias apse='apt search'
-alias apsh='apt show'
-alias apsc='apt-get source'
-alias apesr='sudo apt edit-sources'
-alias apdl='apt-get download'
-
-alias apbd='sudo apt build-deb'
-alias aphst='cat /var/log/apt/history.log | less'
-
-alias drcf='sudo dpkg-reconfigure'
-
-alias upgrb='sudo update-grub'
-alias uirfs='sudo update-initramfs -u'
 
 
 #alias python='python3'
 
 #-------------------------------------------------------------------------
-#DOCKER_ALIASES
+# 13. DOCKER_ALIASES
 #-------------------------------------------------------------------------
 alias dbl='docker build'
 alias dcin='docker container inspect'
@@ -245,7 +234,7 @@ alias dxc='docker container exec'
 alias dxcit='docker container exec -it'
 
 #-------------------------------------------------------------------------
-# CTF's
+# 14. CTF's
 #-------------------------------------------------------------------------
 #pwn.college
 alias sshpwn='ssh -i $HOME/.keys/pwn.college hacker@dojo.pwn.college'
@@ -257,22 +246,22 @@ alias ssh2='ssh -i .ssh/ansible debian2@127.0.0.1 -p 3022'
 #-------------------------------------------------------------------------
 
 #-------------------------------------------------------------------------
-#H4CK3R_TOOLS
+# 15. H4CK3R_TOOLS
 #-----------------------------------------------------------------------
 #mproxy
 alias mproxy='curl --proxy http://127.0.0.1:8080 '
 
 #dnscan
-alias dnscan='/home/h4ck3r/h4ck3r_setup/tools/dnscan/dnscan.py'
+#alias dnscan='/home/h4ck3r/h4ck3r_setup/tools/dnscan/dnscan.py'
 
 #subbrute
-alias subbrute='/home/h4ck3r/h4ck3r_setup/tools/subbrute/subbrute.py'
+#alias subbrute='/home/h4ck3r/h4ck3r_setup/tools/subbrute/subbrute.py'
 
 #dirsearch
-alias dirsearch='/home/h4ck3r/h4ck3r_setup/tools/dirsearch/dirsearch.py'
+#alias dirsearch='/home/h4ck3r/h4ck3r_setup/tools/dirsearch/dirsearch.py'
 
 #RouterHunterBR
-alias rhunter='php /home/h4ck3r/h4ck3r_setup/tools/RouterHunterBR/RouterHunterBR.php'
+#alias rhunter='php /home/h4ck3r/h4ck3r_setup/tools/RouterHunterBR/RouterHunterBR.php'
 
 
 # cryptography
