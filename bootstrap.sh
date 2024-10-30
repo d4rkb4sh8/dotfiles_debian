@@ -185,7 +185,7 @@ curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh
 
 
 # Display message
-figlet "The Machine is Ready." | lolcat
+figlet h4ck3r m4ch1n3  | lolcat
 
 sudo reboot
 
