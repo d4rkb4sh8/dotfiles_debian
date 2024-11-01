@@ -171,6 +171,7 @@ alias ip='ip -c'
 
 # ai  assistant
 alias aid='ollama run deepseek-coder-v2:latest'
+alias aiu='ollama run llama2-uncensored:latest'
 alias ait='tgpt'
 
 # cheat sheet
