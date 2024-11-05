@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-set -e  # Exit immediately if a command exits with a non-zero status
+set -e # Exit immediately if a command exits with a non-zero status
 
 log() {
-    echo "[$(date +'%Y-%m-%dT%H:%M:%S%z')] $*"
+  echo "[$(date +'%Y-%m-%dT%H:%M:%S%z')] $*"
 }
 
 # Append 'contrib non-free' to each active deb repository line in sources.list
@@ -26,13 +26,13 @@ sudo apt purge -y audacity gimp gnome-games libreoffice* && sudo apt autoremove 
 
 # Define APT packages
 APT_PACKAGES=(
-	arp-scan asciiart autoconf bat bison btop build-essential cmake cpufetch curl dconf-cli debian-goodies dict 
-	dkms fd-find figlet file flatpak font-manager forensics-all forensics-full fzf gawk gdebi gh git gnome-software-plugin-flatpak 
-	rsync gnome-shell-extension-manager gpaste-2 gpg gpgv2 httpie imagemagick info libchafa-dev libgmp3-dev libpcap-dev libpq-dev libreadline6-dev libsixel-dev
-	libsqlite3-dev libssl-dev libsvn1 libtbb-dev libtool libvips-dev libxml2-dev libxslt-dev libyaml-dev linux-headers-$(uname -r)
-	lolcat lynis mitmproxy most nala ncal ncurses-dev netdiscover net-tools nikto npm openssl pass patchelf pipx plocate postgresql
-	postgresql-contrib powerline procps python3-levenshtein python3-websocket python-is-python3 snapd sqlmap stow tilix tldr ufw uuid-runtime
-	v4l-utils vlc w3m wget wikipedia2text wmctrl ytfzf zathura
+  arp-scan asciiart autoconf bat bison btop build-essential cmake cpufetch curl dconf-cli debian-goodies dict
+  dkms fd-find figlet file flatpak font-manager forensics-all forensics-full fzf gawk gdebi gh git gnome-software-plugin-flatpak
+  rsync gnome-shell-extension-manager gpaste-2 gpg gpgv2 httpie imagemagick info libchafa-dev libgmp3-dev libpcap-dev libpq-dev libreadline6-dev libsixel-dev
+  libsqlite3-dev libssl-dev libsvn1 libtbb-dev libtool libvips-dev libxml2-dev libxslt-dev libyaml-dev linux-headers-$(uname -r)
+  lolcat lynis mitmproxy most nala ncal ncurses-dev netdiscover net-tools nikto npm openssl pass patchelf pipx plocate postgresql
+  postgresql-contrib powerline procps python3-levenshtein python3-websocket python-is-python3 snapd sqlmap stow tilix tldr ufw uuid-runtime
+  thefuck v4l-utils vlc w3m wget wikipedia2text wmctrl ytfzf zathura
 )
 
 # Update, upgrade and install APT packages in a single step
@@ -41,7 +41,6 @@ sudo apt update -y && sudo apt full-upgrade -y && sudo apt install -y "${APT_PAC
 
 # Install latest flathub & flatpak
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-
 
 # Install Snap
 log "Installing Snap..."
@@ -56,7 +55,7 @@ sudo snap install snap-store
 cd $HOME
 git clone --recursive --depth 1 --shallow-submodules https://github.com/akinomyoga/ble.sh.git
 make -C ble.sh install PREFIX=~/.local
-echo 'source ~/.local/share/blesh/ble.sh' >> ~/.bashrc
+echo 'source ~/.local/share/blesh/ble.sh' >>~/.bashrc
 
 # Remove other terminal emulators and set Tilix as default
 log "Setting Tilix as the default terminal..."
@@ -90,7 +89,7 @@ log "Installing Homebrew..."
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # Add Homebrew to PATH
-echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> ~/.bashrc
+echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >>~/.bashrc
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 # Install packages using Homebrew
@@ -134,7 +133,6 @@ stow nvim
 stow starship
 stow ulauncher
 
-
 # Update .bashrc and .bash_aliases, fastfetch, nvim and ulauncher
 log "Updating bash configurations..."
 #cp $HOME/gitprojects/main/.bashrc $HOME/
@@ -143,7 +141,6 @@ cp -r $HOME/gitprojects/main/wallpapers $HOME/Pictures
 #cp -r $HOME/gitprojects/main/fastfetch $HOME/.config
 #cp -r $HOME/gitprojects/main/nvim $HOME/.config
 #cp -r $HOME/gitprojects/main/ulauncher $HOME/.config
-
 
 # setup GRC colors
 log "setting up GRC colors..."
@@ -158,7 +155,7 @@ log "setting up Starship..."
 curl -sS https://starship.rs/install.sh | sh
 starship preset nerd-font-symbols -o ~/.config/starship.toml
 
-# Install Grub2 custom theme 
+# Install Grub2 custom theme
 log "Installing Grub theme..."
 cd $HOME/gitprojects
 git clone https://github.com/vinceliuice/grub2-themes.git
@@ -170,7 +167,7 @@ sudo ./install.sh -s 1080p -b -t whitesur
 log "Installing GTFOB..."
 pipx install git+https://github.com/nccgroup/GTFOBLookup.git
 
-# Binsider 
+# Binsider
 cargo install binsider
 
 #Install tgpt
@@ -181,15 +178,13 @@ curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh
 
 # Final update and clean up
 log "Final update and clean up..."
-sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y 
+sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y
 
 # Source .bashrc
 log "Sourcing .bashrc..."
-source $HOME/.bashrc 
-
+source $HOME/.bashrc
 
 # Display message
-figlet h4ck3r m4ch1n3  | lolcat
+figlet h4ck3r m4ch1n3 | lolcat
 
 sudo reboot
-
