@@ -113,11 +113,9 @@ eval "$(atuin init bash)"
 
 
 
-
 #starship prompt - shell prompt
 eval "$(starship init bash)"
 
 
-#custom prompt
-#PROMPT_COMMAND='PS1_CMD1=$(__git_ps1 " (%s)"); PS1_CMD2=$(ip route get 1.1.1.1 | awk -F"src " '"'"'NR == 1{ split($2, a," ");print a[1]}'"'"')'; PS1='\n\[\e[38;5;199;1m\]\u\[\e[0;97;2m\]@\[\e[0;38;5;129;1m\]\h\[\e[0m\]: \[\e[38;5;51m\]\w\n\[\e[93;3m\]${PS1_CMD1}\[\e[0m\] \[\e[38;5;42m\]${PS1_CMD2}\[\e[0m\] \[\e[90;2m\]status\[\e[0m\] \[\e[97;2m\]$?\[\e[0m\] \[\e[95;2;3m\]\t\n\[\e[23;38;5;201m\]\$\[\e[0m\] '
+
 
