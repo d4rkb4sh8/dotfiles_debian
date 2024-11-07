@@ -171,7 +171,7 @@ pipx install git+https://github.com/nccgroup/GTFOBLookup.git
 cargo install binsider
 
 # Install kanata for home row mods
-cargo install kanata
+#cargo install kanata
 
 #Install tgpt
 curl -sSL https://raw.githubusercontent.com/aandrew-me/tgpt/main/install | bash -s /usr/local/bin
