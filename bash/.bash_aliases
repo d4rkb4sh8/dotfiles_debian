@@ -11,6 +11,7 @@ alias bat='batcat --theme=Coldark-Dark  --style=full'
 alias ff='fastfetch --logo $HOME/.config/fastfetch/h4cker_ascii.txt'
 alias ffa='fastfetch -c all --logo $HOME/.config/fastfetch/h4cker_ascii.txt'
 alias rcedit='$EDITOR $HOME/.bashrc'
+alias c='clear'
 
 #   -------------------------------
 #  2. SAVE COPYING

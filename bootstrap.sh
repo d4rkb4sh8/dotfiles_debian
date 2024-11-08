@@ -28,7 +28,7 @@ sudo apt purge -y audacity gimp gnome-games libreoffice* && sudo apt autoremove 
 APT_PACKAGES=(
   arp-scan asciiart autoconf bat bison btop build-essential cmake cpufetch curl dconf-cli debian-goodies dict
   dkms fd-find figlet file flatpak font-manager forensics-all forensics-full fzf gawk gdebi gh git gnome-software-plugin-flatpak
-  rsync gnome-shell-extension-manager gpaste-2 gpg gpgv2 httpie imagemagick info libchafa-dev libgmp3-dev libpcap-dev libpq-dev libreadline6-dev libsixel-dev
+  sd rsync gnome-shell-extension-manager gpaste-2 gpg gpgv2 httpie imagemagick info libchafa-dev libgmp3-dev libpcap-dev libpq-dev libreadline6-dev libsixel-dev
   libsqlite3-dev libssl-dev libsvn1 libtbb-dev libtool libvips-dev libxml2-dev libxslt-dev libyaml-dev linux-headers-$(uname -r)
   lolcat lynis mitmproxy most nala ncal ncurses-dev netdiscover net-tools nikto npm openssl pass patchelf pipx plocate postgresql
   postgresql-contrib powerline procps python3-levenshtein python3-websocket python-is-python3 snapd sqlmap stow tilix tldr ufw uuid-runtime
@@ -166,6 +166,8 @@ sudo ./install.sh -s 1080p -b -t whitesur
 # Install GTFOB lookup
 log "Installing GTFOB..."
 pipx install git+https://github.com/nccgroup/GTFOBLookup.git
+
+source $HOME/.bashrc
 
 # Binsider
 cargo install binsider
