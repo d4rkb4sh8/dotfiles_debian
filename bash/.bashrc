@@ -4,8 +4,8 @@
 
 # If not running interactively, don't do anything
 case $- in
-    *i*) ;;
-      *) return;;
+*i*) ;;
+*) return ;;
 esac
 
 # don't put duplicate lines or lines starting with space in the history.
@@ -32,19 +32,19 @@ shopt -s checkwinsize
 
 # set variable identifying the chroot you work in (used in the prompt below)
 if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
-    debian_chroot=$(cat /etc/debian_chroot)
+  debian_chroot=$(cat /etc/debian_chroot)
 fi
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
-    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    #alias ls='ls --color=auto'
-    #alias dir='dir --color=auto'
-    #alias vdir='vdir --color=auto'
+  test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+  #alias ls='ls --color=auto'
+  #alias dir='dir --color=auto'
+  #alias vdir='vdir --color=auto'
 
-    #alias grep='grep --color=auto'
-    #alias fgrep='fgrep --color=auto'
-    #alias egrep='egrep --color=auto'
+  #alias grep='grep --color=auto'
+  #alias fgrep='fgrep --color=auto'
+  #alias egrep='egrep --color=auto'
 fi
 
 # colored GCC warnings and errors
@@ -56,7 +56,7 @@ fi
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
 
 if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
+  . ~/.bash_aliases
 fi
 
 # enable programmable completion features (you don't need to enable
@@ -74,14 +74,12 @@ fi
 GRC_ALIASES=true
 [[ -s "/etc/profile.d/grc.sh" ]] && source /etc/grc.sh
 
-
 #Brightness control from keybaord
 gsettings set org.gnome.settings-daemon.plugins.media-keys screen-brightness-up "['<Ctrl><Super>Up']"
 gsettings set org.gnome.settings-daemon.plugins.media-keys screen-brightness-down "['<Ctrl><Super>Down']"
 
 #path
 export PATH=$PATH::/home/h4ck3r/.cargo/bin:home/h4ck3r/go/bin:/home/h4ck3r/.local/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/opt:/snap/bin:/usr/bin:/usr/games:/usr/local/bin
-
 
 # preferred text editor
 EDITOR=nano
@@ -102,8 +100,7 @@ eval "$(register-python-argcomplete pipx)"
 export LESSOPEN="| /usr/bin/highlight %s --out-format xterm256 --force"
 
 # greet me
-echo "w3lc0m3 h4ck3r - let the games begin! - m4ast3r y0ur cr4ft"  | lolcat
-
+echo "w3lc0m3 h4ck3r - let the games begin! - m4ast3r y0ur cr4ft" | lolcat
 
 # Atuin
 . "$HOME/.atuin/bin/env"
@@ -111,11 +108,10 @@ echo "w3lc0m3 h4ck3r - let the games begin! - m4ast3r y0ur cr4ft"  | lolcat
 [[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
 eval "$(atuin init bash)"
 
-
-
 #starship prompt - shell prompt
 eval "$(starship init bash)"
 
-
-
-
+#tmux auto attach
+if command -v tmux &>/dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+  exec tmux
+fi
