@@ -128,7 +128,7 @@ stow bash
 stow bin
 stow btop
 stow fastfetch
-stow gnome
+#stow gnome
 stow nvim
 stow starship
 stow ulauncher
