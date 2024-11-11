@@ -26,13 +26,11 @@ sudo apt purge -y audacity gimp gnome-games libreoffice* && sudo apt autoremove 
 
 # Define APT packages
 APT_PACKAGES=(
-  arp-scan asciiart autoconf bat bison btop build-essential cmake cpufetch curl dconf-cli debian-goodies dict
-  dkms fd-find figlet file flatpak font-manager forensics-all forensics-full fzf gawk gdebi gh git gnome-software-plugin-flatpak
-  sd rsync gnome-shell-extension-manager gpaste-2 gpg gpgv2 httpie imagemagick info libchafa-dev libgmp3-dev libpcap-dev libpq-dev libreadline6-dev libsixel-dev
-  libsqlite3-dev libssl-dev libsvn1 libtbb-dev libtool libvips-dev libxml2-dev libxslt-dev libyaml-dev linux-headers-$(uname -r)
-  lolcat lynis mitmproxy most nala ncal ncurses-dev netdiscover net-tools nikto npm openssl pass patchelf pipx plocate postgresql
-  postgresql-contrib powerline procps python3-levenshtein python3-websocket python-is-python3 snapd sqlmap stow tilix tldr ufw uuid-runtime
-  thefuck v4l-utils vlc w3m wget wikipedia2text wmctrl ytfzf zathura
+  asciiart autoconf bat bison btop build-essential cmake cpufetch curl dconf-cli debian-goodies dict
+  dkms fd-find figlet file flatpak font-manager fzf gawk gdebi gh git gnome-software-plugin-flatpak
+  sd rsync gnome-shell-extension-manager gpaste-2 gpg gpgv2 httpie imagemagick info linux-headers-$(uname -r)
+  lolcat lynis mitmproxy most nala ncal npm openssl pass patchelf pipx plocate postgresql
+  postgresql-contrib procps python-is-python3 snapd stow tldr tmux ufw thefuck vlc w3m wget wikipedia2text zathura
 )
 
 # Update, upgrade and install APT packages in a single step
@@ -56,13 +54,6 @@ cd $HOME
 git clone --recursive --depth 1 --shallow-submodules https://github.com/akinomyoga/ble.sh.git
 make -C ble.sh install PREFIX=~/.local
 echo 'source ~/.local/share/blesh/ble.sh' >>~/.bashrc
-
-# Remove other terminal emulators and set Tilix as default
-log "Setting Tilix as the default terminal..."
-#sudo apt purge -y gnome-terminal xterm
-gsettings set org.gnome.desktop.default-applications.terminal exec /usr/bin/tilix.wrapper
-gsettings set org.gnome.desktop.default-applications.terminal exec-arg "-x"
-sudo update-alternatives --set x-terminal-emulator /usr/bin/tilix.wrapper
 
 #Brightness control from keybaord
 gsettings set org.gnome.settings-daemon.plugins.media-keys screen-brightness-up "['<Ctrl><Super>Up']"
@@ -113,34 +104,22 @@ mkdir $HOME/gitprojects
 cd $HOME/gitprojects
 git clone https://github.com/d4rkb4sh8/main.git
 git clone https://github.com/d4rkb4sh8/learn.git
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 #dotfiles
 rm -rf $HOME/.bashrc
 rm -rf $HOME/.config/GNOME-xdg-terminals.list
 rm -rf $HOME/.config/gtk-3.0
 rm -rf $HOME/.config/gtk-4.0
-rm -rf $HOME/.config/xdg-terminals.list
 cd $HOME
 git clone https://github.com/d4rkb4sh8/dotfiles.git
 cd dotfiles
-stow autostart
-stow bash
-stow bin
-stow btop
-stow fastfetch
-#stow gnome
-stow nvim
-stow starship
-stow ulauncher
+stow .
 
-# Update .bashrc and .bash_aliases, fastfetch, nvim and ulauncher
-log "Updating bash configurations..."
-#cp $HOME/gitprojects/main/.bashrc $HOME/
-#cp $HOME/gitprojects/main/.bash_aliases $HOME/
+
+# add wallpapers 
+log "adding wallpapers..."
 cp -r $HOME/gitprojects/main/wallpapers $HOME/Pictures
-#cp -r $HOME/gitprojects/main/fastfetch $HOME/.config
-#cp -r $HOME/gitprojects/main/nvim $HOME/.config
-#cp -r $HOME/gitprojects/main/ulauncher $HOME/.config
 
 # setup GRC colors
 log "setting up GRC colors..."
@@ -170,7 +149,7 @@ pipx install git+https://github.com/nccgroup/GTFOBLookup.git
 source $HOME/.bashrc
 
 # Binsider
-cargo install binsider
+#cargo install binsider
 
 # Install kanata for home row mods
 #cargo install kanata
@@ -179,7 +158,7 @@ cargo install binsider
 curl -sSL https://raw.githubusercontent.com/aandrew-me/tgpt/main/install | bash -s /usr/local/bin
 
 # Install atuin
-curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh
+#curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh
 
 # Final update and clean up
 log "Final update and clean up..."
