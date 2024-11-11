@@ -3,7 +3,7 @@
 set -e # Exit immediately if a command exits with a non-zero status
 
 log() {
-	echo "[$(date +'%Y-%m-%dT%H:%M:%S%z')] $*"
+  echo "[$(date +'%Y-%m-%dT%H:%M:%S%z')] $*"
 }
 
 # Append 'contrib non-free' to each active deb repository line in sources.list
@@ -26,11 +26,11 @@ sudo apt purge -y audacity gimp gnome-games libreoffice* && sudo apt autoremove 
 
 # Define APT packages
 APT_PACKAGES=(
-	alacritty asciiart autoconf bat bison btop build-essential cmake cpufetch curl dconf-cli debian-goodies dict
-	dkms fd-find figlet file flatpak font-manager fzf gawk gdebi gh git gnome-software-plugin-flatpak
-	sd rsync gnome-shell-extension-manager gpaste-2 gpg gpgv2 httpie imagemagick info linux-headers-$(uname -r)
-	lolcat lynis mitmproxy most nala ncal npm openssl pass patchelf pipx plocate postgresql
-	postgresql-contrib procps python-is-python3 snapd stow tldr tmux ufw thefuck vlc w3m wget wikipedia2text zathura
+  alacritty asciiart autoconf bat bison btop build-essential cmake cpufetch curl dconf-cli debian-goodies dict
+  dkms fd-find figlet file flatpak font-manager fzf gawk gdebi gh git gnome-software-plugin-flatpak
+  sd rsync gnome-shell-extension-manager gpaste-2 gpg gpgv2 httpie imagemagick info linux-headers-$(uname -r)
+  lolcat lynis mitmproxy most nala ncal npm openssl pass patchelf pipx plocate postgresql gir1.2-gtop-2.0 lm-sensors
+  postgresql-contrib procps python-is-python3 snapd stow tldr tmux ufw thefuck vlc w3m wget wikipedia2text zathura
 )
 
 # Update, upgrade and install APT packages in a single step
