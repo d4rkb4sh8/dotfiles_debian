@@ -112,6 +112,8 @@ rm -rf $HOME/.config/GNOME-xdg-terminals.list
 rm -rf $HOME/.config/gtk-3.0
 rm -rf $HOME/.config/gtk-4.0
 cd $HOME
+
+# install dotfiles and stow them..
 git clone https://github.com/d4rkb4sh8/dotfiles.git
 cd dotfiles
 stow .
@@ -143,10 +145,9 @@ cp $HOME/Pictures/wallpapers/wallpaper_001.jpg $HOME/gitprojects/grub2-themes/ba
 sudo ./install.sh -s 1080p -b -t whitesur
 
 # Install GTFOB lookup
-log "Installing GTFOB..."
-pipx install git+https://github.com/nccgroup/GTFOBLookup.git
+#log "Installing GTFOB..."
+#pipx install git+https://github.com/nccgroup/GTFOBLookup.git
 
-source $HOME/.bashrc
 
 # Binsider
 #cargo install binsider
@@ -155,7 +156,7 @@ source $HOME/.bashrc
 #cargo install kanata
 
 #Install tgpt
-curl -sSL https://raw.githubusercontent.com/aandrew-me/tgpt/main/install | bash -s /usr/local/bin
+#curl -sSL https://raw.githubusercontent.com/aandrew-me/tgpt/main/install | bash -s /usr/local/bin
 
 # Install atuin
 #curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh
