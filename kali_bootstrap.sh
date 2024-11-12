@@ -65,17 +65,11 @@ git clone https://github.com/d4rkb4sh8/main.git
 git clone https://github.com/d4rkb4sh8/learn.git
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
-#dotfiles
-rm -rf $HOME/.bashrc
-rm -rf $HOME/.config/GNOME-xdg-terminals.list
-rm -rf $HOME/.config/gtk-3.0
-rm -rf $HOME/.config/gtk-4.0
+## install dotfiles and stow them.
 cd $HOME
-
-# install dotfiles and stow them..
 git clone https://github.com/d4rkb4sh8/dotfiles.git
 cd dotfiles
-stow .
+stow --adopt .
 
 # add wallpapers
 log "adding wallpapers..."
