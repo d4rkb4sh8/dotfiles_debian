@@ -46,8 +46,8 @@ sudo snap install snapd
 sudo snap install snap-store
 
 # Install Gogh terminal profile theme
-#log "Installing Gogh terminal profile theme..."
-#bash -c "$(wget -qO- https://git.io/vQgMr)"
+log "Installing Gogh terminal profile theme..."
+bash -c "$(wget -qO- https://git.io/vQgMr)"
 
 # Install ble.sh
 cd $HOME

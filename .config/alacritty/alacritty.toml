@@ -11,10 +11,15 @@ padding.x = 10
 padding.y = 10
 
 # WINDOW BUTTONS
-decorations = "Buttonless"
+#decorations = "Buttonless"
+
+# WINDOW SPAWNING
+[keyboard]
+bindings = [{ key = "n", mods = "Control|Shift", action = "CreateNewWindow" }]
 
 # TRANSPARENCY
 opacity = 0.8
+#transparent_background_colors = true
 
 # BLUR
 blur = true
@@ -39,6 +44,10 @@ family = "Hack Nerd Font"
 # family = "Hack Nerd Font Mono"
 style = "Italic"
 
+[font.normal]
+# family = "Hack Nerd Font Mono"
+family = "Hack Nerd Font"
+style = "Regular"
 [font.normal]
 # family = "Hack Nerd Font Mono"
 family = "Hack Nerd Font"
