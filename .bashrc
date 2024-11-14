@@ -107,6 +107,9 @@ echo "w3lc0m3 h4ck3r - let the games begin! - m4ast3r y0ur cr4ft" | lolcat
 
 [[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
 eval "$(atuin init bash)"
+# zoxide
+eval "$(zoxide init bash)"
+alias cd="z"
 
 #starship prompt - shell prompt
 eval "$(starship init bash)"
