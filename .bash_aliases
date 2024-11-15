@@ -29,7 +29,6 @@ alias cpv='rsync -avh --info=progress2'
 
 # cd
 alias ..="cd .."
-alias cd..="cd .."
 alias ...="cd ../../"
 alias ....="cd ../../../"
 

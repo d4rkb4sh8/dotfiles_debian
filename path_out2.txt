@@ -1,0 +1,1 @@
+export PATH=/bin:/opt:/usr/bin:/usr/games:/usr/local/bin:/usr/local/games:/snap/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:$HOME/.atuin/bin:$HOME/.cargo/bin:$HOME/go/bin:$HOME/.local/bin
