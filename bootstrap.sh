@@ -14,6 +14,7 @@ sudo sed -i '/^deb / s/$/ contrib non-free/' /etc/apt/sources.list
 log "Configuring GRUB settings..."
 sudo sed -i 's/^GRUB_TIMEOUT=.*/GRUB_TIMEOUT=2/' /etc/default/grub
 sudo sed -i '/^GRUB_CMDLINE_LINUX_DEFAULT=/a GRUB_CMDLINE_LINUX="rhgb quiet mitigations=off"' /etc/default/grub
+sudo sed -i '/^GRUB_CMDLINE_LINUX_DEFAULT="quiet"/ GRUB_CMDLINE_LINUX_DEFAULT="quiet amd_iommu=off"' /etc/default/grub
 
 # Update GRUB and initramfs
 log "Updating GRUB and initramfs..."
