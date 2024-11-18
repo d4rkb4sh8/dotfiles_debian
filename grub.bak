@@ -6,7 +6,7 @@
 GRUB_DEFAULT=0
 GRUB_TIMEOUT=2
 GRUB_DISTRIBUTOR=`lsb_release -i -s 2> /dev/null || echo Debian`
-GRUB_CMDLINE_LINUX_DEFAULT="quiet amd_iommu=off resume=UUID=ccb4c85e-0413-4881-ab30-bb4a8da46384"
+GRUB_CMDLINE_LINUX_DEFAULT="quiet resume=UUID=ccb4c85e-0413-4881-ab30-bb4a8da46384"
 GRUB_CMDLINE_LINUX="rhgb quiet mitigations=off"
 GRUB_CMDLINE_LINUX=""
 

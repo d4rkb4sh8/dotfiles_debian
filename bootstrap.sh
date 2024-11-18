@@ -29,7 +29,7 @@ sudo apt purge -y audacity gimp gnome-games libreoffice* && sudo apt autoremove 
 APT_PACKAGES=(
   alacritty asciiart autoconf bat bison btop build-essential cmake cpufetch curl dconf-cli debian-goodies dict
   dkms fd-find figlet file flatpak font-manager fzf gawk gdebi gh git gnome-software-plugin-flatpak
-  sd rsync gnome-shell-extension-manager gpaste-2 gpg gpgv2 httpie imagemagick info linux-headers-$(uname -r)
+  sd rsync gnome-shell-extension-manager gpaste-2 gpg gpgv2 httpie imagemagick info linux-headers-$(uname -r) lm-sensors
   lolcat lynis mitmproxy most nala ncal npm openssl pass patchelf pipx plocate postgresql gir1.2-gtop-2.0 lm-sensors
   postgresql-contrib procps python-is-python3 snapd stow tldr tmux ufw thefuck vlc w3m wget wikipedia2text zathura
 )
