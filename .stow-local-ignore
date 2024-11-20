@@ -1,6 +1,5 @@
 optional_installs.sh
 .wezterm.lua
-kanata_keyboard
 sync-dotfiles.sh
 wifiext.sh
 starship
