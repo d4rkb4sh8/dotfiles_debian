@@ -20,8 +20,6 @@
   k-mod (tap-hold $tap-time $hold-time k rsft)
   l-mod (tap-hold $tap-time $hold-time l ralt)
   ;-mod (tap-hold $tap-time $hold-time ; rmet)
-  caps-mod (tap $tap-time caps esc)
-  esc-mod (tap $tap-time esc caps)
 )
 
 (deflayer base
@@ -33,6 +31,4 @@
   @k-mod
   @l-mod
   @;-mod
-  @caps-mod
-  @esc-mod
 )
