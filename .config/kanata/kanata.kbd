@@ -4,7 +4,7 @@
 )
 
 (defsrc
-  a s d f j k l ; caps esc 
+  a s d f j k l ; caps esc
 )
 
 (defvar
@@ -20,8 +20,9 @@
   j-mod (tap-hold $tap-time $hold-time j rctl)
   k-mod (tap-hold $tap-time $hold-time k rsft)
   l-mod (tap-hold $tap-time $hold-time l ralt)
-  caps-mod (tap-hold $tap-time $hold-time esc grv)
-  esc-mod (tap-hold $tap-time caps 0 caps)
+  ;-mod (tap-hold $tap-time $hold-time ; rmet)
+  caps-mod (tap-hold $tap-time $hold-time esc S-grv)
+  esc-mod (tap-hold $tap-time $hold-time caps scln)
 )
 
 (deflayer base
@@ -34,5 +35,5 @@
   @l-mod
   @;-mod
   @caps-mod
-  @;esc-mod
+  @esc-mod
 )
