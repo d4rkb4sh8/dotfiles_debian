@@ -4,7 +4,7 @@
 )
 
 (defsrc
-  a s d f j k l ; caps esc
+  a s d f j k l ; 
 )
 
 (defvar
