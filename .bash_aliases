@@ -258,7 +258,11 @@ alias mproxy='curl --proxy http://127.0.0.1:8080 '
 #RouterHunterBR
 #alias rhunter='php /home/h4ck3r/h4ck3r_setup/tools/RouterHunterBR/RouterHunterBR.php'
 
+#-----------------------------------------------------------------------
 # cryptography
+#-----------------------------------------------------------------------
+alias openssl_encrypt='openssl enc -aes-256-ctr -pbkdf2 -e -a -in /dev/stdin -out encrypted_file.txt'
+alias openssl_decrypt='openssl enc -aes-256-ctr -pbkdf2 -d -a -in /dev/stdin -out decrypted_file.txt'
 
 # rot13
 alias rot13="tr 'A-Za-z' 'N-ZA-Mn-za-m'"

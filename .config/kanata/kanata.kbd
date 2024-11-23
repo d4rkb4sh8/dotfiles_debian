@@ -4,7 +4,7 @@
 )
 
 (defsrc
-  a s d f h j k l ; caps esc z
+  a s d f h j k l ; caps esc z 
 )
 
 (defvar
@@ -24,10 +24,10 @@
   ;-mod (tap-hold $tap-time $hold-time ; rmet)
   caps-mod (tap-hold $tap-time $hold-time esc grv)
   esc-mod (tap-hold $tap-time $hold-time caps scln)
-  z-mod (tap-hold $tap-time $hold-time z (layer-toggle one))
+  z-mod (tap-hold $tap-time $hold-time z (layer-toggle two))
 )
 
-(deflayer base
+(deflayer one 
   @a-mod
   @s-mod
   @d-mod
@@ -42,7 +42,7 @@
   @z-mod
 )
 
-(deflayer one
+(deflayer two 
   _ 
   _
   _
