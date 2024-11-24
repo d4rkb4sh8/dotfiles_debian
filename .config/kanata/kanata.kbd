@@ -4,7 +4,7 @@
 )
 
 (defsrc
-  a s d f h j k l ; caps esc z 
+  s d f h j k l caps esc z 
 )
 
 (defvar
@@ -13,22 +13,19 @@
 )
 
 (defalias
-  a-mod (tap-hold $tap-time $hold-time a lmet)
-  s-mod (tap-hold $tap-time $hold-time s lalt)
-  d-mod (tap-hold $tap-time $hold-time d lsft)
+  s-mod (tap-hold $tap-time $hold-time s lmet)
+  d-mod (tap-hold $tap-time $hold-time d lalt)
   f-mod (tap-hold $tap-time $hold-time f lctl)
   h-mod (tap-hold $tap-time $hold-time h S-grv)
   j-mod (tap-hold $tap-time $hold-time j rctl)
-  k-mod (tap-hold $tap-time $hold-time k rsft)
-  l-mod (tap-hold $tap-time $hold-time l ralt)
-  ;-mod (tap-hold $tap-time $hold-time ; rmet)
+  k-mod (tap-hold $tap-time $hold-time k ralt)
+  l-mod (tap-hold $tap-time $hold-time l rmet)
   caps-mod (tap-hold $tap-time $hold-time esc grv)
   esc-mod (tap-hold $tap-time $hold-time caps scln)
   z-mod (tap-hold $tap-time $hold-time z (layer-toggle two))
 )
 
 (deflayer one 
-  @a-mod
   @s-mod
   @d-mod
   @f-mod
@@ -36,7 +33,6 @@
   @j-mod
   @k-mod
   @l-mod
-  @;-mod
   @caps-mod
   @esc-mod
   @z-mod
@@ -44,7 +40,6 @@
 )
 
 (deflayer two 
-  _ 
   _
   _
   _
@@ -52,7 +47,6 @@
   down 
   up 
   rght 
-  _
   _
   _
   _
