@@ -1,5 +1,5 @@
 optional_installs.sh
-kanata_keyboard
+kanata_setup
 .wezterm.lua
 sync-dotfiles.sh
 wifiext.sh
