@@ -248,7 +248,7 @@ alias ssh2='ssh -i .ssh/ansible debian2@127.0.0.1 -p 3022'
 alias mproxy='curl --proxy http://127.0.0.1:8080 '
 
 #nmap
-alias nmapxml='nmap -sS -T4 -A -sC -oX nmap.xml'
+alias nmap2xml='nmap -sS -T4 -A -sC -oX nmap.xml'
 alias xml2html='xsltproc -o nmap.html nmap-bootstrap.xsl nmap.xml'
 
 #dnscan
