@@ -168,7 +168,7 @@ alias ip='ip -c'
 # ai  assistant
 alias aid='ollama run deepseek-coder-v2:latest'
 alias aiu='ollama run llama2-uncensored:latest'
-alias aip='ollama run ALIENTELLIGENCE/deepseekcoder16kcontextv2:latest'
+alias aip='ollama run ALIENTELLIGENCE/deepseekcoder16kcontextv2'
 alias ait='tgpt'
 
 # cheat sheet
@@ -246,6 +246,10 @@ alias ssh2='ssh -i .ssh/ansible debian2@127.0.0.1 -p 3022'
 #-----------------------------------------------------------------------
 #mproxy
 alias mproxy='curl --proxy http://127.0.0.1:8080 '
+
+#nmap
+alias nmapxml='nmap -sS -T4 -A -sC -oX nmap.xml'
+alias xml2html='xsltproc -o nmap.html nmap-bootstrap.xsl nmap.xml'
 
 #dnscan
 #alias dnscan='/home/h4ck3r/h4ck3r_setup/tools/dnscan/dnscan.py'
