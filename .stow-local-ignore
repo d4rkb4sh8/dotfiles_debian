@@ -1,3 +1,5 @@
+ansible
+gsettings_custom
 optional_installs.sh
 kanata_setup
 .wezterm.lua
