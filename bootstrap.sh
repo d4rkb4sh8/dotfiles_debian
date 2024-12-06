@@ -31,7 +31,7 @@ APT_PACKAGES=(
   dkms fd-find figlet file flatpak font-manager fzf gawk gdebi gh git gir1.2-gtop-2.0 gnome-software-plugin-flatpak
   sd rsync gnome-shell-extension-manager gpaste-2 gpg gpgv2 gtk2-engines-murrine httpie imagemagick info linux-headers-$(uname -r) lm-sensors
   lolcat lynis mitmproxy most nala ncal npm openssl pass patchelf pipx plocate postgresql gir1.2-gtop-2.0 lm-sensors
-  openrc postgresql-contrib procps python-is-python3 rkhunter snapd stow tldr tilix tmux ufw thefuck vlc w3m wget wikipedia2text zathura
+  openrc postgresql-contrib procps python-is-python3 rkhunter snapd stow tldr tilix tmux ufw thefuck vlc w3m wget wikipedia2text zathura zoxide
 )
 
 # Update, upgrade and install APT packages in a single step
@@ -59,16 +59,6 @@ echo 'source ~/.local/share/blesh/ble.sh' >>~/.bashrc
 #Brightness control from keybaord
 gsettings set org.gnome.settings-daemon.plugins.media-keys screen-brightness-up "['<Ctrl><Super>Up']"
 gsettings set org.gnome.settings-daemon.plugins.media-keys screen-brightness-down "['<Ctrl><Super>Down']"
-gsettings set org.gnome.desktop.background picture-uri 'file:///home/h4ck3r/.local/share/backgrounds/2024-11-26-00-37-59-wallpaper_002.jpg'
-gsettings set org.gnome.desktop.background picture-uri-dark 'file:///home/h4ck3r/.local/share/backgrounds/2024-11-26-00-37-59-wallpaper_002.jpg'
-gsettings set com.gexperts.Tilix.Keybindings session-resize-terminal-down '<Shift><Alt>j'
-gsettings set com.gexperts.Tilix.Keybindings session-resize-terminal-left '<Shift><Alt>h'
-gsettings set com.gexperts.Tilix.Keybindings session-resize-terminal-right '<Shift><Alt>l'
-gsettings set com.gexperts.Tilix.Keybindings session-resize-terminal-up '<Shift><Alt>k'
-gsettings set com.gexperts.Tilix.Keybindings session-switch-to-terminal-down '<Alt>j'
-gsettings set com.gexperts.Tilix.Keybindings session-switch-to-terminal-left '<Alt>h'
-gsettings set com.gexperts.Tilix.Keybindings session-switch-to-terminal-right '<Alt>l'
-gsettings set com.gexperts.Tilix.Keybindings session-switch-to-terminal-up '<Alt>k'
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left ['<Control><Alt>h']
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right ['<Control><Alt>l']
 
@@ -116,8 +106,8 @@ log "setting up gitprojects..."
 mkdir $HOME/gitprojects
 cd $HOME/gitprojects
 git clone https://github.com/d4rkb4sh8/main.git
-git clone git clone https://github.com/d4rkb4sh8/learn.git
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+git clone https://github.com/d4rkb4sh8/notes.git
 
 ## install dotfiles and stow them.
 cd $HOME
