@@ -31,7 +31,7 @@ APT_PACKAGES=(
   dkms fd-find figlet file flatpak font-manager fzf gawk gdebi gh git gir1.2-gtop-2.0 gnome-software-plugin-flatpak
   sd rsync gnome-shell-extension-manager gpaste-2 gpg gpgv2 gtk2-engines-murrine httpie imagemagick info linux-headers-$(uname -r) lm-sensors
   lolcat lynis mitmproxy most nala ncal npm openssl pass patchelf pipx plocate postgresql gir1.2-gtop-2.0 lm-sensors
-  openrc postgresql-contrib procps python-is-python3 rkhunter snapd stow tldr tilix tmux ufw thefuck vlc w3m wget wikipedia2text zathura zoxide
+  openrc postgresql-contrib procps python-is-python3 rc rkhunter snapd stow tldr tilix tmux ufw thefuck vlc w3m wget wikipedia2text zathura zoxide
 )
 
 # Update, upgrade and install APT packages in a single step
