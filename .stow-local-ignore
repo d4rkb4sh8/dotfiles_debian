@@ -1,7 +1,6 @@
 ansible
 gsettings_custom
 optional_installs.sh
-kanata_setup
 .wezterm.lua
 sync-dotfiles.sh
 wifiext.sh
