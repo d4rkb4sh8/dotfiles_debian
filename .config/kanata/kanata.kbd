@@ -4,7 +4,7 @@
 )
 
 (defsrc
-  s d f h j k l caps esc z lalt ralt
+  s d f h j k l caps esc z lalt ralt y u i o
 )
 
 (defvar
@@ -25,6 +25,10 @@
   z-mod (tap-hold $tap-time $hold-time z (layer-toggle two))
   lalt-mod (tap-hold $tap-time $hold-time bspc del)
   ralt-mod (tap-hold $tap-time $hold-time ret ralt)
+  y-mod (tap-hold $tap-time $hold-time y home) 
+  u-mod (tap-hold $tap-time $hold-time u pgdn)
+  i-mod (tap-hold $tap-time $hold-time i pgup)
+  o-mod (tap-hold $tap-time $hold-time o end)
 )
 
 (deflayer one 
@@ -40,6 +44,10 @@
   @z-mod
   @lalt-mod
   @ralt-mod
+  _
+  _
+  _
+  _
 )
 
 (deflayer two 
@@ -55,4 +63,8 @@
   _
   _
   _
+  @y-mod
+  @u-mod
+  @i-mod
+  @o-mod
 )
