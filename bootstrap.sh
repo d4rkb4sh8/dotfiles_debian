@@ -59,8 +59,8 @@ echo 'source ~/.local/share/blesh/ble.sh' >>~/.bashrc
 #Brightness control from keybaord
 gsettings set org.gnome.settings-daemon.plugins.media-keys screen-brightness-up "['<Ctrl><Super>Up']"
 gsettings set org.gnome.settings-daemon.plugins.media-keys screen-brightness-down "['<Ctrl><Super>Down']"
-gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left ['<Ctrl><Alt>h']
-gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right ['<Ctrl><Alt>l']
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left "['<Ctrl><Alt>h']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right "['<Ctrl><Alt>l']"
 
 # Install Hack Nerd Font
 log "Installing Hack Nerd Font..."
