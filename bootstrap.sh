@@ -31,7 +31,7 @@ APT_PACKAGES=(
   dkms fd-find figlet file flatpak font-manager fzf gawk gdebi gh git gir1.2-gtop-2.0 gnome-software-plugin-flatpak
   sd rsync gnome-shell-extension-manager gpaste-2 gpg gpgv2 gtk2-engines-murrine httpie imagemagick info linux-headers-$(uname -r) lm-sensors
   lolcat lynis mitmproxy most nala ncal npm openssl pass patchelf pipx plocate postgresql gir1.2-gtop-2.0 lm-sensors
-  openrc postgresql-contrib procps python-is-python3 rc rkhunter snapd stow tldr terminator tmux ufw thefuck vlc w3m wget wikipedia2text zathura zoxide
+  openrc postgresql-contrib procps python-is-python3 rc rkhunter snapd stow tldr terminator tmux ufw thefuck vlc w3m wget wikipedia2text zathura
 )
 
 # Update, upgrade and install APT packages in a single step
@@ -88,7 +88,7 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 # Install packages using Homebrew
 log "Installing Homebrew packages: eza, gcc, neovim, dust, zoxide, atuin, xh, yazi..."
-brew install eza gcc neovim dust xh yazi fastfetch gitleaks lazygit
+brew install eza gcc neovim dust xh fastfetch gitleaks lazygit yazi ffmpeg sevenzip jq poppler fd ripgrep fzf zoxide imagemagick
 
 # Install rust
 log "Installing Rust..."
