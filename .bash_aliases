@@ -6,7 +6,8 @@ alias numFiles='echo $(ls -1 | wc -l)'      # numFiles:     Count of non-hidden 
 alias make1mb='truncate -s 1m ./1MB.dat'    # make1mb:      Creates a file of 1mb size (all zeros)
 alias make5mb='truncate -s 5m ./5MB.dat'    # make5mb:      Creates a file of 5mb size (all zeros)
 alias make10mb='truncate -s 10m ./10MB.dat' # make10mb:     Creates a file of 10mb size (all zeros)
-#alias z='zoxide'
+alias cd='z'
+alias cdi='zi'
 alias bat='batcat --theme=Coldark-Dark  --style=full'
 alias ff='fastfetch --logo $HOME/.config/fastfetch/h4cker_ascii.txt'
 alias ffa='fastfetch -c all --logo $HOME/.config/fastfetch/h4cker_ascii.txt'
