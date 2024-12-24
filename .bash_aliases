@@ -168,8 +168,8 @@ alias ip='ip -c'
 
 # ai  assistant
 alias aid='ollama run deepseek-coder-v2:latest'
-alias aiu='ollama run llama2-uncensored:latest'
-alias aic='ollama run ALIENTELLIGENCE/deepseekcoder16kcontextv2'
+alias ail='ollama run llama3.2'
+alias aiw='ollama run ALIENTELLIGENCE/whiterabbitv2'
 alias ait='tgpt'
 
 # cheat sheet
