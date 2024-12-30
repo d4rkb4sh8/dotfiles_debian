@@ -4,7 +4,7 @@
 )
 
 (defsrc
-  s d f h j k l caps esc z lalt ralt y u i o
+  s d f h j k l caps esc lmet lalt ralt y u i o a z x c v
 )
 
 (defvar
@@ -22,13 +22,18 @@
   l-mod (tap-hold $tap-time $hold-time l rmet)
   caps-mod (tap-hold $tap-time $hold-time esc grv)
   esc-mod (tap-hold $tap-time $hold-time caps scln)
-  z-mod (tap-hold $tap-time $hold-time z (layer-toggle two))
+  lmet-mod (tap-hold $tap-time $hold-time lmet (layer-toggle two))
   lalt-mod (tap-hold $tap-time $hold-time bspc del)
   ralt-mod (tap-hold $tap-time $hold-time ret ralt)
   y-mod (tap-hold $tap-time $hold-time y home) 
   u-mod (tap-hold $tap-time $hold-time u pgdn)
   i-mod (tap-hold $tap-time $hold-time i pgup)
   o-mod (tap-hold $tap-time $hold-time o end)
+  a-mod (tap-hold $tap-time $hold-time a C-a)
+  z-mod (tap-hold $tap-time $hold-time z C-z)
+  x-mod (tap-hold $tap-time $hold-time x C-x)
+  c-mod (tap-hold $tap-time $hold-time c C-c)
+  v-mod (tap-hold $tap-time $hold-time v C-v)
 )
 
 (deflayer one 
@@ -41,9 +46,14 @@
   @l-mod
   @caps-mod
   @esc-mod
-  @z-mod
+  @lmet-mod
   @lalt-mod
   @ralt-mod
+  _
+  _
+  _
+  _
+  _
   _
   _
   _
@@ -67,4 +77,9 @@
   @u-mod
   @i-mod
   @o-mod
+  @a-mod
+  @z-mod
+  @x-mod
+  @c-mod
+  @v-mod
 )
