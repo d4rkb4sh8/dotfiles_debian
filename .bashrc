@@ -94,10 +94,10 @@ source ~/.local/share/blesh/ble.sh
 eval "$(register-python-argcomplete pipx)"
 
 #most - colorful output for man
-#export PAGER=most
+export PAGER=most
 
 #highlight less
-export LESSOPEN="| /usr/bin/highlight %s --out-format xterm256 --force"
+# export LESSOPEN="| /usr/bin/highlight %s --out-format xterm256 --force"
 
 # greet me
 echo "w3lc0m3 h4ck3r - let the games begin! - m4ast3r y0ur cr4ft" | lolcat
