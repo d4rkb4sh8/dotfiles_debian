@@ -20,10 +20,6 @@ The `.bootstrap.sh` script is used to install required packages for the dot file
 
 Stow, a package manager for managing binary directories, is used to manage the installation of the dot files. The `stow.conf` file contains configuration options for Stow.
 
-Here's an example README.md file that can be generated based on this information:
-
-**d4rkb4sh8/dotfiles**
-
 A collection of dot files used to manage the Linux environment.
 
 ## **Directory Structure**
