@@ -22,7 +22,7 @@ sudo apt purge -y audacity gimp gnome-games libreoffice* && sudo apt autoremove 
 
 # Define APT packages
 APT_PACKAGES=(
-  asciiart autoconf bat bison btop build-essential cmake cpufetch curl dconf-cli dict
+  joplin asciiart autoconf bat bison btop build-essential cmake cpufetch curl dconf-cli dict
   dkms fd-find figlet file fastfetch eza font-manager fzf gawk gdebi gh git sd rsync gpg httpie imagemagick info lolcat lynis mitmproxy most nala ncal npm openssl pass
   patchelf plocate postgresql postgresql-contrib procps python-is-python3 stow tldr tmux ufw thefuck vlc w3m wget wikipedia2text zathura
 )
