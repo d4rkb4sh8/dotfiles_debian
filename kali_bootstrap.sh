@@ -87,11 +87,11 @@ GRC_ALIASES=true
 [[ -s "/etc/profile.d/grc.sh" ]] && source /etc/grc.sh" >>$HOME/.bashrc
 
 # alfa wireless adapter realtek
-cd $HOME/gitprojects/
-git clone https://github.com/aircrack-ng/rtl8812au.git
-cd rtl8812au
-sudo ./dkms-install.sh
-
+# cd $HOME/gitprojects/
+# git clone https://github.com/aircrack-ng/rtl8812au.git
+# cd rtl8812au
+# sudo make dkms_install
+#
 # setup Starship prompt
 log "setting up Starship..."
 curl -sS https://starship.rs/install.sh | sh
