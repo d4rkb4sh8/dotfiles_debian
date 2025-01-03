@@ -22,7 +22,7 @@ sudo apt purge -y audacity gimp gnome-games libreoffice* && sudo apt autoremove 
 
 # Define APT packages
 APT_PACKAGES=(
-  alacritty asciiart autoconf bat bison btop build-essential cmake cpufetch curl dconf-cli dict
+  asciiart autoconf bat bison btop build-essential cmake cpufetch curl dconf-cli dict
   dkms fd-find figlet file fastfetch eza font-manager fzf gawk gdebi gh git sd rsync gpg httpie imagemagick info lolcat lynis mitmproxy most nala ncal npm openssl pass
   patchelf plocate postgresql postgresql-contrib procps python-is-python3 stow tldr tmux ufw thefuck vlc w3m wget wikipedia2text zathura
 )
@@ -62,7 +62,7 @@ log "setting up gitprojects..."
 mkdir $HOME/gitprojects
 cd $HOME/gitprojects
 git clone https://github.com/d4rkb4sh8/main.git
-git clone https://github.com/d4rkb4sh8/learn.git
+git clone https://github.com/d4rkb4sh8/notes.git
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 ## install dotfiles and stow them.
@@ -82,6 +82,15 @@ git clone https://github.com/garabik/grc.git
 cd $HOME/gitprojects/grc
 sudo ./install.sh
 sudo cp /etc/profile.d/grc.sh /etc
+echo "# colorize output
+GRC_ALIASES=true
+[[ -s "/etc/profile.d/grc.sh" ]] && source /etc/grc.sh" >>$HOME/.bashrc
+
+# alfa wireless adapter realtek
+cd $HOME/gitprojects/
+git clone https://github.com/aircrack-ng/rtl8812au.git
+cd rtl8812au
+sudo ./dkms-install.sh
 
 # setup Starship prompt
 log "setting up Starship..."
