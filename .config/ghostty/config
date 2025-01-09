@@ -1,0 +1,26 @@
+# Themes
+theme = Darkside 
+
+# Fonts
+font-size = 12
+font-family = Hack Nerd Font
+font-feature = liga
+
+# Background
+# background-opacity = 0.9
+# background-blur-radius = 20
+
+# Mouse
+mouse-hide-while-typing = true
+
+# Windows
+window-decoration = true
+
+# Keybindings
+# keybind = global:cmd+/=toggle_quick_terminal
+
+keybind = shift+ctrl+r=reload_config
+
+keybind = ctrl+alt+\=new_split:right
+keybind = ctrl+alt+-=new_split:down
+
