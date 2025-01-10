@@ -1,7 +1,9 @@
 [global_config]
   handle_size = 2
+  inactive_color_offset = 0.6258503401360545
   enabled_plugins = LaunchpadBugURLHandler, LaunchpadCodeURLHandler, APTURLHandler, TerminatorThemes
   suppress_multiple_term_dialog = True
+  always_split_with_profile = True
   link_single_click = True
 [keybindings]
   split_horiz = <Primary><Alt>minus
@@ -23,6 +25,7 @@
     use_theme_colors = True
     bold_is_bright = True
     copy_on_selection = True
+    title_hide_sizetext = True
     title_transmit_fg_color = "#2a2a2a"
     title_transmit_bg_color = "#99c1f1"
     title_receive_fg_color = "#2a2a2a"

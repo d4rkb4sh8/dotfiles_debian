@@ -46,10 +46,6 @@ log "Installing Snap..."
 sudo snap install snapd
 sudo snap install snap-store
 
-# Install Gogh terminal profile theme
-log "Installing Gogh terminal profile theme..."
-bash -c "$(wget -qO- https://git.io/vQgMr)"
-
 # Install ble.sh
 cd $HOME
 git clone --recursive --depth 1 --shallow-submodules https://github.com/akinomyoga/ble.sh.git
@@ -59,8 +55,6 @@ echo 'source ~/.local/share/blesh/ble.sh' >>~/.bashrc
 #Brightness control from keybaord
 gsettings set org.gnome.settings-daemon.plugins.media-keys screen-brightness-up "['<Ctrl><Super>Up']"
 gsettings set org.gnome.settings-daemon.plugins.media-keys screen-brightness-down "['<Ctrl><Super>Down']"
-gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left "['<Ctrl><Alt>h']"
-gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right "['<Ctrl><Alt>l']"
 
 # Install Hack Nerd Font
 log "Installing Hack Nerd Font..."
@@ -106,14 +100,14 @@ log "setting up gitprojects..."
 mkdir $HOME/gitprojects
 cd $HOME/gitprojects
 git clone https://github.com/d4rkb4sh8/main.git
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+# git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 git clone https://github.com/d4rkb4sh8/notes.git
 
 ## install dotfiles and stow them.
 cd $HOME
 git clone https://github.com/d4rkb4sh8/dotfiles.git
 cd dotfiles
-stow --adopt .
+stow .
 
 # add wallpapers
 log "adding wallpapers..."
@@ -151,10 +145,10 @@ sudo ./install.sh -s 1080p -b -t whitesur
 #cargo install kanata
 
 #Install tgpt
-#curl -sSL https://raw.githubusercontent.com/aandrew-me/tgpt/main/install | bash -s /usr/local/bin
+curl -sSL https://raw.githubusercontent.com/aandrew-me/tgpt/main/install | bash -s /usr/local/bin
 
 # Install atuin
-#curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh
+curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh
 
 # Final update and clean up
 log "Final update and clean up..."
