@@ -109,7 +109,7 @@ echo "w3lc0m3 h4ck3r - let the games begin! - m4ast3r y0ur cr4ft" | lolcat
 eval "$(atuin init bash)"
 
 #zoxide
-eval "$(zoxide init bash)"
+# eval "$(zoxide init bash)"
 
 #starship prompt - shell prompt
 eval "$(starship init bash)"
