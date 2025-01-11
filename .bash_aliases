@@ -44,6 +44,7 @@ alias w='grc w'
 alias who='grc who'
 alias free='free -h'
 alias ifconfig='grc ifconfig'
+alias whois='grc whois'
 
 #git add all files, commit and push
 alias gitup='git add .; git commit -m "updated"; git push'
