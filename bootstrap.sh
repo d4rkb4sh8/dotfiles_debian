@@ -138,8 +138,12 @@ sudo ./install.sh -s 1080p -b -t whitesur
 #log "Installing GTFOB..."
 #pipx install git+https://github.com/nccgroup/GTFOBLookup.git
 
+# cargo install
+cargo install cargo-update
+cargo install cargo-list
+
 # Binsider
-#cargo install binsider
+cargo install binsider
 
 # Install kanata for home row mods
 #cargo install kanata

@@ -150,7 +150,7 @@ alias ux='chmod u+x'                   # ---x------ (user: --x, group: -, other:
 # 12.  GENERAL_TOOLS
 #-----------------------------------------------------------------------
 # update
-alias update='sudo nala upgrade -y && sudo apt full-upgrade -y && flatpak upgrade && sudo snap refresh && rustup update && brew update && brew upgrade && sudo updatedb -v;figlet "machine is updated !"|lolcat'
+alias update='sudo nala upgrade -y && sudo apt full-upgrade -y && flatpak upgrade && sudo snap refresh && rustup update && cargo install-update -a && brew update && brew upgrade && sudo updatedb -v;figlet "machine is updated !"|lolcat'
 
 #clean
 alias clean='sudo nala autopurge && sudo nala autoremove && sudo nala clean'

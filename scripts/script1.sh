@@ -51,7 +51,7 @@ fi
 
 # 4.8 Installed Packages (cargo)
 if command -v cargo &> /dev/null; then
-  INSTALLED_CARGO_PACKAGES=$(cargo list | awk '{print $1}' | tr '\n' ' ')
+  INSTALLED_CARGO_PACKAGES=$(cargo-list list | awk '{print $1}' | tr '\n' ' ')
 else
   INSTALLED_CARGO_PACKAGES=""
 fi
