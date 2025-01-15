@@ -119,3 +119,7 @@ eval "$(starship init bash)"
 #   exec tmux
 # fi
 . "$HOME/.cargo/env"
+
+if [ -d "$HOME/adb-fastboot/platform-tools" ]; then
+  export PATH="$HOME/adb-fastboot/platform-tools:$PATH"
+fi
