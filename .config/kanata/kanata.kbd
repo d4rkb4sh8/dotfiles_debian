@@ -4,7 +4,7 @@
 )
 
 (defsrc
-  s d f h j k l caps esc lmet lalt ralt y u i o a z x c v
+  s d f h j k l caps esc lmet lalt ralt y u i o a z x c v 
 )
 
 (defvar
