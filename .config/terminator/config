@@ -23,15 +23,13 @@
   switch_to_tab_10 = <Alt>0
 [profiles]
   [[default]]
-    background_color = "#2b2d2e"
+    background_color = "#242424"
     background_darkness = 0.7
-    background_type = transparent
     cursor_bg_color = "#708284"
     font = Hack Nerd Font 12
-    foreground_color = "#d2d8d9"
+    foreground_color = "#f6f5f4"
     palette = "#7d8b8f:#b23a52:#789b6a:#b9ac4a:#2a7fac:#bd4f5a:#44a799:#d2d8d9:#888888:#f24840:#80c470:#ffeb62:#4196ff:#fc5275:#53cdbd:#d2d8d9"
     use_system_font = False
-    use_theme_colors = True
     bold_is_bright = True
     copy_on_selection = True
     title_hide_sizetext = True
