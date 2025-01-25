@@ -134,6 +134,12 @@ cd $HOME/gitprojects/grub2-themes
 cp $HOME/Pictures/wallpapers/wallpaper_001.jpg $HOME/gitprojects/grub2-themes/background.jpg
 sudo ./install.sh -s 1080p -b -t whitesur
 
+# Install Orchis theme
+cd $HOME/gitprojects/
+git clone https://github.com/vinceliuice/Orchis-theme.git
+cd Orchis-theme
+./install.sh -t red -c dark -s compact -l --tweaks compact --shell
+
 # Install GTFOB lookup
 #log "Installing GTFOB..."
 #pipx install git+https://github.com/nccgroup/GTFOBLookup.git
