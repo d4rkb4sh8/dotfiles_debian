@@ -82,7 +82,7 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 # Install packages using Homebrew
 log "Installing Homebrew packages: eza, gcc, neovim, dust, zoxide, atuin, xh, yazi..."
-brew install eza musikcube gcc neovim dust xh fastfetch gitleaks lazygit yazi ffmpeg sevenzip jq poppler fd ripgrep fzf zoxide imagemagick
+brew install eza musikcube gcc kanata neovim dust xh fastfetch gitleaks lazygit yazi ffmpeg sevenzip jq poppler fd ripgrep fzf zoxide imagemagick
 
 # Install rust
 log "Installing Rust..."
@@ -151,14 +151,14 @@ cargo install cargo-list
 # Binsider
 cargo install binsider
 
-# Install kanata for home row mods
-#cargo install kanata
-
 #Install tgpt
 curl -sSL https://raw.githubusercontent.com/aandrew-me/tgpt/main/install | bash -s /usr/local/bin
 
 # Install atuin
 curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh
+
+# Install Ollama
+curl -fsSL https://ollama.com/install.sh | sh
 
 # Final update and clean up
 log "Final update and clean up..."

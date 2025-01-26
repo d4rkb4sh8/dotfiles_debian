@@ -23,7 +23,7 @@
   switch_to_tab_10 = <Alt>0
 [profiles]
   [[default]]
-    background_color = "#242424"
+    background_color = "#1c1b22"
     background_darkness = 0.7
     cursor_bg_color = "#708284"
     font = Hack Nerd Font 12
