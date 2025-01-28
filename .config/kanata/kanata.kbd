@@ -69,32 +69,32 @@
 
 ;; Navigation layer 
 (deflayer two 
-  esc  f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12
+  caps f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12
   grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
   tab  q    w    e    r    t    @yy  @uu  @ii  @oo  p    _    _    \
-  caps @aa  _    _    _    g    left down up   rght ;    '    ret
+  esc  @aa  _    _    _    g    left down up   rght ;    '    ret
   lsft @zz  @xx  @cc  @vv  b    n    m    _    _    /    rsft
-  lctl _    _           spc               _    _    rctl
+  _    _    _           spc               _    _    rctl
 )
 
 ;; Symbols layer 
 (deflayer three 
-  esc  f1   f2   f3    f4   f5   f6   f7   f8   f9   f10  f11  f12
+  caps f1   f2   f3    f4   f5   f6   f7   f8   f9   f10  f11  f12
   grv  1    2    3     4    5    6    7    8    9    0    -    =    bspc
   tab  S-1  S-2  S-3   S-4  t    _    _    _    _    p    _    _    \
-  caps S-5  S-6  S-7   S-8  _    _    _    _    _    ;    '    ret
+  esc  S-5  S-6  S-7   S-8  _    _    _    _    _    ;    '    ret
   lsft S-9  S-0  S-grv _    b    n    m    _    _    /    rsft
-  lctl _    _           spc                _    _    rctl
+  _    _    _           spc                _    _    rctl
 )
 
-;; Number Layer
+;; Numbers Layer
 (deflayer four 
   caps f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12 
   grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
   tab  q    w    e    r    t    y    1    2    3    p    @tbd @tfd \
   esc  a    @ss  @dd  @ff  g    @hh  4    5    6    ;    '    ret
   lsft z    x    c    v    b    7    8    9    0    /    rsft
-  @nlt @lm  @la           spc             @ra  @rm  rctl
+  _    _    _           spc               _    _    rctl
 )
 
 ;; lrld is a default shortcut to reload the configuration 
