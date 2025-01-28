@@ -46,7 +46,7 @@
   cc (tap-hold $tap-time $hold-time c C-c)
   vv (tap-hold $tap-time $hold-time v C-v)
   tbd (tap-hold $tap-time $hold-time [ C-w)
-  tfd (tap-hold $tap-time $hold-time ] esc-d)
+  tfd (tap-hold $tap-time $hold-time ] lalt-d)
   dwb (tap-hold $tap-time $hold-time , C-bspc)
   dwf (tap-hold $tap-time $hold-time . C-del)
 )
