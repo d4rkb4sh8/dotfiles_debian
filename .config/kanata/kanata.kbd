@@ -79,7 +79,7 @@
 
 ;; Symbols layer 
 (deflayer three 
-  caps f1   f2   f3    f4   f5   f6   f7   f8   f9   f10  f11  f12
+  caps f1   f2   f3    f4   f5   f6   f7   f8   f9   f10  f11  lrld
   grv  1    2    3     4    5    6    7    8    9    0    -    =    bspc
   tab  S-1  S-2  S-3   S-4  t    _    _    _    _    p    _    _    \
   esc  S-5  S-6  S-7   S-8  _    _    _    _    _    ;    '    ret
