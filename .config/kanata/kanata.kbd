@@ -3,83 +3,99 @@
   log-layer-changes no
 )
 
-(defsrc
-  s d f h j k l caps esc lmet lalt ralt y u i o a z x c v 
-)
-
+;; Variables
 (defvar
  tap-time 200
  hold-time 200
 )
 
+
+;; Defsrc contains the original unmapped keyboard layout. Often this is qwerty.
+(defsrc
+  esc  f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12 
+  grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
+  caps a    s    d    f    g    h    j    k    l    ;    '    ret
+  lsft z    x    c    v    b    n    m    ,    .    /    rsft
+  lctl lmet lalt           spc            ralt rmet rctl
+)
+
+;; Aliases
 (defalias
-  s-mod (tap-hold $tap-time $hold-time s lmet)
-  d-mod (tap-hold $tap-time $hold-time d lalt)
-  f-mod (tap-hold $tap-time $hold-time f lctl)
-  h-mod (tap-hold $tap-time $hold-time h S-grv)
-  j-mod (tap-hold $tap-time $hold-time j rctl)
-  k-mod (tap-hold $tap-time $hold-time k ralt)
-  l-mod (tap-hold $tap-time $hold-time l rmet)
-  caps-mod (tap-hold $tap-time $hold-time esc grv)
-  esc-mod (tap-hold $tap-time $hold-time caps scln)
-  lmet-mod (tap-hold $tap-time $hold-time lmet (layer-toggle two))
-  lalt-mod (tap-hold $tap-time $hold-time bspc del)
-  ralt-mod (tap-hold $tap-time $hold-time ret ralt)
-  y-mod (tap-hold $tap-time $hold-time y home) 
-  u-mod (tap-hold $tap-time $hold-time u pgdn)
-  i-mod (tap-hold $tap-time $hold-time i pgup)
-  o-mod (tap-hold $tap-time $hold-time o end)
-  a-mod (tap-hold $tap-time $hold-time a C-a)
-  z-mod (tap-hold $tap-time $hold-time z C-z)
-  x-mod (tap-hold $tap-time $hold-time x C-x)
-  c-mod (tap-hold $tap-time $hold-time c C-c)
-  v-mod (tap-hold $tap-time $hold-time v C-v)
+  ss (tap-hold $tap-time $hold-time s lmet)
+  dd (tap-hold $tap-time $hold-time d lalt)
+  ff (tap-hold $tap-time $hold-time f lctl)
+  hh (tap-hold $tap-time $hold-time h S-grv)
+  jj (tap-hold $tap-time $hold-time j rctl)
+  kk (tap-hold $tap-time $hold-time k ralt)
+  ll (tap-hold $tap-time $hold-time l rmet)
+  capm (tap-hold $tap-time $hold-time esc grv)
+  escm  (tap-hold $tap-time $hold-time caps scln)
+  nlt (tap-hold $tap-time $hold-time lctl (layer-toggle four))
+  lm (tap-hold $tap-time $hold-time lmet (layer-toggle two))
+  rm (tap-hold $tap-time $hold-time rmet (layer-toggle three))
+  la (tap-hold $tap-time $hold-time bspc del)
+  ra (tap-hold $tap-time $hold-time ret ralt)
+  yy (tap-hold $tap-time $hold-time y home) 
+  uu (tap-hold $tap-time $hold-time u pgdn)
+  ii (tap-hold $tap-time $hold-time i pgup)
+  oo (tap-hold $tap-time $hold-time o end)
+  aa (tap-hold $tap-time $hold-time a C-a)
+  zz (tap-hold $tap-time $hold-time z C-z)
+  xx (tap-hold $tap-time $hold-time x C-x)
+  cc (tap-hold $tap-time $hold-time c C-c)
+  vv (tap-hold $tap-time $hold-time v C-v)
+  tbd (tap-hold $tap-time $hold-time [ C-w)
+  tfd (tap-hold $tap-time $hold-time ] esc-d)
+  dwb (tap-hold $tap-time $hold-time , C-bspc)
+  dwf (tap-hold $tap-time $hold-time . C-del)
 )
 
+;; Commands
+(defalias
+)
+
+;; The first layer defined is the layer that will be active by default when kanata starts up. 
 (deflayer one 
-  @s-mod
-  @d-mod
-  @f-mod
-  @h-mod
-  @j-mod
-  @k-mod
-  @l-mod
-  @caps-mod
-  @esc-mod
-  @lmet-mod
-  @lalt-mod
-  @ralt-mod
-  _
-  _
-  _
-  _
-  _
-  _
-  _
-  _
-  _
+  caps f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12 
+  grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  tab  q    w    e    r    t    y    u    i    o    p    @tbd @tfd \
+  esc  a    @ss  @dd  @ff  g    @hh  @jj  @kk  @ll  ;    '    ret
+  lsft z    x    c    v    b    n    m    @dwb @dwf /    rsft
+  @nlt @lm  @la           spc             @ra  @rm  rctl
 )
 
+;; Notice the keys with "@" those are aliases.
+
+;; Navigation layer 
 (deflayer two 
-  _
-  _
-  _
-  left 
-  down 
-  up 
-  rght 
-  _
-  _
-  _
-  _
-  _
-  @y-mod
-  @u-mod
-  @i-mod
-  @o-mod
-  @a-mod
-  @z-mod
-  @x-mod
-  @c-mod
-  @v-mod
+  esc  f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  @dvk
+  grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  tab  q    w    e    r    t    @yy  @uu  @ii  @oo  p    _    _    \
+  caps @aa  _    _    _    g    left down up   rght ;    '    ret
+  lsft @zz  @xx  @cc  @vv  b    n    m    _    _    /    rsft
+  lctl _    _           spc               _    _    rctl
 )
+
+;; Symbols layer 
+(deflayer three 
+  esc  f1   f2   f3    f4   f5   f6   f7   f8   f9   f10  f11  @dvk
+  grv  1    2    3     4    5    6    7    8    9    0    -    =    bspc
+  tab  S-1  S-2  S-3   S-4  t    _    _    _    _    p    _    _    \
+  caps S-5  S-6  S-7   S-8  _    _    _    _    _    ;    '    ret
+  lsft S-9  S-0  S-grv _    b    n    m    _    _    /    rsft
+  lctl _    _           spc                _    _    rctl
+)
+
+;; Number Layer
+(deflayer four 
+  caps f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12 
+  grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  tab  q    w    e    r    t    y    1    2    3    p    @tbd @tfd \
+  esc  a    @ss  @dd  @ff  g    @hh  4    5    6    ;    '    ret
+  lsft z    x    c    v    b    7    8    9    0    /    rsft
+  @nlt @lm  @la           spc             @ra  @rm  rctl
+)
+
+;; lrld is a default shortcut to reload the configuration 
+
