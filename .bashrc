@@ -94,7 +94,7 @@ source ~/.local/share/blesh/ble.sh
 eval "$(register-python-argcomplete pipx)"
 
 #most - colorful output for man
-export PAGER=most
+#export PAGER=most
 
 #highlight less
 # export LESSOPEN="| /usr/bin/highlight %s --out-format xterm256 --force"
@@ -103,7 +103,7 @@ export PAGER=most
 echo "w3lc0m3 h4ck3r - let the games begin! - m4ast3r y0ur cr4ft" | lolcat
 
 # Atuin
-. "$HOME/.atuin/bin/env"
+#. "$HOME/.atuin/bin/env"
 
 [[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
 eval "$(atuin init bash)"
@@ -120,3 +120,6 @@ eval "$(starship init bash)"
 if [ -d "$HOME/adb-fastboot/platform-tools" ]; then
   export PATH="$HOME/adb-fastboot/platform-tools:$PATH"
 fi
+# colorize output
+GRC_ALIASES=true
+[[ -s /etc/profile.d/grc.sh ]] && source /etc/grc.sh
