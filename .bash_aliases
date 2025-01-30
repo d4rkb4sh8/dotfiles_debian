@@ -169,9 +169,7 @@ alias lta='eza -a --tree --level=2 --icons'
 alias ip='ip -c'
 
 # ai  assistant
-alias aid='ollama run deepseek-coder-v2:latest'
-alias ail='ollama run llama3.2'
-alias aiw='ollama run ALIENTELLIGENCE/whiterabbitv2'
+alias aid='ollama run deepseek-r1:7b'
 alias ait='tgpt'
 
 # cheat sheet
