@@ -70,6 +70,7 @@ cd $HOME
 git clone https://github.com/d4rkb4sh8/dotfiles.git
 cd dotfiles
 stow --adopt .
+git restore .
 
 # add wallpapers
 log "adding wallpapers..."
