@@ -169,7 +169,7 @@ alias lta='eza -a --tree --level=2 --icons'
 alias ip='ip -c'
 
 # ai  assistant
-alias aid='ollama run deepseek-r1:7b'
+alias aid='ollama run deepseek-coder-v2:latest'
 alias ait='tgpt'
 
 # cheat sheet
