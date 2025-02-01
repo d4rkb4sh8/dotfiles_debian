@@ -79,13 +79,13 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys screen-brightness-up 
 gsettings set org.gnome.settings-daemon.plugins.media-keys screen-brightness-down "['<Ctrl><Super>Down']"
 
 #path
-export PATH=$PATH:/home/h4ck3r/.cargo/bin:home/h4ck3r/go/bin:/home/h4ck3r/.local/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/opt:/snap/bin:/usr/bin:/usr/games:/usr/local/bin
+export PATH=$PATH:/home/h4ck3r/.cargo/bin:home/h4ck3r/go/bin:/home/h4ck3r/.local/bin:/usr/bin:/usr/games:/usr/local/bin
 
 # preferred text editor
 #EDITOR=nano
 
 #homebrew
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+#eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 #ble.sh
 source ~/.local/share/blesh/ble.sh
@@ -123,3 +123,5 @@ fi
 # colorize output
 GRC_ALIASES=true
 [[ -s /etc/profile.d/grc.sh ]] && source /etc/grc.sh
+
+export PYTHONPATH=/usr/lib/python3/dist-packages:$PYTHONPATH

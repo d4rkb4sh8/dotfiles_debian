@@ -1,7 +1,7 @@
 #   -------------------------------
 #   1.  FILE AND FOLDER MANAGEMENT
 #   -------------------------------
-
+alias nvim='/usr/local/bin/nvim-linux-x86_64/bin/nvim'
 alias numFiles='echo $(ls -1 | wc -l)'      # numFiles:     Count of non-hidden files in current dir
 alias make1mb='truncate -s 1m ./1MB.dat'    # make1mb:      Creates a file of 1mb size (all zeros)
 alias make5mb='truncate -s 5m ./5MB.dat'    # make5mb:      Creates a file of 5mb size (all zeros)
