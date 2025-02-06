@@ -131,6 +131,11 @@ alias apacheLogs="less +F /var/log/apache2/error_log" # Apachelogs:       Shows 
 #   ---------------------------------------
 #  11.  OTHER ALIASES
 #   ---------------------------------------
+# Download YouTube playlist videos in separate directory indexed by video order in a playlist
+alias ydlp='yt-dlp -o "%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s"'
+
+# Download all playlists of YouTube channel/user keeping each playlist in separate directory:
+alias ydlc='yt-dlp -o "%(uploader)s/%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s"'
 
 # Outputs List of Loadable Modules (llm) for current kernel
 alias llm="find /lib/modules/$(uname -r) -type f -name '*.ko*'"
@@ -150,7 +155,7 @@ alias ux='chmod u+x'                   # ---x------ (user: --x, group: -, other:
 # 12.  GENERAL_TOOLS
 #-----------------------------------------------------------------------
 # update
-alias update='sudo nala upgrade -y && sudo apt full-upgrade -y && flatpak upgrade && rustup update && cargo install-update -a && brew update && brew upgrade && sudo updatedb -v;figlet "machine is updated !"|lolcat'
+alias update='sudo apt update && sudo apt full-upgrade -y && flatpak upgrade && rustup update && cargo install-update -a && sudo updatedb -v;figlet "machine is updated !"|lolcat'
 
 #clean
 alias clean='sudo nala autopurge && sudo nala autoremove && sudo nala clean'
