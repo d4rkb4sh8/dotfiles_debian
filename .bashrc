@@ -79,7 +79,7 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys screen-brightness-up 
 gsettings set org.gnome.settings-daemon.plugins.media-keys screen-brightness-down "['<Ctrl><Super>Down']"
 
 #path
-export PATH=$PATH:/home/h4ck3r/.cargo/bin:home/h4ck3r/go/bin:/home/h4ck3r/.local/bin:/usr/bin:/usr/games:/usr/local/bin
+export PATH=$PATH:/home/linuxbrew/.linuxbrew/bin/:/home/h4ck3r/.cargo/bin:home/h4ck3r/go/bin:/home/h4ck3r/.local/bin:/usr/bin:/usr/games:/usr/local/bin
 
 # preferred text editor
 #EDITOR=nano
@@ -89,9 +89,6 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 #ble.sh
 source ~/.local/share/blesh/ble.sh
-
-#pipx
-eval "$(register-python-argcomplete pipx)"
 
 #most - colorful output for man
 #export PAGER=most
