@@ -85,8 +85,8 @@ log "Installing Homebrew packages: eza, gcc, neovim, dust, zoxide, atuin, xh, ya
 brew install eza musikcube gcc kanata neovim dust xh fastfetch gitleaks lazygit yazi ffmpeg sevenzip jq poppler fd ripgrep fzf zoxide imagemagick
 
 # Install rust
-log "Installing Rust..."
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+#log "Installing Rust..."
+#curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 # Install Tela-circle-icons
 log "Installing Tela-circle-icons..."
@@ -107,7 +107,8 @@ git clone https://github.com/d4rkb4sh8/notes.git
 cd $HOME
 git clone https://github.com/d4rkb4sh8/dotfiles.git
 cd dotfiles
-stow .
+stow --adopt .
+git restore .
 
 # add wallpapers
 log "adding wallpapers..."
