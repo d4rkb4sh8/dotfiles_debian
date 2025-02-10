@@ -85,7 +85,7 @@ export PATH=$PATH:/home/h4ck3r/.cargo/bin:home/h4ck3r/go/bin:/home/h4ck3r/.local
 #EDITOR=nano
 
 #homebrew
-#eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 #ble.sh
 source ~/.local/share/blesh/ble.sh
@@ -111,17 +111,6 @@ eval "$(atuin init bash)"
 #starship prompt - shell prompt
 eval "$(starship init bash)"
 
-#tmux auto attach
-# if command -v tmux &>/dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
-#   exec tmux
-# fi
 . "$HOME/.cargo/env"
 
-if [ -d "$HOME/adb-fastboot/platform-tools" ]; then
-  export PATH="$HOME/adb-fastboot/platform-tools:$PATH"
-fi
-# colorize output
-GRC_ALIASES=true
-[[ -s /etc/profile.d/grc.sh ]] && source /etc/grc.sh
 
-export PYTHONPATH=/usr/lib/python3/dist-packages:$PYTHONPATH
