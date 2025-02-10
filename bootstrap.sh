@@ -147,6 +147,7 @@ cd Orchis-theme
 # cargo install
 cargo install cargo-update
 cargo install cargo-list
+cargo install kanata --version 1.6.0
 
 # Binsider
 cargo install binsider
