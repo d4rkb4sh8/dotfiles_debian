@@ -45,37 +45,41 @@
   xx (tap-hold $tap-time $hold-time x C-x)
   cc (tap-hold $tap-time $hold-time c C-c)
   vv (tap-hold $tap-time $hold-time v C-v)
-  tbd (tap-hold $tap-time $hold-time [ C-w)
-  tfd (tap-hold $tap-time $hold-time ] A-d)
+  tbd (tap-hold $tap-time $hold-time , C-w)
+  tfd (tap-hold $tap-time $hold-time . A-d)
+  dtb (tap-hold $tap-time $hold-time [ C-u)
+  dte (tap-hold $tap-time $hold-time ] C-k)
   dwb (tap-hold $tap-time $hold-time , C-bspc)
   dwf (tap-hold $tap-time $hold-time . C-del)
   nn (tap-hold $tap-time $hold-time n 0)
   mm (tap-hold $tap-time $hold-time m S-4)
+  dsb (tap-hold $tap-time $hold-time C-M-down C-M-down)
+  isb (tap-hold $tap-time $hold-time C-M-up C-M-up)
+  psc (tap-hold $tap-time $hold-time S-C-5 S-C-5)
 )
 
 ;; Commands
 (defalias
 )
 
-;; The first layer defined is the layer that will be active by default when kanata starts up. 
-(deflayer one 
-  caps f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12 
+;; layer one - home row mods
+(deflayer one
+  caps @psc f2  @dsb @isb f5   f6   f7   f8   f9   f10  f11  f12 
   grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
-  tab  q    w    e    r    t    y    u    i    o    p    @tbd @tfd \
+  tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
   esc  a    @ss  @dd  @ff  g    @hh  @jj  @kk  @ll  ;    '    ret
   lsft z    x    c    v    b    n    m    @dwb @dwf /    rsft
   @l4 @l2  @la           spc              @ra  @l3  rctl
 )
 
-;; Notice the keys with "@" those are aliases.
 
-;; Navigation layer - VIM 
+;; Terminal layer  
 (deflayer two 
   caps f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12
   grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
-  tab  q    w    e    r    t    @yy  @uu  @ii  @oo  p    _    _    \
+  tab  q    w    e    r    t    @yy  @uu  @ii  @oo  p    @dtb @dte \
   esc  @aa  _    _    _    g    left down up   rght ;    '    ret
-  lsft @zz  @xx  @cc  @vv  b    @nn  @mm  _    _    /    rsft
+  lsft @zz  @xx  @cc  @vv  b    @nn  @mm  @tbd @tfd /    rsft
   _    _    _           spc               _    _    rctl
 )
 
@@ -93,7 +97,7 @@
 (deflayer four 
   caps f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12 
   grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
-  tab  q    w    e    r    t    y    1    2    3    p    @tbd @tfd \
+  tab  q    w    e    r    t    y    1    2    3    p    _    _    \
   esc  a    @ss  @dd  @ff  g    @hh  4    5    6    ;    '    ret
   lsft z    x    c    v    b    7    8    9    0    /    rsft
   _    _    _           spc               _    _    rctl
