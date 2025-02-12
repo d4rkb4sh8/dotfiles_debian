@@ -31,9 +31,9 @@
   ll (tap-hold $tap-time $hold-time l rmet)
   capm (tap-hold $tap-time $hold-time esc grv)
   escm  (tap-hold $tap-time $hold-time caps scln)
-  nlt (tap-hold $tap-time $hold-time lctl (layer-toggle four))
-  lm (tap-hold $tap-time $hold-time lmet (layer-toggle two))
-  rm (tap-hold $tap-time $hold-time rmet (layer-toggle three))
+  l4 (tap-hold $tap-time $hold-time lctl (layer-toggle four))
+  l2 (tap-hold $tap-time $hold-time lmet (layer-toggle two))
+  l3 (tap-hold $tap-time $hold-time rmet (layer-toggle three))
   la (tap-hold $tap-time $hold-time bspc del)
   ra (tap-hold $tap-time $hold-time ret ralt)
   yy (tap-hold $tap-time $hold-time y home) 
@@ -49,6 +49,8 @@
   tfd (tap-hold $tap-time $hold-time ] A-d)
   dwb (tap-hold $tap-time $hold-time , C-bspc)
   dwf (tap-hold $tap-time $hold-time . C-del)
+  nn (tap-hold $tap-time $hold-time n 0)
+  mm (tap-hold $tap-time $hold-time m S-4)
 )
 
 ;; Commands
@@ -62,18 +64,18 @@
   tab  q    w    e    r    t    y    u    i    o    p    @tbd @tfd \
   esc  a    @ss  @dd  @ff  g    @hh  @jj  @kk  @ll  ;    '    ret
   lsft z    x    c    v    b    n    m    @dwb @dwf /    rsft
-  @nlt @lm  @la           spc             @ra  @rm  rctl
+  @l4 @l2  @la           spc              @ra  @l3  rctl
 )
 
 ;; Notice the keys with "@" those are aliases.
 
-;; Navigation layer 
+;; Navigation layer - VIM 
 (deflayer two 
   caps f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12
   grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
   tab  q    w    e    r    t    @yy  @uu  @ii  @oo  p    _    _    \
   esc  @aa  _    _    _    g    left down up   rght ;    '    ret
-  lsft @zz  @xx  @cc  @vv  b    n    m    _    _    /    rsft
+  lsft @zz  @xx  @cc  @vv  b    @nn  @mm  _    _    /    rsft
   _    _    _           spc               _    _    rctl
 )
 
