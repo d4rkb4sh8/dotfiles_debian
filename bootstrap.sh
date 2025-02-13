@@ -132,7 +132,7 @@ cp $HOME/Pictures/wallpapers/wallpaper_001.jpg $HOME/gitprojects/grub2-themes/ba
 sudo ./install.sh -s 1080p -b -t whitesur
 
 #Install flatpaks
-flatpak install $(cat $HOME/dotfiles/flatpaks_list.txt)
+flatpak install $(cat $HOME/dotfiles/flatpaks_list.bak)
 
 # Install Orchis theme
 cd $HOME/gitprojects/
@@ -170,7 +170,7 @@ log "Sourcing .bashrc..."
 source $HOME/.bashrc
 
 # Gnome restore
-dconf load / <$HOME/dotfiles/gnome_backup
+dconf load / <$HOME/dotfiles/gnome_backup.bak
 
 # Display message
 figlet h4ck3r m4ch1n3 | lolcat
