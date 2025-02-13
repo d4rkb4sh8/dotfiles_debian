@@ -1,0 +1,356 @@
+[com/github/repsac-by/quake-mode]
+quake-mode-height=97
+quake-mode-hide-from-overview=true
+quake-mode-tray=false
+quake-mode-width=97
+
+[com/github/repsac-by/quake-mode/accelerators]
+quake-mode-accelerator-1=['<Alt><Super>q']
+
+[com/github/repsac-by/quake-mode/apps]
+app-1='terminator.desktop'
+
+[com/mattjakeman/ExtensionManager]
+last-used-version='0.4.0'
+
+[org/gnome/GPaste]
+growing-lines=true
+images-support=true
+primary-to-history=true
+synchronize-clipboards=true
+track-changes=true
+track-extension-state=true
+trim-items=true
+
+[org/gnome/GWeather4]
+temperature-unit='centigrade'
+
+[org/gnome/Totem]
+active-plugins=['rotation', 'recent', 'open-directory', 'autoload-subtitles', 'screenshot', 'movie-properties', 'save-file', 'skipto', 'mpris', 'variable-rate', 'vimeo', 'screensaver', 'apple-trailers']
+subtitle-encoding='UTF-8'
+
+[org/gnome/Weather]
+locations=[<(uint32 2, <('Port-of-Spain', 'TTPP', true, [(0.18529579473782881, -1.0707594960985212)], [(0.18587756533739611, -1.0736683840029426)])>)>]
+
+[org/gnome/calculator]
+accuracy=9
+angle-units='degrees'
+base=10
+button-mode='basic'
+number-format='automatic'
+show-thousands=false
+show-zeroes=false
+source-currency=''
+source-units='degree'
+target-currency=''
+target-units='radian'
+word-size=64
+
+[org/gnome/cheese]
+burst-delay=1000
+camera='HP HD Camera (V4L2)'
+photo-x-resolution=1280
+photo-y-resolution=720
+selected-effect='No Effect'
+video-x-resolution=1280
+video-y-resolution=720
+
+[org/gnome/clocks]
+world-clocks=[{'location': <(uint32 2, <('Los Angeles', 'KCQT', true, [(0.59370283970450188, -2.0644336110828618)], [(0.59432360095955872, -2.063741622941031)])>)>}, {'location': <(uint32 2, <('Mexico City', 'MMMX', true, [(0.33917564548646723, -1.7296212887263802)], [(0.33919020153242879, -1.7302951778038682)])>)>}, {'location': <(uint32 2, <('New York', 'KNYC', true, [(0.71180344078725644, -1.2909618758762367)], [(0.71059804659265924, -1.2916478949920254)])>)>}, {'location': <(uint32 2, <('Miami', 'KMIA', true, [(0.45013011811997866, -1.401785431362556)], [(0.44984580398482882, -1.3996433887715831)])>)>}, {'location': <(uint32 2, <('Toronto', 'CYTZ', true, [(0.76154532446909495, -1.3857914260834978)], [(0.76212711252195475, -1.3860823201099277)])>)>}, {'location': <(uint32 2, <('Panamá', 'MPHO', true, [(0.15562519745392522, -1.3892820845874863)], [(0.15649786207992239, -1.3881185259350592)])>)>}, {'location': <(uint32 2, <('Rio de Janeiro', 'SBRJ', true, [(-0.39968039870670141, -0.75340046626198298)], [(-0.39968039870670141, -0.75456400746111763)])>)>}, {'location': <(uint32 2, <('London', 'EGWU', true, [(0.89971722940307675, -0.007272211034407213)], [(0.89884456477707964, -0.0020362232784242244)])>)>}, {'location': <(uint32 2, <('Paris', 'LFPB', true, [(0.85462956287765413, 0.042760566673861078)], [(0.8528842336256599, 0.040724343395436846)])>)>}, {'location': <(uint32 2, <('Moscow', 'UUWW', true, [(0.97127572873484425, 0.65042604039431762)], [(0.97305983920281813, 0.65651530216830811)])>)>}, {'location': <(uint32 2, <('New Delhi', 'VIDP', true, [(0.49858239547081096, 1.345939747314058)], [(0.49916416607037828, 1.3473941825396225)])>)>}, {'location': <(uint32 2, <('Singapore', 'WSAP', true, [(0.023852838928353343, 1.8136879868485383)], [(0.022568084612667797, 1.8126262332513803)])>)>}, {'location': <(uint32 2, <('Beijing', 'ZBAA', true, [(0.69696814214530467, 2.0295270260429752)], [(0.69689057971334611, 2.0313596217575696)])>)>}, {'location': <(uint32 2, <('Tokyo', 'RJTI', true, [(0.62191898430954862, 2.4408429589140699)], [(0.62282074357417661, 2.4391218722853854)])>)>}, {'location': <(uint32 2, <('Sydney', 'YSSY', true, [(-0.59253928105207498, 2.6386469349889961)], [(-0.59137572239964786, 2.6392287230418559)])>)>}]
+
+[org/gnome/clocks/state/window]
+maximized=false
+panel-id='world'
+size=(870, 690)
+
+[org/gnome/control-center]
+last-panel='keyboard'
+window-state=(980, 640, false)
+
+[org/gnome/desktop/app-folders]
+folder-children=['Utilities', 'YaST']
+
+[org/gnome/desktop/app-folders/folders/Utilities]
+apps=['nm-connection-editor.desktop', 'org.gnome.FileRoller.desktop', 'org.gnome.Dictionary.desktop', 'org.gnome.baobab.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.Evince.desktop', 'org.gnome.eog.desktop', 'org.gnome.seahorse.Application.desktop', 'org.gnome.tweaks.desktop', 'gnome-abrt.desktop', 'gnome-system-log.desktop', 'org.gnome.Connections.desktop', 'org.gnome.DejaDup.desktop', 'org.gnome.fonts.desktop', 'org.gnome.Usage.desktop', 'vinagre.desktop']
+categories=['X-GNOME-Utilities']
+name='X-GNOME-Utilities.directory'
+translate=true
+
+[org/gnome/desktop/app-folders/folders/YaST]
+categories=['X-SuSE-YaST']
+name='suse-yast.directory'
+translate=true
+
+[org/gnome/desktop/background]
+color-shading-type='solid'
+picture-options='zoom'
+picture-uri='file:///home/h4ck3r/.local/share/backgrounds/2025-02-10-01-49-36-wallpaper_002.jpg'
+picture-uri-dark='file:///home/h4ck3r/.local/share/backgrounds/2025-02-10-01-49-36-wallpaper_002.jpg'
+primary-color='#000000000000'
+secondary-color='#000000000000'
+
+[org/gnome/desktop/calendar]
+show-weekdate=false
+
+[org/gnome/desktop/input-sources]
+current=uint32 0
+mru-sources=[('xkb', 'us'), ('xkb', 'gb')]
+sources=[('xkb', 'gb'), ('xkb', 'us')]
+xkb-options=@as []
+
+[org/gnome/desktop/interface]
+clock-show-weekday=true
+color-scheme='prefer-dark'
+document-font-name='Hack Nerd Font 11'
+font-antialiasing='grayscale'
+font-hinting='slight'
+font-name='Hack Nerd Font 11'
+gtk-theme='Adwaita-dark'
+icon-theme='Tela-circle-dark'
+monospace-font-name='Hack Nerd Font Mono 11'
+show-battery-percentage=true
+
+[org/gnome/desktop/notifications]
+application-children=['firefox-esr', 'ulauncher', 'org-gnome-software', 'gnome-network-panel', 'org-gnome-nautilus', 'gnome-power-panel', 'com-discordapp-discord']
+
+[org/gnome/desktop/notifications/application/com-discordapp-discord]
+application-id='com.discordapp.Discord.desktop'
+
+[org/gnome/desktop/notifications/application/firefox-esr]
+application-id='firefox-esr.desktop'
+
+[org/gnome/desktop/notifications/application/gnome-network-panel]
+application-id='gnome-network-panel.desktop'
+
+[org/gnome/desktop/notifications/application/gnome-power-panel]
+application-id='gnome-power-panel.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-nautilus]
+application-id='org.gnome.Nautilus.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-software]
+application-id='org.gnome.Software.desktop'
+
+[org/gnome/desktop/notifications/application/ulauncher]
+application-id='ulauncher.desktop'
+
+[org/gnome/desktop/peripherals/mouse]
+natural-scroll=true
+speed=0.92035398230088505
+
+[org/gnome/desktop/peripherals/touchpad]
+speed=0.95433789954337889
+tap-to-click=true
+two-finger-scrolling-enabled=true
+
+[org/gnome/desktop/privacy]
+report-technical-problems=true
+
+[org/gnome/desktop/screensaver]
+color-shading-type='solid'
+picture-options='zoom'
+picture-uri='file:///home/h4ck3r/.local/share/backgrounds/2025-02-10-01-49-36-wallpaper_002.jpg'
+primary-color='#000000000000'
+secondary-color='#000000000000'
+
+[org/gnome/desktop/session]
+idle-delay=uint32 900
+
+[org/gnome/desktop/sound]
+allow-volume-above-100-percent=true
+
+[org/gnome/desktop/wm/keybindings]
+begin-move=@as []
+
+[org/gnome/desktop/wm/preferences]
+action-right-click-titlebar='none'
+button-layout='close,minimize,maximize:appmenu'
+titlebar-font='Hack Nerd Font Bold 11'
+
+[org/gnome/dictionary]
+database='!'
+print-font='Hack Nerd Font 12'
+source-name='Default'
+strategy='exact'
+
+[org/gnome/evolution-data-server]
+migrated=true
+
+[org/gnome/mutter]
+overlay-key='Super_L'
+
+[org/gnome/nautilus/list-view]
+default-zoom-level='large'
+
+[org/gnome/nautilus/preferences]
+default-folder-viewer='list-view'
+migrated-gtk-settings=true
+search-filter-time-type='last_modified'
+
+[org/gnome/nautilus/window-state]
+initial-size=(890, 550)
+
+[org/gnome/portal/filechooser/io.github.realmazharhussain.GdmSettings]
+last-folder-path='/home/h4ck3r/Pictures/wallpapers'
+
+[org/gnome/portal/filechooser/io.github.vikdevelop.SaveDesktop]
+last-folder-path='/home/h4ck3r/dotfiles/save_desktop'
+
+[org/gnome/settings-daemon/plugins/color]
+night-light-enabled=true
+night-light-temperature=uint32 3040
+
+[org/gnome/settings-daemon/plugins/media-keys]
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/']
+mic-mute=['F8']
+screen-brightness-down=['<Ctrl><Super>Down']
+screen-brightness-up=['<Ctrl><Super>Up']
+screensaver=['<Control><Alt><Super>l']
+volume-down=['F6']
+volume-mute=['F5']
+volume-up=['F7']
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
+binding='<Control>space'
+command='ulauncher-toggle'
+name='ulauncher-toggle'
+
+[org/gnome/settings-daemon/plugins/power]
+power-button-action='interactive'
+
+[org/gnome/shell]
+app-picker-layout=[{'balena-etcher.desktop': <{'position': <0>}>, 'btop.desktop': <{'position': <1>}>, 'org.gnome.Calculator.desktop': <{'position': <2>}>, 'org.gnome.Calendar.desktop': <{'position': <3>}>, 'org.gnome.Cheese.desktop': <{'position': <4>}>, 'org.gnome.clocks.desktop': <{'position': <5>}>, 'org.gnome.Contacts.desktop': <{'position': <6>}>, 'org.gnome.Dictionary.desktop': <{'position': <7>}>, 'simple-scan.desktop': <{'position': <8>}>, 'org.gnome.Evolution.desktop': <{'position': <9>}>, 'com.mattjakeman.ExtensionManager.desktop': <{'position': <10>}>, 'org.gnome.Extensions.desktop': <{'position': <11>}>, 'org.gnome.FontManager.desktop': <{'position': <12>}>, 'org.gnome.FontViewer.desktop': <{'position': <13>}>, 'gdebi.desktop': <{'position': <14>}>, 'io.github.realmazharhussain.GdmSettings.desktop': <{'position': <15>}>, 'org.gnome.GPaste.Ui.desktop': <{'position': <16>}>, 'org.gnome.GPaste.Preferences.desktop': <{'position': <17>}>, 'lstopo.desktop': <{'position': <18>}>, 'yelp.desktop': <{'position': <19>}>, 'im-config.desktop': <{'position': <20>}>, 'lynis.desktop': <{'position': <21>}>, 'org.gnome.Maps.desktop': <{'position': <22>}>, 'org.gnome.Music.desktop': <{'position': <23>}>}, {'com.github.jeromerobert.pdfarranger.desktop': <{'position': <0>}>, 'net.sourceforge.Pdfedit.desktop': <{'position': <1>}>, 'org.qbittorrent.qBittorrent.desktop': <{'position': <2>}>, 'org.gnome.Rhythmbox3.desktop': <{'position': <3>}>, 'org.gnome.Settings.desktop': <{'position': <4>}>, 'de.haeckerfelix.Shortwave.desktop': <{'position': <5>}>, 'software-properties-gtk.desktop': <{'position': <6>}>, 'org.gnome.SoundRecorder.desktop': <{'position': <7>}>, 'synaptic.desktop': <{'position': <8>}>, 'gnome-system-monitor.desktop': <{'position': <9>}>, 'org.gnome.Terminal.desktop': <{'position': <10>}>, 'info.desktop': <{'position': <11>}>, 'org.gnome.TextEditor.desktop': <{'position': <12>}>, 'transmission-gtk.desktop': <{'position': <13>}>, 'ulauncher.desktop': <{'position': <14>}>, 'Utilities': <{'position': <15>}>, 'org.gnome.Totem.desktop': <{'position': <16>}>, 'vlc.desktop': <{'position': <17>}>, 'org.gnome.Weather.desktop': <{'position': <18>}>, 'org.pwmt.zathura.desktop': <{'position': <19>}>}]
+enabled-extensions=['user-theme@gnome-shell-extensions.gcampax.github.com', 'blur-my-shell@aunetx', 'clipboard-indicator@tudmotu.com', 'mediacontrols@cliffniff.github.com', 'Vitals@CoreCoding.com', 'dash-to-panel@jderose9.github.com', 'quake-mode@repsac-by.github.com', 'GPaste@gnome-shell-extensions.gnome.org', 'AlphabeticalAppGrid@stuarthayhurst', 'arcmenu@arcmenu.com']
+favorite-apps=['mullvad-vpn.desktop', 'terminator.desktop', 'virtualbox.desktop', 'org.gnome.Nautilus.desktop', 'net.cozic.joplin_desktop.desktop', 'firefox-esr.desktop', 'org.onlyoffice.desktopeditors.desktop', 'com.discordapp.Discord.desktop', 'com.ktechpit.whatsie.desktop', 'shotwell.desktop', 'org.gnome.Software.desktop', 'org.gnome.World.PikaBackup.desktop']
+welcome-dialog-last-shown-version='43.9'
+
+[org/gnome/shell/extensions/arcmenu]
+arcmenu-custom-hotkey=['<Alt>m']
+custom-menu-button-icon-size=26.0
+distro-icon=1
+extra-categories=[(0, true), (1, true), (2, true), (3, false), (4, true)]
+highlight-search-result-terms=true
+menu-background-color='rgba(48,48,49,0.98)'
+menu-border-color='rgb(60,60,60)'
+menu-button-appearance='Icon'
+menu-button-fg-color=(true, 'rgb(53,132,228)')
+menu-button-icon='Distro_Icon'
+menu-foreground-color='rgb(223,223,223)'
+menu-hotkey-type='Custom'
+menu-item-active-bg-color='rgb(25,98,163)'
+menu-item-active-fg-color='rgb(255,255,255)'
+menu-item-hover-bg-color='rgb(21,83,158)'
+menu-item-hover-fg-color='rgb(255,255,255)'
+menu-layout='Whisker'
+menu-separator-color='rgba(255,255,255,0.1)'
+multi-monitor=true
+prefs-visible-page=0
+recently-installed-apps=['de.haeckerfelix.Shortwave.desktop', 'balena-etcher.desktop', 'org.gnome.Dictionary.desktop', 'org.gnome.Polari.desktop', 'app.drey.Warp.desktop', 'com.github.qarmin.czkawka.desktop', 'com.neatdecisions.Detwinner.desktop', 'io.github.vikdevelop.SaveDesktop.desktop']
+search-entry-border-radius=(true, 25)
+search-provider-open-windows=true
+search-provider-recent-files=true
+
+[org/gnome/shell/extensions/blur-my-shell]
+hacks-level=3
+
+[org/gnome/shell/extensions/clipboard-indicator]
+history-size=100
+notify-on-copy=true
+
+[org/gnome/shell/extensions/dash-to-panel]
+animate-appicon-hover-animation-extent={'RIPPLE': 4, 'PLANK': 4, 'SIMPLE': 1}
+appicon-margin=4
+appicon-padding=4
+available-monitors=[0]
+dot-position='BOTTOM'
+dot-style-focused='DOTS'
+dot-style-unfocused='DOTS'
+hide-overview-on-startup=true
+hotkeys-overlay-combo='TEMPORARILY'
+intellihide=false
+leftbox-padding=-1
+panel-anchors='{"0":"MIDDLE"}'
+panel-element-positions='{"0":[{"element":"showAppsButton","visible":true,"position":"stackedTL"},{"element":"activitiesButton","visible":false,"position":"stackedTL"},{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"stackedTL"},{"element":"centerBox","visible":true,"position":"stackedBR"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"dateMenu","visible":true,"position":"stackedBR"},{"element":"systemMenu","visible":true,"position":"stackedBR"},{"element":"desktopButton","visible":false,"position":"stackedBR"}]}'
+panel-lengths='{"0":100}'
+panel-sizes='{"0":36}'
+primary-monitor=0
+status-icon-padding=-1
+trans-bg-color='#191919'
+trans-use-custom-bg=true
+tray-padding=-1
+window-preview-title-position='TOP'
+
+[org/gnome/shell/extensions/mediacontrols]
+mouse-actions=['toggle_play', 'toggle_info', 'none', 'none', 'none', 'none', 'none', 'none']
+
+[org/gnome/shell/keybindings]
+open-application-menu=@as []
+show-screenshot-ui=['<Shift><Control>5']
+
+[org/gnome/shell/weather]
+automatic-location=true
+locations=[<(uint32 2, <('Port-of-Spain', 'TTPP', true, [(0.18529579473782881, -1.0707594960985212)], [(0.18587756533739611, -1.0736683840029426)])>)>]
+
+[org/gnome/shell/world-clocks]
+locations=[<(uint32 2, <('Los Angeles', 'KCQT', true, [(0.59370283970450188, -2.0644336110828618)], [(0.59432360095955872, -2.063741622941031)])>)>, <(uint32 2, <('Mexico City', 'MMMX', true, [(0.33917564548646723, -1.7296212887263802)], [(0.33919020153242879, -1.7302951778038682)])>)>, <(uint32 2, <('New York', 'KNYC', true, [(0.71180344078725644, -1.2909618758762367)], [(0.71059804659265924, -1.2916478949920254)])>)>, <(uint32 2, <('Miami', 'KMIA', true, [(0.45013011811997866, -1.401785431362556)], [(0.44984580398482882, -1.3996433887715831)])>)>, <(uint32 2, <('Toronto', 'CYTZ', true, [(0.76154532446909495, -1.3857914260834978)], [(0.76212711252195475, -1.3860823201099277)])>)>, <(uint32 2, <('Panamá', 'MPHO', true, [(0.15562519745392522, -1.3892820845874863)], [(0.15649786207992239, -1.3881185259350592)])>)>, <(uint32 2, <('Rio de Janeiro', 'SBRJ', true, [(-0.39968039870670141, -0.75340046626198298)], [(-0.39968039870670141, -0.75456400746111763)])>)>, <(uint32 2, <('London', 'EGWU', true, [(0.89971722940307675, -0.007272211034407213)], [(0.89884456477707964, -0.0020362232784242244)])>)>, <(uint32 2, <('Paris', 'LFPB', true, [(0.85462956287765413, 0.042760566673861078)], [(0.8528842336256599, 0.040724343395436846)])>)>, <(uint32 2, <('Moscow', 'UUWW', true, [(0.97127572873484425, 0.65042604039431762)], [(0.97305983920281813, 0.65651530216830811)])>)>, <(uint32 2, <('New Delhi', 'VIDP', true, [(0.49858239547081096, 1.345939747314058)], [(0.49916416607037828, 1.3473941825396225)])>)>, <(uint32 2, <('Singapore', 'WSAP', true, [(0.023852838928353343, 1.8136879868485383)], [(0.022568084612667797, 1.8126262332513803)])>)>, <(uint32 2, <('Beijing', 'ZBAA', true, [(0.69696814214530467, 2.0295270260429752)], [(0.69689057971334611, 2.0313596217575696)])>)>, <(uint32 2, <('Tokyo', 'RJTI', true, [(0.62191898430954862, 2.4408429589140699)], [(0.62282074357417661, 2.4391218722853854)])>)>, <(uint32 2, <('Sydney', 'YSSY', true, [(-0.59253928105207498, 2.6386469349889961)], [(-0.59137572239964786, 2.6392287230418559)])>)>]
+
+[org/gnome/software]
+check-timestamp=int64 1739445972
+first-run=false
+install-timestamp=int64 1739273201
+online-updates-timestamp=int64 1739367421
+update-notification-timestamp=int64 1739273572
+
+[org/gnome/system/location]
+enabled=false
+
+[org/gtk/gtk4/settings/color-chooser]
+custom-colors=[(0.098039217293262482, 0.098039217293262482, 0.098039217293262482, 1.0), (0.20784313976764679, 0.51764696836471558, 0.89411765336990356, 1.0), (0.94901961088180542, 0.94901961088180542, 0.94901961088180542, 1.0)]
+selected-color=(true, 0.098039217293262482, 0.098039217293262482, 0.098039217293262482, 1.0)
+
+[org/gtk/gtk4/settings/file-chooser]
+date-format='regular'
+location-mode='path-bar'
+show-hidden=false
+show-size-column=true
+show-type-column=true
+sidebar-width=140
+sort-column='name'
+sort-directories-first=false
+sort-order='ascending'
+type-format='category'
+window-size=(861, 373)
+
+[org/gtk/settings/file-chooser]
+date-format='regular'
+location-mode='path-bar'
+show-hidden=false
+show-size-column=true
+show-type-column=true
+sidebar-width=189
+sort-column='name'
+sort-directories-first=false
+sort-order='ascending'
+type-format='category'
+window-position=(26, 23)
+window-size=(1231, 902)
+
+[org/yorba/shotwell/preferences/ui]
+display-basic-properties=true
+display-extended-properties=false
+display-photo-comments=false
+display-photo-ratings=true
+display-photo-tags=true
+display-photo-titles=false
+display-search-bar=false
+display-sidebar=true
+events-sort-ascending=false
+library-photos-sort-ascending=false
+library-photos-sort-by=2
+show-welcome-dialog=false
+sidebar-position=180
+
+[org/yorba/shotwell/preferences/window]
+library-height=768
+library-maximize=false
+library-width=1024

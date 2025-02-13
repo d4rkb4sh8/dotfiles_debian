@@ -1,0 +1,13 @@
+app.drey.Warp
+com.discordapp.Discord
+com.github.jeromerobert.pdfarranger
+com.github.qarmin.czkawka
+com.ktechpit.whatsie
+com.neatdecisions.Detwinner
+de.haeckerfelix.Shortwave
+io.github.realmazharhussain.GdmSettings
+net.cozic.joplin_desktop
+net.sourceforge.Pdfedit
+org.gnome.World.PikaBackup
+org.onlyoffice.desktopeditors
+org.qbittorrent.qBittorrent

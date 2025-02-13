@@ -52,10 +52,6 @@ git clone --recursive --depth 1 --shallow-submodules https://github.com/akinomyo
 make -C ble.sh install PREFIX=~/.local
 echo 'source ~/.local/share/blesh/ble.sh' >>~/.bashrc
 
-#Brightness control from keybaord
-gsettings set org.gnome.settings-daemon.plugins.media-keys screen-brightness-up "['<Ctrl><Super>Up']"
-gsettings set org.gnome.settings-daemon.plugins.media-keys screen-brightness-down "['<Ctrl><Super>Down']"
-
 # Install Hack Nerd Font
 log "Installing Hack Nerd Font..."
 mkdir -p ~/.local/share/fonts
@@ -135,6 +131,9 @@ cd $HOME/gitprojects/grub2-themes
 cp $HOME/Pictures/wallpapers/wallpaper_001.jpg $HOME/gitprojects/grub2-themes/background.jpg
 sudo ./install.sh -s 1080p -b -t whitesur
 
+#Install flatpaks
+flatpak install $(cat $HOME/dotfiles/flatpaks_list.txt)
+
 # Install Orchis theme
 cd $HOME/gitprojects/
 git clone https://github.com/vinceliuice/Orchis-theme.git
@@ -169,6 +168,9 @@ sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt 
 # Source .bashrc
 log "Sourcing .bashrc..."
 source $HOME/.bashrc
+
+# Gnome restore
+dconf load / <$HOME/dotfiles/gnome_backup
 
 # Display message
 figlet h4ck3r m4ch1n3 | lolcat
