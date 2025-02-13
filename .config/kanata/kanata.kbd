@@ -22,6 +22,7 @@
 
 ;; Aliases
 (defalias
+  al (tap-hold $tap-time $hold-time a lsft)
   ss (tap-hold $tap-time $hold-time s lmet)
   dd (tap-hold $tap-time $hold-time d lalt)
   ff (tap-hold $tap-time $hold-time f lctl)
@@ -29,6 +30,7 @@
   jj (tap-hold $tap-time $hold-time j rctl)
   kk (tap-hold $tap-time $hold-time k ralt)
   ll (tap-hold $tap-time $hold-time l rmet)
+  ar (tap-hold $tap-time $hold-time ; rsft)
   capm (tap-hold $tap-time $hold-time esc grv)
   escm  (tap-hold $tap-time $hold-time caps scln)
   l4 (tap-hold $tap-time $hold-time lctl (layer-toggle four))
@@ -57,18 +59,17 @@
   isb (tap-hold $tap-time $hold-time C-M-up C-M-up)
   psc (tap-hold $tap-time $hold-time S-C-5 S-C-5)
   qtd (tap-hold $tap-time $hold-time A-M-q A-M-q)
+  dsl (tap-hold $tap-time $hold-time A-C-left A-C-left)
+  dsr (tap-hold $tap-time $hold-time A-C-rght A-C-rght)
+  lts (tap-hold $tap-time $hold-time M-A-C-l M-A-C-l)
 )
 
-;; Commands
-(defalias
-)
-
-;; layer one - home row mods
+;; LAYER ONE - main mods
 (deflayer one
-  caps @qtd f2  @dsb  @isb f5   f6   f7   f8   @psc f10  f11  f12 
+  caps @qtd f2  @dsb  @isb f5   f6   f7   f8   @psc @lts @dsl @dsr 
   grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
   tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
-  esc  a    @ss  @dd  @ff  g    @hh  @jj  @kk  @ll  ;    '    ret
+  esc  @al  @ss  @dd  @ff  g    @hh  @jj  @kk  @ll  @ar  '    ret
   lsft z    x    c    v    b    n    m    @dwb @dwf /    rsft
   @l4 @l2  @la           spc              @ra  @l3  rctl
 )
