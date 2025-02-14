@@ -9,7 +9,6 @@
  hold-time 200
 )
 
-
 ;; Defsrc contains the original unmapped keyboard layout. Often this is qwerty.
 (defsrc
   esc  f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12 
@@ -33,7 +32,8 @@
   ar (tap-hold $tap-time $hold-time ; rsft)
   capm (tap-hold $tap-time $hold-time esc grv)
   escm  (tap-hold $tap-time $hold-time caps scln)
-  l4 (tap-hold $tap-time $hold-time lctl (layer-toggle four))
+  l5 (tap-hold $tap-time $hold-time lctl (layer-toggle five))
+  l4 (tap-hold $tap-time $hold-time rctl (layer-toggle four))
   l2 (tap-hold $tap-time $hold-time lmet (layer-toggle two))
   l3 (tap-hold $tap-time $hold-time rmet (layer-toggle three))
   la (tap-hold $tap-time $hold-time bspc del)
@@ -71,38 +71,47 @@
   tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
   esc  @al  @ss  @dd  @ff  g    @hh  @jj  @kk  @ll  @ar  '    ret
   lsft z    x    c    v    b    n    m    @dwb @dwf /    rsft
-  @l4 @l2  @la           spc              @ra  @l3  rctl
+  @l5 @l2  @la           spc              @ra  @l3  @l4
 )
 
-
-;; Terminal layer  
+;; Navigation layer  
 (deflayer two 
   caps f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12
   grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
   tab  q    w    e    r    t    @yy  @uu  @ii  @oo  p    @dtb @dte \
   esc  @aa  _    _    _    g    left down up   rght ;    '    ret
   lsft @zz  @xx  @cc  @vv  b    @nn  @mm  @tbd @tfd /    rsft
-  _    _    _           spc               _    _    rctl
+  _    _    _           spc               _    _    _
 )
 
 ;; Symbols layer 
 (deflayer three 
   caps f1   f2   f3    f4   f5   f6   f7   f8   f9   f10  f11  lrld
   grv  1    2    3     4    5    6    7    8    9    0    -    =    bspc
-  tab  S-1  S-2  S-3   S-4  t    _    _    _    _    p    _    _    \
+  tab  S-1  S-2  S-3   S-4  _    _    _    _    _    p    _    _    \
   esc  S-5  S-6  S-7   S-8  _    _    _    _    _    ;    '    ret
-  lsft S-9  S-0  S-grv _    b    n    m    _    _    /    rsft
-  _    _    _           spc                _    _    rctl
+  lsft -    S-=  S--   S-=  S-]  n    m    _    _    /    rsft
+  _    _    _           spc                _    _    _
 )
 
-;; Numbers Layer
+;; Brackets layer 
 (deflayer four 
+  caps f1   f2   f3    f4   f5   f6   f7   f8   f9   f10  f11  lrld
+  grv  1    2    3     4    5    6    7    8    9    0    -    =    bspc
+  tab  S-9  S-0  [     ]    _    _    _    _    _    p    _    _    \
+  esc  S-[  S-]  S-,   S-.  _    _    _    _    _    ;    '    ret
+  lsft ;    S-;  '     S-'  grv  \    /    _    _    /    rsft
+  _    _    _           spc                _    _    _
+) 
+
+;; Numbers Layer
+(deflayer five 
   caps f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12 
   grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
   tab  q    w    e    r    t    y    1    2    3    p    _    _    \
   esc  a    @ss  @dd  @ff  g    @hh  4    5    6    ;    '    ret
   lsft z    x    c    v    b    7    8    9    0    /    rsft
-  _    _    _           spc               _    _    rctl
+  _    _    _           spc               _    _    _
 )
 
 ;; lrld is a default shortcut to reload the configuration 
