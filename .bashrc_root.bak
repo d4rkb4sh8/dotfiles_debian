@@ -1,27 +1,21 @@
 # ~/.bashrc: executed by bash(1) for non-login shells.
-# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
-# for examples
 
-# If not running interactively, don't do anything
-case $- in
-*i*) ;;
-*) return ;;
-esac
+# Note: PS1 and umask are already set in /etc/profile. You should not
+# need this unless you want different defaults for root.
+# PS1='${debian_chroot:+($debian_chroot)}\h:\w\$ '
+# umask 022
 
-# don't put duplicate lines or lines starting with space in the history.
-# See bash(1) for more options
-HISTCONTROL=ignoreboth
-
-# append to the history file, don't overwrite it
-shopt -s histappend
-
-# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=1000
-HISTFILESIZE=2000
-
-# check the window size after each command and, if necessary,
-# update the values of LINES and COLUMNS.
-shopt -s checkwinsize
+# You may uncomment the following lines if you want `ls' to be colorized:
+# export LS_OPTIONS='--color=auto'
+# eval "$(dircolors)"
+# alias ls='ls $LS_OPTIONS'
+# alias ll='ls $LS_OPTIONS -l'
+# alias l='ls $LS_OPTIONS -lA'
+#
+# Some more alias to avoid making mistakes:
+# alias rm='rm -i'
+# alias cp='cp -i'
+# alias mv='mv -i'
 
 # If set, the pattern "**" used in a pathname expansion context will
 # match all files and zero or more directories and subdirectories.
@@ -48,7 +42,7 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 # colored GCC warnings and errors
-#export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
+export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
@@ -70,16 +64,15 @@ if ! shopt -oq posix; then
   fi
 fi
 
+
+PROMPT_COMMAND='PS1_CMD1=$(ip route get 1.1.1.1 | awk -F"src " '"'"'NR == 1{ split($2, a," ");print a[1]}'"'"')'; PS1='\[\e[91;1m\]\u\[\e[0m\]☠️ \[\e[96;1m\]\h\[\e[0m\] \[\e[93;3m\]\w\n\[\e[0;32;2m\]${PS1_CMD1}\[\e[0m\] \[\e[35;2m\]\t\[\e[0m\] \n\[\e[93;2m\]$?\[\e[0m\] \[\e[97;2;5m\]\$\[\e[0m\]: '
+
 # colorize output
 GRC_ALIASES=true
 [[ -s "/etc/profile.d/grc.sh" ]] && source /etc/grc.sh
 
-#Brightness control from keybaord
-gsettings set org.gnome.settings-daemon.plugins.media-keys screen-brightness-up "['<Ctrl><Super>Up']"
-gsettings set org.gnome.settings-daemon.plugins.media-keys screen-brightness-down "['<Ctrl><Super>Down']"
-
 #path
-export PATH=$PATH:/home/linuxbrew/.linuxbrew/bin/:/home/h4ck3r/.cargo/bin:home/h4ck3r/go/bin:/home/h4ck3r/.local/bin:/usr/bin:/usr/games:/usr/local/bin
+export PATH="$PATH:/home/linuxbrew/.linuxbrew/bin/:/usr/games/"
 
 # preferred text editor
 #EDITOR=nano
@@ -96,8 +89,6 @@ source ~/.local/share/blesh/ble.sh
 #highlight less
 # export LESSOPEN="| /usr/bin/highlight %s --out-format xterm256 --force"
 
-# greet me
-echo "w3lc0m3 h4ck3r - let the games begin! - m4ast3r y0ur cr4ft" | lolcat
 
 # Atuin
 . "$HOME/.atuin/bin/env"
@@ -105,7 +96,5 @@ echo "w3lc0m3 h4ck3r - let the games begin! - m4ast3r y0ur cr4ft" | lolcat
 [[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
 eval "$(atuin init bash)"
 
-#starship prompt - shell prompt
-eval "$(starship init bash)"
-
-. "$HOME/.cargo/env"
+# greet me
+echo "w3lc0m3 t0 th3 r00t 0f 4ll th1ng5! - m4ast3r y0ur cr4ft" | lolcat
