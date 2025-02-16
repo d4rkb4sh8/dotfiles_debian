@@ -63,7 +63,7 @@
   dsr (tap-hold $tap-time $hold-time A-C-rght A-C-rght)
   lts (tap-hold $tap-time $hold-time M-A-C-l M-A-C-l)
   bdl (tap-hold $tap-time $hold-time [ C-bspc)
-  fdl (tap-hold $tap-time $hold-time , S-C-del)
+  fdl (tap-hold $tap-time $hold-time ] S-C-del)
 )
 
 ;; LAYER ONE - main mods
