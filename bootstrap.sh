@@ -172,6 +172,9 @@ source $HOME/.bashrc
 # Gnome restore
 dconf load / <$HOME/dotfiles/gnome_backup.bak
 
+# Apparmor
+sudo aa-enforce /etc/apparmor.d/*
+
 # Display message
 figlet h4ck3r m4ch1n3 | lolcat
 
