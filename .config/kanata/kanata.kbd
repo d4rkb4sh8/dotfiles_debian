@@ -62,13 +62,15 @@
   dsl (tap-hold $tap-time $hold-time A-C-left A-C-left)
   dsr (tap-hold $tap-time $hold-time A-C-rght A-C-rght)
   lts (tap-hold $tap-time $hold-time M-A-C-l M-A-C-l)
+  bdl (tap-hold $tap-time $hold-time [ C-bspc)
+  fdl (tap-hold $tap-time $hold-time , S-C-del)
 )
 
 ;; LAYER ONE - main mods
 (deflayer one
   caps @qtd f2  @dsb  @isb f5   f6   f7   f8   @psc @lts @dsl @dsr 
   grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
-  tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
+  tab  q    w    e    r    t    y    u    i    o    p    @bdl @fdl \
   esc  @al  @ss  @dd  @ff  g    @hh  @jj  @kk  @ll  @ar  '    ret
   lsft z    x    c    v    b    n    m    @dwb @dwf /    rsft
   @l5 @l2  @la           spc              @ra  @l3  @l4
