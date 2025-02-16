@@ -159,6 +159,9 @@ alias update='sudo apt update && sudo apt full-upgrade -y && brew update && brew
 #clean
 alias clean='sudo nala autopurge && sudo nala autoremove && sudo nala clean'
 
+# clear history & atuin database
+alias clearhistory='echo "" > ~/.bash_history && history -c && rm -rf $HOME/.local/share/atuin/*'
+
 # a better ls
 alias ls='eza --icons --git'
 alias ll='eza -l --icons --git --header'
