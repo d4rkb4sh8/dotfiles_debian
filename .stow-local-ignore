@@ -10,7 +10,7 @@ bin
 misc
 LICENSE
 ^/.*\.org
-
+text_for_rootbashrc.txt
 RCS
 .+,v
 
