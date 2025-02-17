@@ -18,13 +18,13 @@ sudo update-initramfs -u -k all
 
 # Remove bloatware and clean up
 log "Removing bloatware and cleaning up..."
-sudo apt purge -y audacity gimp gnome-games libreoffice* && sudo apt autoremove -y && sudo apt autoclean -y
+sudo apt purge -y audacity gimp gnome-games libreoffice* && sudo apt update -y && sudo apt full-upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y
 
 # Define APT packages
 APT_PACKAGES=(
   apparmor-profiles apparmor-utils joplin gcc asciiart autoconf bat bison btop
   build-essential cmake cpufetch curl dconf-cli dict neovim gnome-software-plugin-flatpak pkg-config
-  flatpak gpg gpgv2 gtk2-engines-murrine httpie info ncal nala pipx openssl
+  flatpak gpg gpgv2 gtk2-engines-murrine httpie info ncal nala pipx openssl guvcview
   gnome-shell-extension-manager gpaste-2 linux-headers$(uname -r) lm-sensors mitmproxy speedtest-cli
   clamav dkms fd-find ffmpeg figlet file fastfetch eza font-manager fzf gawk gdebi gh git
   sd rsync gpg httpie imagemagick info lolcat lynis mitmproxy most nala ncal npm openssl pass
@@ -34,7 +34,7 @@ APT_PACKAGES=(
 
 # Update, upgrade and install APT packages in a single step
 log "Updating, upgrading, and installing packages..."
-sudo apt update -y && sudo apt full-upgrade -y && sudo apt install -y "${APT_PACKAGES[@]}" && sudo apt autoremove -y && sudo apt autoclean -y
+sudo apt install -y "${APT_PACKAGES[@]}" && sudo apt autoremove -y && sudo apt autoclean -y
 
 # Install latest flathub & flatpak
 
