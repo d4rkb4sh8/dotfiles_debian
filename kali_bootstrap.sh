@@ -22,14 +22,22 @@ sudo apt purge -y audacity gimp gnome-games libreoffice* && sudo apt autoremove 
 
 # Define APT packages
 APT_PACKAGES=(
-  joplin asciiart autoconf bat bison btop build-essential cmake cpufetch curl dconf-cli dict
-  dkms fd-find figlet file fastfetch eza font-manager fzf gawk gdebi gh git sd rsync gpg httpie imagemagick info lolcat lynis mitmproxy most nala ncal npm openssl pass
-  gnome-clocks gnome-weather patchelf plocate postgresql postgresql-contrib procps python-is-python3 stow tldr tmux ufw thefuck vlc w3m wget wikipedia2text zathura
+  apparmor-profiles apparmor-utils joplin gcc asciiart autoconf bat bison btop
+  build-essential cmake cpufetch curl dconf-cli dict neovim
+  flatpak gpg gpgv2 gtk2-engines-murrine httpie info ncal nala pipx openssl
+  gnome-shell-extension-manager gpaste-2 linux-headers$(uname -r) lm-sensors mitmproxy speedtest-cli
+  clamav dkms fd-find ffmpeg figlet file fastfetch eza font-manager fzf gawk gdebi gh git
+  sd rsync gpg httpie imagemagick info lolcat lynis mitmproxy most nala ncal npm openssl pass
+  gitleaks gnome-clocks gnome-weather patchelf plocate postgresql postgresql-contrib
+  procps python-is-python3 stow terminator rkhunter tldr ufw thefuck vlc w3m wget wikipedia2text xh yt-dlp zathura
 )
 
 # Update, upgrade and install APT packages in a single step
 log "Updating, upgrading, and installing packages..."
 sudo apt update -y && sudo apt full-upgrade -y && sudo apt install -y "${APT_PACKAGES[@]}" && sudo apt autoremove -y && sudo apt autoclean -y
+
+# Install latest flathub & flatpak
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
 # Install ble.sh
 cd $HOME
@@ -63,7 +71,7 @@ mkdir $HOME/gitprojects
 cd $HOME/gitprojects
 git clone https://github.com/d4rkb4sh8/main.git
 git clone https://github.com/d4rkb4sh8/notes.git
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+#git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 ## install dotfiles and stow them.
 cd $HOME
@@ -71,6 +79,9 @@ git clone https://github.com/d4rkb4sh8/dotfiles.git
 cd dotfiles
 stow --adopt .
 git restore .
+
+#Install flatpaks
+flatpak install $(cat $HOME/dotfiles/flatpaks_list.bak)
 
 # add wallpapers
 log "adding wallpapers..."
@@ -88,11 +99,18 @@ GRC_ALIASES=true
 [[ -s "/etc/profile.d/grc.sh" ]] && source /etc/grc.sh" >>$HOME/.bashrc
 
 # alfa wireless adapter realtek
-# cd $HOME/gitprojects/
-# git clone https://github.com/aircrack-ng/rtl8812au.git
-# cd rtl8812au
-# sudo make dkms_install
-#
+cd $HOME/gitprojects/
+git clone https://github.com/aircrack-ng/rtl8812au.git
+cd rtl8812au
+sudo make dkms_install
+
+# Install Tela-circle-icons
+log "Installing Tela-circle-icons..."
+cd $HOME/Downloads
+git clone https://github.com/vinceliuice/Tela-circle-icon-theme.git
+cd Tela-circle-icon-theme
+./install.sh
+
 # setup Starship prompt
 log "setting up Starship..."
 curl -sS https://starship.rs/install.sh | sh
@@ -106,25 +124,38 @@ cd $HOME/gitprojects/grub2-themes
 cp $HOME/Pictures/wallpapers/wallpaper_001.jpg $HOME/gitprojects/grub2-themes/background.jpg
 sudo ./install.sh -s 1080p -b -t whitesur
 
+source $HOME/.bashrc
+
 # Install GTFOB lookup
-#log "Installing GTFOB..."
-#pipx install git+https://github.com/nccgroup/GTFOBLookup.git
+log "Installing GTFOB..."
+pipx install git+https://github.com/nccgroup/GTFOBLookup.git
 
 # Binsider
-#cargo install binsider
+cargo install binsider
+cargo install cargo-update
+cargo install cargo-list
 
 # Install kanata for home row mods
-#cargo install kanata
+cargo install kanata
 
 #Install tgpt
-#curl -sSL https://raw.githubusercontent.com/aandrew-me/tgpt/main/install | bash -s /usr/local/bin
+curl -sSL https://raw.githubusercontent.com/aandrew-me/tgpt/main/install | bash -s /usr/local/bin
 
 # Install atuin
-#curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh
+curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh
+
+# Install Ollama
+curl -fsSL https://ollama.com/install.sh | sh
 
 # Final update and clean up
 log "Final update and clean up..."
 sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y
+
+# Gnome restore
+dconf load / <$HOME/dotfiles/gnome_backup.bak
+
+# Apparmor
+sudo aa-enforce /etc/apparmor.d/*
 
 # Source .bashrc
 log "Sourcing .bashrc..."
