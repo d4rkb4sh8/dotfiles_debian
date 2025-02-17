@@ -109,3 +109,6 @@ eval "$(atuin init bash)"
 eval "$(starship init bash)"
 
 . "$HOME/.cargo/env"
+# colorize output
+GRC_ALIASES=true
+[[ -s /etc/profile.d/grc.sh ]] && source /etc/grc.sh
