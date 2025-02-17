@@ -64,11 +64,16 @@ panel-id='world'
 size=(870, 690)
 
 [org/gnome/control-center]
-last-panel='bluetooth'
+last-panel='system'
 window-state=(980, 640, false)
 
 [org/gnome/desktop/app-folders]
 folder-children=['Utilities', 'YaST']
+
+[org/gnome/desktop/app-folders/folders/Pardus]
+categories=['X-Pardus-Apps']
+name='X-Pardus-Apps.directory'
+translate=true
 
 [org/gnome/desktop/app-folders/folders/Utilities]
 apps=['nm-connection-editor.desktop', 'org.gnome.FileRoller.desktop', 'org.gnome.Dictionary.desktop', 'org.gnome.baobab.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.Evince.desktop', 'org.gnome.eog.desktop', 'org.gnome.seahorse.Application.desktop', 'org.gnome.tweaks.desktop', 'gnome-abrt.desktop', 'gnome-system-log.desktop', 'org.gnome.Connections.desktop', 'org.gnome.DejaDup.desktop', 'org.gnome.fonts.desktop', 'org.gnome.Usage.desktop', 'vinagre.desktop']
@@ -84,8 +89,8 @@ translate=true
 [org/gnome/desktop/background]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/h4ck3r/.local/share/backgrounds/2025-02-10-01-49-36-wallpaper_002.jpg'
-picture-uri-dark='file:///home/h4ck3r/.local/share/backgrounds/2025-02-10-01-49-36-wallpaper_002.jpg'
+picture-uri='file:///home/h4ck3r/.local/share/backgrounds/2025-02-16-22-48-07-wallpaper_002.jpg'
+picture-uri-dark='file:///home/h4ck3r/.local/share/backgrounds/2025-02-16-22-48-07-wallpaper_002.jpg'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -110,8 +115,11 @@ icon-theme='Tela-circle-dark'
 monospace-font-name='Hack Nerd Font Mono 11'
 show-battery-percentage=true
 
+[org/gnome/desktop/media-handling]
+automount=true
+
 [org/gnome/desktop/notifications]
-application-children=['firefox-esr', 'ulauncher', 'org-gnome-software', 'gnome-network-panel', 'org-gnome-nautilus', 'gnome-power-panel', 'com-discordapp-discord', 'org-gnome-texteditor', 'xdg-desktop-portal-gnome']
+application-children=['firefox-esr', 'ulauncher', 'org-gnome-software', 'gnome-network-panel', 'org-gnome-nautilus', 'gnome-power-panel', 'com-discordapp-discord', 'org-gnome-texteditor', 'xdg-desktop-portal-gnome', 'org-gnome-evolution']
 
 [org/gnome/desktop/notifications/application/com-discordapp-discord]
 application-id='com.discordapp.Discord.desktop'
@@ -124,6 +132,9 @@ application-id='gnome-network-panel.desktop'
 
 [org/gnome/desktop/notifications/application/gnome-power-panel]
 application-id='gnome-power-panel.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-evolution]
+application-id='org.gnome.Evolution.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-nautilus]
 application-id='org.gnome.Nautilus.desktop'
@@ -155,7 +166,7 @@ report-technical-problems=true
 [org/gnome/desktop/screensaver]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/h4ck3r/.local/share/backgrounds/2025-02-10-01-49-36-wallpaper_002.jpg'
+picture-uri='file:///home/h4ck3r/.local/share/backgrounds/2025-02-16-22-48-07-wallpaper_002.jpg'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -169,6 +180,9 @@ theme-name='__custom'
 
 [org/gnome/desktop/wm/keybindings]
 begin-move=@as []
+maximize=@as []
+minimize=@as []
+unmaximize=@as []
 
 [org/gnome/desktop/wm/preferences]
 action-right-click-titlebar='none'
@@ -184,8 +198,30 @@ strategy='exact'
 [org/gnome/evolution-data-server]
 migrated=true
 
+[org/gnome/gnome-system-monitor]
+current-tab='resources'
+maximized=false
+show-dependencies=false
+show-whose-processes='user'
+window-height=720
+window-width=800
+
+[org/gnome/gnome-system-monitor/disksview]
+col-free-visible=true
+sort-col='directory'
+sort-order=1
+
+[org/gnome/gnome-system-monitor/proctree]
+col-26-visible=false
+col-26-width=0
+
 [org/gnome/mutter]
+edge-tiling=false
 overlay-key='Super_L'
+
+[org/gnome/mutter/keybindings]
+toggle-tiled-left=@as []
+toggle-tiled-right=@as []
 
 [org/gnome/nautilus/list-view]
 default-zoom-level='large'
@@ -197,15 +233,22 @@ search-filter-time-type='last_modified'
 
 [org/gnome/nautilus/window-state]
 initial-size=(890, 550)
+initial-size-file-chooser=(890, 550)
 
 [org/gnome/portal/filechooser/app.zen_browser.zen]
 last-folder-path='/home/h4ck3r'
+
+[org/gnome/portal/filechooser/gnome-background-panel]
+last-folder-path='/home/h4ck3r/Pictures/wallpapers'
 
 [org/gnome/portal/filechooser/io.github.realmazharhussain.GdmSettings]
 last-folder-path='/home/h4ck3r/Pictures/wallpapers'
 
 [org/gnome/portal/filechooser/io.github.vikdevelop.SaveDesktop]
 last-folder-path='/home/h4ck3r/dotfiles/save_desktop'
+
+[org/gnome/portal/filechooser/org.gnome.Settings]
+last-folder-path='/home/h4ck3r/Pictures/wallpapers'
 
 [org/gnome/portal/filechooser/org.gnome.World.PikaBackup]
 last-folder-path='/media/h4ck3r/Backups'
@@ -218,6 +261,7 @@ last-folder-path='/home/h4ck3r/keepassxc'
 
 [org/gnome/settings-daemon/plugins/color]
 night-light-enabled=true
+night-light-schedule-automatic=false
 night-light-temperature=uint32 3040
 
 [org/gnome/settings-daemon/plugins/media-keys]
@@ -239,15 +283,17 @@ name='ulauncher-toggle'
 power-button-action='interactive'
 
 [org/gnome/shell]
-app-picker-layout=[{'balena-etcher.desktop': <{'position': <0>}>, 'btop.desktop': <{'position': <1>}>, 'org.gnome.Calculator.desktop': <{'position': <2>}>, 'org.gnome.Calendar.desktop': <{'position': <3>}>, 'org.gnome.Cheese.desktop': <{'position': <4>}>, 'org.gnome.clocks.desktop': <{'position': <5>}>, 'org.gnome.Contacts.desktop': <{'position': <6>}>, 'org.gnome.Dictionary.desktop': <{'position': <7>}>, 'simple-scan.desktop': <{'position': <8>}>, 'org.gnome.Evolution.desktop': <{'position': <9>}>, 'com.mattjakeman.ExtensionManager.desktop': <{'position': <10>}>, 'org.gnome.Extensions.desktop': <{'position': <11>}>, 'org.gnome.FontManager.desktop': <{'position': <12>}>, 'org.gnome.FontViewer.desktop': <{'position': <13>}>, 'gdebi.desktop': <{'position': <14>}>, 'io.github.realmazharhussain.GdmSettings.desktop': <{'position': <15>}>, 'org.gnome.GPaste.Ui.desktop': <{'position': <16>}>, 'org.gnome.GPaste.Preferences.desktop': <{'position': <17>}>, 'lstopo.desktop': <{'position': <18>}>, 'yelp.desktop': <{'position': <19>}>, 'im-config.desktop': <{'position': <20>}>, 'lynis.desktop': <{'position': <21>}>, 'org.gnome.Maps.desktop': <{'position': <22>}>, 'org.gnome.Music.desktop': <{'position': <23>}>}, {'com.github.jeromerobert.pdfarranger.desktop': <{'position': <0>}>, 'net.sourceforge.Pdfedit.desktop': <{'position': <1>}>, 'org.qbittorrent.qBittorrent.desktop': <{'position': <2>}>, 'org.gnome.Rhythmbox3.desktop': <{'position': <3>}>, 'org.gnome.Settings.desktop': <{'position': <4>}>, 'de.haeckerfelix.Shortwave.desktop': <{'position': <5>}>, 'software-properties-gtk.desktop': <{'position': <6>}>, 'org.gnome.SoundRecorder.desktop': <{'position': <7>}>, 'synaptic.desktop': <{'position': <8>}>, 'gnome-system-monitor.desktop': <{'position': <9>}>, 'org.gnome.Terminal.desktop': <{'position': <10>}>, 'info.desktop': <{'position': <11>}>, 'org.gnome.TextEditor.desktop': <{'position': <12>}>, 'transmission-gtk.desktop': <{'position': <13>}>, 'ulauncher.desktop': <{'position': <14>}>, 'Utilities': <{'position': <15>}>, 'org.gnome.Totem.desktop': <{'position': <16>}>, 'vlc.desktop': <{'position': <17>}>, 'org.gnome.Weather.desktop': <{'position': <18>}>, 'org.pwmt.zathura.desktop': <{'position': <19>}>}]
-disabled-extensions=['Vitals@CoreCoding.com']
-enabled-extensions=['user-theme@gnome-shell-extensions.gcampax.github.com', 'blur-my-shell@aunetx', 'clipboard-indicator@tudmotu.com', 'mediacontrols@cliffniff.github.com', 'dash-to-panel@jderose9.github.com', 'quake-mode@repsac-by.github.com', 'GPaste@gnome-shell-extensions.gnome.org', 'AlphabeticalAppGrid@stuarthayhurst', 'arcmenu@arcmenu.com']
+app-picker-layout=[{'kali-aircrack-ng.desktop': <{'position': <0>}>, 'btop.desktop': <{'position': <1>}>, 'org.gnome.Calculator.desktop': <{'position': <2>}>, 'kali-amass.desktop': <{'position': <3>}>, 'kali-arping.desktop': <{'position': <4>}>, 'org.gnome.clocks.desktop': <{'position': <5>}>, 'kali-atk6-thcping6.desktop': <{'position': <6>}>, 'kali-autopsy.desktop': <{'position': <7>}>, 'kali-binwalk.desktop': <{'position': <8>}>, 'kali-blkcalc.desktop': <{'position': <9>}>, 'com.mattjakeman.ExtensionManager.desktop': <{'position': <10>}>, 'org.gnome.Extensions.desktop': <{'position': <11>}>, 'gdebi.desktop': <{'position': <12>}>, 'io.github.realmazharhussain.GdmSettings.desktop': <{'position': <13>}>, 'org.gnome.GPaste.Ui.desktop': <{'position': <14>}>, 'org.gnome.GPaste.Preferences.desktop': <{'position': <15>}>, 'org.gnome.SystemMonitor.desktop': <{'position': <16>}>, 'lstopo.desktop': <{'position': <17>}>, 'yelp.desktop': <{'position': <18>}>, 'im-config.desktop': <{'position': <19>}>, 'lynis.desktop': <{'position': <20>}>}, {'com.github.jeromerobert.pdfarranger.desktop': <{'position': <0>}>, 'net.sourceforge.Pdfedit.desktop': <{'position': <1>}>, 'org.qbittorrent.qBittorrent.desktop': <{'position': <2>}>, 'kali-blkcat.desktop': <{'position': <3>}>, 'org.gnome.Settings.desktop': <{'position': <4>}>, 'de.haeckerfelix.Shortwave.desktop': <{'position': <5>}>, 'kali-blkls.desktop': <{'position': <6>}>, 'kali-blkstat.desktop': <{'position': <7>}>, 'kali-bulk_extractor.desktop': <{'position': <8>}>, 'kali-bully.desktop': <{'position': <9>}>, 'org.gnome.Terminal.desktop': <{'position': <10>}>, 'info.desktop': <{'position': <11>}>, 'org.gnome.TextEditor.desktop': <{'position': <12>}>, 'kali-burpsuite.desktop': <{'position': <13>}>, 'kali-cadaver.desktop': <{'position': <14>}>, 'Utilities': <{'position': <15>}>, 'org.gnome.Totem.desktop': <{'position': <16>}>, 'vlc.desktop': <{'position': <17>}>, 'org.gnome.Weather.desktop': <{'position': <18>}>, 'org.pwmt.zathura.desktop': <{'position': <19>}>, 'kali-cewl.desktop': <{'position': <20>}>, 'cherrytree.desktop': <{'position': <21>}>, 'kali-chntpw.desktop': <{'position': <22>}>, 'chromium.desktop': <{'position': <23>}>}, {'kali-clang.desktop': <{'position': <0>}>, 'kali-clang++.desktop': <{'position': <1>}>, 'kali-commix.desktop': <{'position': <2>}>, 'kali-crackmapexec.desktop': <{'position': <3>}>, 'kali-crunch.desktop': <{'position': <4>}>, 'kali-cryptsetup.desktop': <{'position': <5>}>, 'kali-cutycapt.desktop': <{'position': <6>}>, 'kali-davtest.desktop': <{'position': <7>}>, 'kali-dbd.desktop': <{'position': <8>}>, 'kali-dirb.desktop': <{'position': <9>}>, 'kali-dirbuster.desktop': <{'position': <10>}>, 'kali-dmitry.desktop': <{'position': <11>}>, 'kali-dns-rebind.desktop': <{'position': <12>}>, 'kali-dns2tcpc.desktop': <{'position': <13>}>, 'kali-dns2tcpd.desktop': <{'position': <14>}>, 'kali-dnschef.desktop': <{'position': <15>}>, 'kali-dnsenum.desktop': <{'position': <16>}>, 'kali-dnsmap.desktop': <{'position': <17>}>, 'kali-dnsrecon.desktop': <{'position': <18>}>, 'kali-dsniff.desktop': <{'position': <19>}>, 'kali-enum4linux.desktop': <{'position': <20>}>, 'ettercap.desktop': <{'position': <21>}>, 'kali-evil-winrm.desktop': <{'position': <22>}>, 'kali-exe2hex.desktop': <{'position': <23>}>}, {'exploit-database.desktop': <{'position': <0>}>, 'kali-faraday.desktop': <{'position': <1>}>, 'kali-faraday-stop.desktop': <{'position': <2>}>, 'kali-fern-wifi-cracker.desktop': <{'position': <3>}>, 'kali-ffind.desktop': <{'position': <4>}>, 'kali-ffuf.desktop': <{'position': <5>}>, 'kali-fierce.desktop': <{'position': <6>}>, 'kali-fls.desktop': <{'position': <7>}>, 'kali-fping.desktop': <{'position': <8>}>, 'kali-fsstat.desktop': <{'position': <9>}>, 'kali-generic_chunked.desktop': <{'position': <10>}>, 'kali-generic_listen_tcp.desktop': <{'position': <11>}>, 'kali-generic_send_tcp.desktop': <{'position': <12>}>, 'kali-generic_send_udp.desktop': <{'position': <13>}>, 'gparted.desktop': <{'position': <14>}>, 'guymager.desktop': <{'position': <15>}>, 'kali-hash-identifier.desktop': <{'position': <16>}>, 'kali-hashcat.desktop': <{'position': <17>}>, 'kali-hashdeep.desktop': <{'position': <18>}>, 'kali-hashid.desktop': <{'position': <19>}>, 'kali-hfind.desktop': <{'position': <20>}>, 'kali-hping3.desktop': <{'position': <21>}>, 'kali-hydra.desktop': <{'position': <22>}>, 'kali-icat.desktop': <{'position': <23>}>}, {'kali-ifind.desktop': <{'position': <0>}>, 'kali-ike-scan.desktop': <{'position': <1>}>, 'kali-ils.desktop': <{'position': <2>}>, 'display-im7.q16.desktop': <{'position': <3>}>, 'kali-img_cat.desktop': <{'position': <4>}>, 'kali-img_stat.desktop': <{'position': <5>}>, 'kali-impacket-scripts.desktop': <{'position': <6>}>, 'kali-iodine-client-start.desktop': <{'position': <7>}>, 'kali-istat.desktop': <{'position': <8>}>, 'kali-jcat.desktop': <{'position': <9>}>, 'kali-jls.desktop': <{'position': <10>}>, 'kali-john.desktop': <{'position': <11>}>, 'kali-bugs.desktop': <{'position': <12>}>, 'kali-docs.desktop': <{'position': <13>}>, 'kali-forums.desktop': <{'position': <14>}>, 'kali-www.desktop': <{'position': <15>}>, 'kali-tools.desktop': <{'position': <16>}>, 'kali-tweaks.desktop': <{'position': <17>}>, 'kali-kismet.desktop': <{'position': <18>}>, 'kali-laudanum.desktop': <{'position': <19>}>, 'kali-lbd.desktop': <{'position': <20>}>, 'kali-legion.desktop': <{'position': <21>}>, 'kali-macchanger.desktop': <{'position': <22>}>, 'kali-mactime.desktop': <{'position': <23>}>}, {'kali-magicrescue.desktop': <{'position': <0>}>, 'kali-maltego-installer.desktop': <{'position': <1>}>, 'kali-masscan.desktop': <{'position': <2>}>, 'kali-medusa.desktop': <{'position': <3>}>, 'kali-metasploit-framework.desktop': <{'position': <4>}>, 'kali-mimikatz.desktop': <{'position': <5>}>, 'minicom.desktop': <{'position': <6>}>, 'kali-miredo.desktop': <{'position': <7>}>, 'kali-mitmproxy.desktop': <{'position': <8>}>, 'kali-mmcat.desktop': <{'position': <9>}>, 'kali-mmls.desktop': <{'position': <10>}>, 'kali-mmstat.desktop': <{'position': <11>}>, 'kali-msf-nasm_shell.desktop': <{'position': <12>}>, 'kali-msfpc.desktop': <{'position': <13>}>, 'kali-nbtscan.desktop': <{'position': <14>}>, 'kali-ncrack.desktop': <{'position': <15>}>, 'kali-netcat.desktop': <{'position': <16>}>, 'kali-netdiscover.desktop': <{'position': <17>}>, 'kali-netexec.desktop': <{'position': <18>}>, 'kali-nethunter.desktop': <{'position': <19>}>, 'kali-netmask.desktop': <{'position': <20>}>, 'kali-netsniff-ng.desktop': <{'position': <21>}>, 'kali-nikto.desktop': <{'position': <22>}>, 'kali-nmap.desktop': <{'position': <23>}>}, {'offsec-training.desktop': <{'position': <0>}>, 'kali-onesixtyone.desktop': <{'position': <1>}>, 'ophcrack.desktop': <{'position': <2>}>, 'kali-ophcrack-cli.desktop': <{'position': <3>}>, 'kali-passing-the-hash.desktop': <{'position': <4>}>, 'kali-patator.desktop': <{'position': <5>}>, 'kali-pdf-parser.desktop': <{'position': <6>}>, 'kali-pdfid.desktop': <{'position': <7>}>, 'kali-pipal.desktop': <{'position': <8>}>, 'kali-pixiewps.desktop': <{'position': <9>}>, 'kali-pwsh.desktop': <{'position': <10>}>, 'kali-powershell-empire.desktop': <{'position': <11>}>, 'kali-powersploit.desktop': <{'position': <12>}>, 'system-config-printer.desktop': <{'position': <13>}>, 'kali-proxychains4.desktop': <{'position': <14>}>, 'kali-proxytunnel.desktop': <{'position': <15>}>, 'kali-ptunnel.desktop': <{'position': <16>}>, 'kali-pwnat.desktop': <{'position': <17>}>, 'qt5ct.desktop': <{'position': <18>}>, 'qt6ct.desktop': <{'position': <19>}>, 'kali-radare2.desktop': <{'position': <20>}>, 'kali-reaver.desktop': <{'position': <21>}>, 'kali-recon-ng.desktop': <{'position': <22>}>, 'kali-recordmydesktop.desktop': <{'position': <23>}>}, {'kali-responder.desktop': <{'position': <0>}>, 'root-terminal.desktop': <{'position': <1>}>, 'kali-rsmangler.desktop': <{'position': <2>}>, 'kali-samdump2.desktop': <{'position': <3>}>, 'kali-sbd.desktop': <{'position': <4>}>, 'kali-scalpel.desktop': <{'position': <5>}>, 'kali-scapy.desktop': <{'position': <6>}>, 'kali-scrounge-ntfs.desktop': <{'position': <7>}>, 'kali-searchsploit.desktop': <{'position': <8>}>, 'kali-setoolkit.desktop': <{'position': <9>}>, 'kali-sigfind.desktop': <{'position': <10>}>, 'kali-skipfish.desktop': <{'position': <11>}>, 'kali-smbmap.desktop': <{'position': <12>}>, 'kali-smtp-user-enum.desktop': <{'position': <13>}>, 'kali-snmp-check.desktop': <{'position': <14>}>, 'kali-sorter.desktop': <{'position': <15>}>, 'kali-spiderfoot.desktop': <{'position': <16>}>, 'kali-spiderfoot-cli.desktop': <{'position': <17>}>, 'kali-spooftooph.desktop': <{'position': <18>}>, 'sqlitebrowser.desktop': <{'position': <19>}>, 'kali-sqlmap.desktop': <{'position': <20>}>, 'kali-srch_strings.desktop': <{'position': <21>}>, 'kali-ssldump.desktop': <{'position': <22>}>, 'kali-sslh.desktop': <{'position': <23>}>}, {'kali-sslscan.desktop': <{'position': <0>}>, 'kali-sslsplit.desktop': <{'position': <1>}>, 'kali-sslyze.desktop': <{'position': <2>}>, 'kali-starkiller.desktop': <{'position': <3>}>, 'kali-stunnel4.desktop': <{'position': <4>}>, 'kali-swaks.desktop': <{'position': <5>}>, 'kali-tcpdump.desktop': <{'position': <6>}>, 'kali-tcpreplay.desktop': <{'position': <7>}>, 'texdoctk.desktop': <{'position': <8>}>, 'kali-thc-pptp-bruter.desktop': <{'position': <9>}>, 'kali-theHarvester.desktop': <{'position': <10>}>, 'kali-tsk_comparedir.desktop': <{'position': <11>}>, 'kali-tsk_gettimes.desktop': <{'position': <12>}>, 'kali-tsk_loaddb.desktop': <{'position': <13>}>, 'kali-tsk_recover.desktop': <{'position': <14>}>, 'kali-udptunnel.desktop': <{'position': <15>}>, 'kali-unicornscan.desktop': <{'position': <16>}>, 'kali-unix-privesc-check.desktop': <{'position': <17>}>, 'kali-voiphopper.desktop': <{'position': <18>}>, 'vulnhub.desktop': <{'position': <19>}>, 'kali-wafw00f.desktop': <{'position': <20>}>, 'kali-wapiti.desktop': <{'position': <21>}>, 'kali-wash.desktop': <{'position': <22>}>, 'kali-webshells.desktop': <{'position': <23>}>}, {'kali-weevely.desktop': <{'position': <0>}>, 'kali-wfuzz.desktop': <{'position': <1>}>, 'kali-whatweb.desktop': <{'position': <2>}>, 'kali-wifite.desktop': <{'position': <3>}>, 'org.wireshark.Wireshark.desktop': <{'position': <4>}>, 'kali-wordlists.desktop': <{'position': <5>}>, 'kali-wpscan.desktop': <{'position': <6>}>, 'kali-xfreerdp.desktop': <{'position': <7>}>, 'zenmap.desktop': <{'position': <8>}>, 'zenmap-root.desktop': <{'position': <9>}>, 'com.github.FontManager.FontManager.desktop': <{'position': <10>}>, 'com.github.FontManager.FontViewer.desktop': <{'position': <11>}>, 'joplin.desktop': <{'position': <12>}>, 'nvim.desktop': <{'position': <13>}>, 'kali-clamscan.desktop': <{'position': <14>}>, 'kali-rkhunter.desktop': <{'position': <15>}>, 'kali-unhide.desktop': <{'position': <16>}>, 'org.chromium.Chromium.desktop': <{'position': <17>}>, 'app.zen_browser.zen.desktop': <{'position': <18>}>, 'com.neatdecisions.Detwinner.desktop': <{'position': <19>}>, 'com.uploadedlobster.peek.desktop': <{'position': <20>}>}, {'com.github.qarmin.czkawka.desktop': <{'position': <0>}>, 'app.drey.Warp.desktop': <{'position': <1>}>, 'org.flameshot.Flameshot.desktop': <{'position': <2>}>, 'org.gnome.Loupe.desktop': <{'position': <3>}>}]
+disabled-extensions=['system-monitor@gnome-shell-extensions.gcampax.github.com']
+enabled-extensions=['user-theme@gnome-shell-extensions.gcampax.github.com', 'blur-my-shell@aunetx', 'clipboard-indicator@tudmotu.com', 'mediacontrols@cliffniff.github.com', 'dash-to-panel@jderose9.github.com', 'quake-mode@repsac-by.github.com', 'GPaste@gnome-shell-extensions.gnome.org', 'AlphabeticalAppGrid@stuarthayhurst', 'arcmenu@arcmenu.com', 'quake-terminal@diegodario88.github.io', 'Vitals@CoreCoding.com', 'ubuntu-appindicators@ubuntu.com', 'tiling-assistant@leleat-on-github']
 favorite-apps=['mullvad-vpn.desktop', 'terminator.desktop', 'virtualbox.desktop', 'org.gnome.Nautilus.desktop', 'net.cozic.joplin_desktop.desktop', 'firefox-esr.desktop', 'org.onlyoffice.desktopeditors.desktop', 'com.discordapp.Discord.desktop', 'com.ktechpit.whatsie.desktop', 'shotwell.desktop', 'org.gnome.Software.desktop', 'org.gnome.World.PikaBackup.desktop']
 last-selected-power-profile='power-saver'
 welcome-dialog-last-shown-version='43.9'
 
 [org/gnome/shell/extensions/arcmenu]
+apps-show-extra-details=false
 arcmenu-custom-hotkey=['<Alt>m']
+arcmenu-hotkey=['<Alt>m']
 custom-menu-button-icon-size=26.0
 distro-icon=1
 extra-categories=[(0, true), (1, true), (2, true), (3, false), (4, true)]
@@ -267,15 +313,39 @@ menu-layout='Whisker'
 menu-separator-color='rgba(255,255,255,0.1)'
 multi-monitor=true
 prefs-visible-page=0
-recently-installed-apps=['de.haeckerfelix.Shortwave.desktop', 'balena-etcher.desktop', 'org.gnome.Dictionary.desktop', 'org.gnome.Polari.desktop', 'app.drey.Warp.desktop', 'com.github.qarmin.czkawka.desktop', 'com.neatdecisions.Detwinner.desktop', 'io.github.vikdevelop.SaveDesktop.desktop', 'org.chromium.Chromium.desktop', 'org.flameshot.Flameshot.desktop', 'com.uploadedlobster.peek.desktop', 'org.keepassxc.KeePassXC.desktop', 'opensnitch_ui.desktop', 'keepassxc_keepassxc.desktop', 'app.zen_browser.zen.desktop']
+recently-installed-apps=['de.haeckerfelix.Shortwave.desktop', 'balena-etcher.desktop', 'org.gnome.Dictionary.desktop', 'org.gnome.Polari.desktop', 'app.drey.Warp.desktop', 'com.github.qarmin.czkawka.desktop', 'com.neatdecisions.Detwinner.desktop', 'io.github.vikdevelop.SaveDesktop.desktop', 'org.chromium.Chromium.desktop', 'org.flameshot.Flameshot.desktop', 'com.uploadedlobster.peek.desktop', 'org.keepassxc.KeePassXC.desktop', 'opensnitch_ui.desktop', 'keepassxc_keepassxc.desktop', 'app.zen_browser.zen.desktop', 'ulauncher.desktop', 'virtualbox.desktop', 'org.gnome.Software.desktop', 'org.gnome.Evolution.desktop', 'mullvad-vpn.desktop']
 search-entry-border-radius=(true, 25)
 search-provider-open-windows=true
 search-provider-recent-files=true
+show-category-sub-menus=true
+show-hidden-recent-files=false
+show-update-notification-v64=false
 
 [org/gnome/shell/extensions/blur-my-shell]
 hacks-level=3
+settings-version=2
+
+[org/gnome/shell/extensions/blur-my-shell/appfolder]
+brightness=0.59999999999999998
+sigma=30
+
+[org/gnome/shell/extensions/blur-my-shell/dash-to-dock]
+blur=true
+brightness=0.59999999999999998
+sigma=30
+static-blur=true
+style-dash-to-dock=0
+
+[org/gnome/shell/extensions/blur-my-shell/panel]
+brightness=0.59999999999999998
+sigma=30
+
+[org/gnome/shell/extensions/blur-my-shell/window-list]
+brightness=0.59999999999999998
+sigma=30
 
 [org/gnome/shell/extensions/clipboard-indicator]
+clear-on-boot=true
 history-size=100
 notify-on-copy=true
 
@@ -283,6 +353,7 @@ notify-on-copy=true
 animate-appicon-hover-animation-extent={'RIPPLE': 4, 'PLANK': 4, 'SIMPLE': 1}
 appicon-margin=4
 appicon-padding=4
+appicon-style='NORMAL'
 available-monitors=[0]
 dot-position='BOTTOM'
 dot-style-focused='DOTS'
@@ -296,14 +367,33 @@ panel-element-positions='{"0":[{"element":"showAppsButton","visible":true,"posit
 panel-lengths='{"0":100}'
 panel-sizes='{"0":36}'
 primary-monitor=0
+show-apps-icon-file=''
 status-icon-padding=-1
 trans-bg-color='#191919'
 trans-use-custom-bg=true
 tray-padding=-1
 window-preview-title-position='TOP'
 
+[org/gnome/shell/extensions/ding]
+check-x11wayland=true
+
 [org/gnome/shell/extensions/mediacontrols]
+mouse-action-left='PLAY_PAUSE'
+mouse-action-right='SHOW_POPUP_MENU'
 mouse-actions=['toggle_play', 'toggle_info', 'none', 'none', 'none', 'none', 'none', 'none']
+
+[org/gnome/shell/extensions/quake-terminal]
+auto-hide-window=false
+horizontal-size=95
+render-on-current-monitor=true
+terminal-id='terminator.desktop'
+terminal-shortcut=['<Alt><Super>q']
+vertical-size=95
+
+[org/gnome/shell/extensions/tiling-assistant]
+active-window-hint-color='rgb(53,132,228)'
+last-version-installed=48
+overridden-settings={'org.gnome.mutter.edge-tiling': <@mb nothing>, 'org.gnome.desktop.wm.keybindings.maximize': <@mb nothing>, 'org.gnome.desktop.wm.keybindings.unmaximize': <@mb nothing>, 'org.gnome.mutter.keybindings.toggle-tiled-left': <@mb nothing>, 'org.gnome.mutter.keybindings.toggle-tiled-right': <@mb nothing>}
 
 [org/gnome/shell/keybindings]
 open-application-menu=@as []
@@ -325,6 +415,10 @@ update-notification-timestamp=int64 1739273572
 
 [org/gnome/system/location]
 enabled=false
+
+[org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+font='Hack Nerd Font 12'
+use-system-font=false
 
 [org/gtk/gtk4/settings/color-chooser]
 custom-colors=[(0.098039217293262482, 0.098039217293262482, 0.098039217293262482, 1.0), (0.20784313976764679, 0.51764696836471558, 0.89411765336990356, 1.0), (0.94901961088180542, 0.94901961088180542, 0.94901961088180542, 1.0)]
