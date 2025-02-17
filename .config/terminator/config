@@ -1,6 +1,7 @@
 [global_config]
   inactive_color_offset = 0.40816326530612246
   enabled_plugins = LaunchpadBugURLHandler, LaunchpadCodeURLHandler, APTURLHandler, TerminatorThemes
+  ask_before_closing = never
   always_split_with_profile = True
   link_single_click = True
 [keybindings]
