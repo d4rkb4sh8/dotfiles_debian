@@ -22,7 +22,7 @@ sudo apt purge -y audacity gimp gnome-games libreoffice* && sudo apt update -y &
 
 # Define APT packages
 APT_PACKAGES=(
-  apparmor-profiles apparmor-utils joplin gcc asciiart autoconf bat bison btop
+  apparmor-profiles apparmor-utils joplin gcc asciiart autoconf bat bison btop dconf-editor
   build-essential cmake cpufetch curl dconf-cli dict neovim gnome-software-plugin-flatpak pkg-config
   fail2ban flatpak gpg gpgv2 gtk2-engines-murrine httpie info ncal nala pipx openssl guvcview
   gnome-shell-extension-manager gpaste-2 linux-headers$(uname -r) lm-sensors mitmproxy speedtest-cli
@@ -131,12 +131,10 @@ source $HOME/.bashrc
 log "Installing GTFOB..."
 pipx install git+https://github.com/nccgroup/GTFOBLookup.git
 
-# Binsider
+# Rust cargo installs
 cargo install binsider
 cargo install cargo-update
 cargo install cargo-list
-
-# Install kanata for home row mods
 cargo install kanata
 
 #Install tgpt
