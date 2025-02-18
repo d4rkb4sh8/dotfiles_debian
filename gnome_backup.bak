@@ -5,6 +5,13 @@ lock-after-screensaver=uint32 5
 lock-on-lid=false
 lock-on-suspend=true
 
+[ca/desrt/dconf-editor]
+saved-pathbar-path='/org/gnome/'
+saved-view='/org/gnome/'
+window-height=951
+window-is-maximized=false
+window-width=1082
+
 [com/github/repsac-by/quake-mode]
 quake-mode-height=97
 quake-mode-hide-from-overview=true
@@ -100,8 +107,8 @@ translate=true
 [org/gnome/desktop/background]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/h4ck3r/.local/share/backgrounds/2025-02-16-22-48-07-wallpaper_002.jpg'
-picture-uri-dark='file:///home/h4ck3r/.local/share/backgrounds/2025-02-16-22-48-07-wallpaper_002.jpg'
+picture-uri='file:///home/h4ck3r/.local/share/backgrounds/2025-02-18-09-39-18-wallpaper_002.jpg'
+picture-uri-dark='file:///home/h4ck3r/.local/share/backgrounds/2025-02-18-09-39-18-wallpaper_002.jpg'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -186,7 +193,7 @@ report-technical-problems=true
 [org/gnome/desktop/screensaver]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/h4ck3r/.local/share/backgrounds/2025-02-16-22-48-07-wallpaper_002.jpg'
+picture-uri='file:///home/h4ck3r/.local/share/backgrounds/2025-02-18-09-39-18-wallpaper_002.jpg'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -278,7 +285,7 @@ last-folder-path='/home/h4ck3r/keepass'
 last-folder-path='/home/h4ck3r/keepassxc'
 
 [org/gnome/portal/filechooser/ulauncher]
-last-folder-path='/home/h4ck3r/Pictures/Screenshots'
+last-folder-path='/home/h4ck3r/Downloads'
 
 [org/gnome/settings-daemon/plugins/color]
 night-light-enabled=true
@@ -316,7 +323,7 @@ apps-show-extra-details=false
 arcmenu-custom-hotkey=['<Alt>m']
 arcmenu-hotkey=['<Alt>m']
 custom-menu-button-icon-size=26.0
-distro-icon=1
+distro-icon=9
 extra-categories=[(0, true), (1, true), (2, true), (3, false), (4, true)]
 highlight-search-result-terms=true
 menu-background-color='rgba(48,48,49,0.98)'
@@ -335,7 +342,7 @@ menu-layout='Whisker'
 menu-separator-color='rgba(255,255,255,0.1)'
 multi-monitor=true
 prefs-visible-page=0
-recently-installed-apps=['de.haeckerfelix.Shortwave.desktop', 'balena-etcher.desktop', 'org.gnome.Dictionary.desktop', 'org.gnome.Polari.desktop', 'app.drey.Warp.desktop', 'com.github.qarmin.czkawka.desktop', 'com.neatdecisions.Detwinner.desktop', 'io.github.vikdevelop.SaveDesktop.desktop', 'org.chromium.Chromium.desktop', 'org.flameshot.Flameshot.desktop', 'com.uploadedlobster.peek.desktop', 'org.keepassxc.KeePassXC.desktop', 'opensnitch_ui.desktop', 'keepassxc_keepassxc.desktop', 'app.zen_browser.zen.desktop', 'ulauncher.desktop', 'virtualbox.desktop', 'org.gnome.Software.desktop', 'org.gnome.Evolution.desktop', 'mullvad-vpn.desktop', 'org.gnome.Cheese.desktop', 'guvcview.desktop', 'debian-xterm.desktop', 'debian-uxterm.desktop', 'cutecom.desktop', 'chirp.desktop', 'gnuradio-grc.desktop', 'dk.gqrx.gqrx.desktop', 're.rizin.cutter.desktop', 'rfdump.desktop', 'kali-fang.desktop', 'kali-mifare-classic-format.desktop', 'kali-sctpscan.desktop', 'kali-siparmyknife.desktop', 'kali-sfuzz.desktop', 'kali-truecrack.desktop', 'kali-mfcuk.desktop', 'kali-sipcrack.desktop', 'kali-hackrf_info.desktop', 'kali-ubertooth-util.desktop', 'kali-bettercap.desktop', 'kali-ohrwurm.desktop', 'kali-rtpinsertsound.desktop', 'kali-wifi-honey.desktop', 'kali-btscanner.desktop', 'kali-nfc-mfclassic.desktop', 'kali-blueranger.desktop', 'kali-cowpatty.desktop', 'kali-nfc-list.desktop', 'kali-crackle.desktop', 'kali-iaxflood.desktop', 'kali-airgeddon.desktop', 'kali-svreport.desktop', 'kali-beef-xss-stop.desktop', 'kali-enumiax.desktop', 'kali-protos-sip.desktop', 'kali-sipp.desktop', 'kali-rtpbreak.desktop', 'kali-asleap.desktop', 'kali-mfterm.desktop', 'kali-ettercap.desktop', 'kali-bluelog.desktop', 'kali-svmap.desktop', 'kali-beef-xss.desktop', 'kali-svcrack.desktop', 'kali-rtpflood.desktop', 'kali-mfoc.desktop', 'kali-inviteflood.desktop', 'kali-afl-fuzz.desktop', 'kali-mdk3.desktop', 'kali-eapmd5pass.desktop', 'kali-svcrash.desktop', 'kali-bluesnarfer.desktop', 'kali-rtpmixsound.desktop', 'kali-svwar.desktop', 'kali-heartleech.desktop', 'kali-regripper.desktop', 'kali-ollydbg.desktop', 'kali-shellter.desktop', 'thunar.desktop', 'org.xfce.mousepad.desktop', 'thunar-bulk-rename.desktop', 'org.pulseaudio.pavucontrol.desktop']
+recently-installed-apps=['de.haeckerfelix.Shortwave.desktop', 'balena-etcher.desktop', 'org.gnome.Dictionary.desktop', 'org.gnome.Polari.desktop', 'app.drey.Warp.desktop', 'com.github.qarmin.czkawka.desktop', 'com.neatdecisions.Detwinner.desktop', 'io.github.vikdevelop.SaveDesktop.desktop', 'org.chromium.Chromium.desktop', 'org.flameshot.Flameshot.desktop', 'com.uploadedlobster.peek.desktop', 'org.keepassxc.KeePassXC.desktop', 'opensnitch_ui.desktop', 'keepassxc_keepassxc.desktop', 'app.zen_browser.zen.desktop', 'ulauncher.desktop', 'virtualbox.desktop', 'org.gnome.Software.desktop', 'org.gnome.Evolution.desktop', 'mullvad-vpn.desktop', 'org.gnome.Cheese.desktop', 'guvcview.desktop', 'debian-xterm.desktop', 'debian-uxterm.desktop', 'cutecom.desktop', 'chirp.desktop', 'gnuradio-grc.desktop', 'dk.gqrx.gqrx.desktop', 're.rizin.cutter.desktop', 'rfdump.desktop', 'kali-fang.desktop', 'kali-mifare-classic-format.desktop', 'kali-sctpscan.desktop', 'kali-siparmyknife.desktop', 'kali-sfuzz.desktop', 'kali-truecrack.desktop', 'kali-mfcuk.desktop', 'kali-sipcrack.desktop', 'kali-hackrf_info.desktop', 'kali-ubertooth-util.desktop', 'kali-bettercap.desktop', 'kali-ohrwurm.desktop', 'kali-rtpinsertsound.desktop', 'kali-wifi-honey.desktop', 'kali-btscanner.desktop', 'kali-nfc-mfclassic.desktop', 'kali-blueranger.desktop', 'kali-cowpatty.desktop', 'kali-nfc-list.desktop', 'kali-crackle.desktop', 'kali-iaxflood.desktop', 'kali-airgeddon.desktop', 'kali-svreport.desktop', 'kali-beef-xss-stop.desktop', 'kali-enumiax.desktop', 'kali-protos-sip.desktop', 'kali-sipp.desktop', 'kali-rtpbreak.desktop', 'kali-asleap.desktop', 'kali-mfterm.desktop', 'kali-ettercap.desktop', 'kali-bluelog.desktop', 'kali-svmap.desktop', 'kali-beef-xss.desktop', 'kali-svcrack.desktop', 'kali-rtpflood.desktop', 'kali-mfoc.desktop', 'kali-inviteflood.desktop', 'kali-afl-fuzz.desktop', 'kali-mdk3.desktop', 'kali-eapmd5pass.desktop', 'kali-svcrash.desktop', 'kali-bluesnarfer.desktop', 'kali-rtpmixsound.desktop', 'kali-svwar.desktop', 'kali-heartleech.desktop', 'kali-regripper.desktop', 'kali-ollydbg.desktop', 'kali-shellter.desktop', 'thunar.desktop', 'org.xfce.mousepad.desktop', 'thunar-bulk-rename.desktop', 'org.pulseaudio.pavucontrol.desktop', 'ca.desrt.dconf-editor.desktop']
 search-entry-border-radius=(true, 25)
 search-provider-open-windows=true
 search-provider-recent-files=true
