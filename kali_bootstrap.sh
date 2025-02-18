@@ -6,6 +6,8 @@ log() {
   echo "[$(date +'%Y-%m-%dT%H:%M:%S%z')] $*"
 }
 
+sudo apt install git gh curl gawk -y
+
 # Edit /etc/default/grub for GRUB settings
 log "Configuring GRUB settings..."
 sudo sed -i 's/^GRUB_TIMEOUT=.*/GRUB_TIMEOUT=2/' /etc/default/grub
@@ -61,6 +63,18 @@ sudo ufw allow 443/tcp
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
 sudo ufw enable
+
+# Install Homebrew
+log "Installing Homebrew..."
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+# Add Homebrew to PATH
+echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >>~/.bashrc
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+# Install packages using Homebrew
+log "Installing Homebrew packages: eza, gcc, neovim, dust, zoxide, atuin, xh, yazi..."
+brew install musikcube gcc dust xh gitleaks lazygit yazi ffmpeg 
 
 # Install rust
 log "Installing Rust..."
