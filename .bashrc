@@ -112,3 +112,6 @@ eval "$(starship init bash)"
 # colorize output
 GRC_ALIASES=true
 [[ -s /etc/profile.d/grc.sh ]] && source /etc/grc.sh
+# colorize output
+GRC_ALIASES=true
+[[ -s /etc/profile.d/grc.sh ]] && source /etc/grc.sh
