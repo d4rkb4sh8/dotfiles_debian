@@ -27,7 +27,7 @@ APT_PACKAGES=(
   apparmor-profiles apparmor-utils joplin gcc asciiart autoconf bat bison btop dconf-editor
   build-essential cmake cpufetch curl dconf-cli dict neovim gnome-software-plugin-flatpak pkg-config
   fail2ban flatpak gpg gpgv2 gtk2-engines-murrine httpie info ncal nala pipx openssl guvcview
-  gnome-shell-extension-manager gpaste-2 linux-headers$(uname -r) lm-sensors mitmproxy speedtest-cli
+  gnome-shell-extension-manager gpaste-2 linux-headers-$(uname -r) lm-sensors mitmproxy speedtest-cli
   clamav dkms fd-find ffmpeg figlet file fastfetch eza font-manager fzf gawk gdebi gh git
   sd rsync gpg httpie imagemagick info lolcat lynis mitmproxy most nala ncal npm openssl pass
   gitleaks gnome-clocks gnome-weather patchelf plocate postgresql postgresql-contrib
