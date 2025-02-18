@@ -165,7 +165,7 @@ log "Final update and clean up..."
 sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y
 
 # Gnome restore
-dconf load / <$HOME/dotfiles/gnome_backup.bak
+dconf load / < $HOME/dotfiles/gnome_backup.bak
 
 # Apparmor
 sudo aa-enforce /etc/apparmor.d/*
