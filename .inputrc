@@ -23,7 +23,7 @@ set output-meta on
 
 # make autocompletion case insensitive and display suggestions
  set completion-ignore-case On
- set show-all-if-ambiguous On
+# set show-all-if-ambiguous On
 
 # some defaults / modifications for the emacs mode
 $if mode=emacs
