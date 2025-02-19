@@ -80,7 +80,8 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 # Install packages using Homebrew
 log "Installing Homebrew packages: eza, gcc, neovim, dust, zoxide, atuin, xh, yazi..."
-brew install eza musikcube gcc neovim dust xh fastfetch gitleaks lazygit yazi ffmpeg fzf 
+brew install gcc
+brew install eza musikcube neovim dust xh fastfetch gitleaks lazygit yazi ffmpeg fzf 
 
 # Install rust
 log "Installing Rust..."
