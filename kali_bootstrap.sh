@@ -48,6 +48,11 @@ git clone --recursive --depth 1 --shallow-submodules https://github.com/akinomyo
 make -C ble.sh install PREFIX=~/.local
 echo 'source ~/.local/share/blesh/ble.sh' >>~/.bashrc
 
+# Install Snap
+log "Installing Snap..."
+sudo snap install snapd
+sudo snap install snap-store
+
 # Install Hack Nerd Font
 log "Installing Hack Nerd Font..."
 mkdir -p ~/.local/share/fonts

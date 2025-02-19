@@ -5,6 +5,8 @@ set -e # Exit immediately if a command exits with a non-zero status
 log() {
   echo "[$(date +'%Y-%m-%dT%H:%M:%S%z')] $*"
 }
+# Install git and others first
+sudo apt install git gh curl gawk cmake -y
 
 # Append 'contrib non-free' to each active deb repository line in sources.list
 log "Adding 'contrib non-free' to active lines in sources.list..."
@@ -78,11 +80,11 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 # Install packages using Homebrew
 log "Installing Homebrew packages: eza, gcc, neovim, dust, zoxide, atuin, xh, yazi..."
-brew install eza musikcube gcc kanata neovim dust xh fastfetch gitleaks lazygit yazi ffmpeg sevenzip jq poppler fd ripgrep fzf zoxide imagemagick
+brew install eza musikcube gcc neovim dust xh fastfetch gitleaks lazygit yazi ffmpeg fzf 
 
 # Install rust
-#log "Installing Rust..."
-#curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+log "Installing Rust..."
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 # Install Tela-circle-icons
 log "Installing Tela-circle-icons..."
@@ -142,7 +144,7 @@ cd Orchis-theme
 
 # Install GTFOB lookup
 #log "Installing GTFOB..."
-#pipx install git+https://github.com/nccgroup/GTFOBLookup.git
+pipx install git+https://github.com/nccgroup/GTFOBLookup.git
 
 # cargo install
 cargo install cargo-update
@@ -170,7 +172,7 @@ log "Sourcing .bashrc..."
 source $HOME/.bashrc
 
 # Gnome restore
-dconf load / <$HOME/dotfiles/gnome_backup.bak
+dconf load / < $HOME/dotfiles/gnome_backup.bak
 
 # Apparmor
 sudo aa-enforce /etc/apparmor.d/*
