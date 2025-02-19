@@ -82,7 +82,7 @@ panel-id='world'
 size=(870, 690)
 
 [org/gnome/control-center]
-last-panel='multitasking'
+last-panel='keyboard'
 window-state=(980, 640, false)
 
 [org/gnome/desktop/app-folders]
@@ -205,9 +205,9 @@ allow-volume-above-100-percent=true
 
 [org/gnome/desktop/wm/keybindings]
 begin-move=@as []
-maximize=@as []
+maximize=['<Super>Up']
 minimize=@as []
-unmaximize=@as []
+unmaximize=['<Super>Down']
 
 [org/gnome/desktop/wm/preferences]
 button-layout='close,minimize,maximize:icon,menu'
@@ -245,8 +245,8 @@ edge-tiling=true
 overlay-key='Super_L'
 
 [org/gnome/mutter/keybindings]
-toggle-tiled-left=@as []
-toggle-tiled-right=@as []
+toggle-tiled-left=['<Super>Left']
+toggle-tiled-right=['<Super>Right']
 
 [org/gnome/nautilus/list-view]
 default-zoom-level='large'
