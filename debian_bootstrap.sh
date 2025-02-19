@@ -137,10 +137,10 @@ sudo ./install.sh -s 1080p -b -t whitesur
 flatpak install $(cat $HOME/dotfiles/flatpaks_list.bak)
 
 # Install Orchis theme
-cd $HOME/gitprojects/
-git clone https://github.com/vinceliuice/Orchis-theme.git
-cd Orchis-theme
-./install.sh -t red -c dark -s compact -l --tweaks compact --shell
+#cd $HOME/gitprojects/
+#git clone https://github.com/vinceliuice/Orchis-theme.git
+#cd Orchis-theme
+#./install.sh -t red -c dark -s compact -l --tweaks compact --shell
 
 # Install GTFOB lookup
 #log "Installing GTFOB..."
