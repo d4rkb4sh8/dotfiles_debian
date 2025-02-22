@@ -1,11 +1,10 @@
+settings_backup.sh
 ansible
-gsettings_custom
 optional_installs.sh
 .wezterm.lua
 sync-dotfiles.sh
 wifiext.sh
 starship
-bootstrap.sh
 bin
 misc
 LICENSE

@@ -47,6 +47,7 @@ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.f
 log "Installing Snap..."
 sudo snap install snapd
 sudo snap install snap-store
+snap install $(cat $HOME/dotfiles/snap_list.bak)
 
 # Install ble.sh
 cd $HOME
@@ -79,9 +80,9 @@ echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >>~/.bashrc
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 # Install packages using Homebrew
-log "Installing Homebrew packages: eza, gcc, neovim, dust, zoxide, atuin, xh, yazi..."
+log "Installing Homebrew packages:"
 brew install gcc
-brew install eza musikcube neovim dust xh fastfetch gitleaks lazygit yazi ffmpeg fzf 
+brew install $(cat $HOME/dotfiles/brew_list.bak)
 
 # Install rust
 log "Installing Rust..."
@@ -173,7 +174,7 @@ log "Sourcing .bashrc..."
 source $HOME/.bashrc
 
 # Gnome restore
-dconf load / < $HOME/dotfiles/gnome_backup.bak
+dconf load / <$HOME/dotfiles/gnome_settings.bak
 
 # Apparmor
 sudo aa-enforce /etc/apparmor.d/*
