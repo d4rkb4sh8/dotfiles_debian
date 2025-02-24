@@ -115,7 +115,7 @@ sudo update-initramfs -u -k all
 
 # Section: Flatpak Applications Installation
 log "Installing Flatpak applications..."
-flatpak install $(cat $HOME/dotfiles/flatpaks_list.bak)
+flatpak install $(cat $HOME/dotfiles/flatpaks_list.bak) -y
 
 # Section: Cargo Installations
 log "Installing cargo packages..."
