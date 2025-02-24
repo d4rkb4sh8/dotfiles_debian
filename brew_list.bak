@@ -8,6 +8,7 @@ brotli
 bzip2
 ca-certificates
 cairo
+certifi
 cjson
 curl
 dav1d
@@ -163,6 +164,7 @@ xorgproto
 xvid
 xz
 yazi
+yt-dlp
 zeromq
 zimg
 zlib
