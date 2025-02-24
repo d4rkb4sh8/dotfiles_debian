@@ -13,13 +13,6 @@ log "Starting initial setup..."
 sudo apt install -y git gh curl gawk cmake
 sudo sed -i '/^deb / s/$/ contrib non-free/' /etc/apt/sources.list
 
-# Section: GRUB Configuration
-log "Configuring GRUB..."
-sudo sed -i 's/^GRUB_TIMEOUT=.*/GRUB_TIMEOUT=2/' /etc/default/grub
-sudo sed -i '/^GRUB_CMDLINE_LINUX_DEFAULT=/a GRUB_CMDLINE_LINUX="rhgb quiet mitigations=off"' /etc/default/grub
-sudo update-grub
-sudo update-initramfs -u -k all
-
 # Section: Remove Bloatware
 log "Removing bloatware..."
 sudo apt purge -y audacity gimp gnome-games libreoffice*
@@ -105,6 +98,13 @@ log "Installing Grub theme..."
 git clone https://github.com/vinceliuice/grub2-themes.git $HOME/gitprojects/grub2-themes
 cp $HOME/Pictures/wallpapers/wallpaper_001.jpg $HOME/gitprojects/grub2-themes/background.jpg
 sudo $HOME/gitprojects/grub2-themes/install.sh -s 1080p -b -t whitesur
+
+# Section: GRUB Configuration
+log "Configuring GRUB..."
+sudo sed -i 's/^GRUB_TIMEOUT=.*/GRUB_TIMEOUT=2/' /etc/default/grub
+sudo sed -i '/^GRUB_CMDLINE_LINUX_DEFAULT=/a GRUB_CMDLINE_LINUX="rhgb quiet mitigations=off"' /etc/default/grub
+sudo update-grub
+sudo update-initramfs -u -k all
 
 # Section: Flatpak Applications Installation
 log "Installing Flatpak applications..."
