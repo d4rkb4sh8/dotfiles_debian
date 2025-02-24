@@ -71,6 +71,11 @@ log "Installing Homebrew..."
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >>~/.bashrc
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+# Increase the file descriptor limit to avoid "too many open files" error
+log "Increasing file descriptor limit for Homebrew..."
+ulimit -n 8192 # Increase the limit to 8192 (or higher if needed)
+
 brew install gcc $(cat $HOME/dotfiles/brew_list.bak)
 
 # Section: Rust Installation
