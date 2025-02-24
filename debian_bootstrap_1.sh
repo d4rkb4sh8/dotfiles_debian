@@ -117,6 +117,8 @@ sudo update-initramfs -u -k all
 log "Installing Flatpak applications..."
 flatpak install $(cat $HOME/dotfiles/flatpaks_list.bak) -y
 
+source $HOME/.bashrc
+
 # Section: Cargo Installations
 log "Installing cargo packages..."
 cargo install cargo-update cargo-list kanata binsider
