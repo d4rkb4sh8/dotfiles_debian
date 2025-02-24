@@ -89,8 +89,10 @@ $HOME/Downloads/Tela-circle-icon-theme/install.sh
 
 # Section: GRC Colors Setup
 log "Setting up GRC colors..."
-git clone https://github.com/garabik/grc.git $HOME/gitprojects/grc
-sudo $HOME/gitprojects/grc/install.sh
+cd $HOME/gitprojects
+git clone https://github.com/garabik/grc.git
+cd $HOME/gitprojects/grc
+sudo ./install.sh
 sudo cp /etc/profile.d/grc.sh /etc
 
 # Section: Starship Prompt Setup
