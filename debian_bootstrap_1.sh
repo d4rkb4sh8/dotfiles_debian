@@ -36,6 +36,15 @@ APT_PACKAGES=(
 )
 sudo apt update -y && sudo apt full-upgrade -y && sudo apt install -y "${APT_PACKAGES[@]}" && sudo apt autoremove -y && sudo apt autoclean -y
 
+# Section: Git Projects and Dotfiles Setup
+log "Setting up gitprojects and dotfiles..."
+mkdir -p $HOME/gitprojects
+git clone https://github.com/d4rkb4sh8/main.git $HOME/gitprojects/main
+git clone https://github.com/d4rkb4sh8/notes.git $HOME/gitprojects/notes
+git clone https://github.com/d4rkb4sh8/dotfiles.git $HOME/dotfiles
+cd $HOME/dotfiles && stow --adopt . && git restore .
+cp -r $HOME/gitprojects/main/wallpapers $HOME/Pictures
+
 # Section: Flatpak and Snap Setup
 log "Setting up Flatpak and Snap..."
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
@@ -80,15 +89,6 @@ log "Installing Tela-circle-icons..."
 git clone https://github.com/vinceliuice/Tela-circle-icon-theme.git $HOME/Downloads/Tela-circle-icon-theme
 $HOME/Downloads/Tela-circle-icon-theme/install.sh
 
-# Section: Git Projects and Dotfiles Setup
-log "Setting up gitprojects and dotfiles..."
-mkdir -p $HOME/gitprojects
-git clone https://github.com/d4rkb4sh8/main.git $HOME/gitprojects/main
-git clone https://github.com/d4rkb4sh8/notes.git $HOME/gitprojects/notes
-git clone https://github.com/d4rkb4sh8/dotfiles.git $HOME/dotfiles
-cd $HOME/dotfiles && stow --adopt . && git restore .
-cp -r $HOME/gitprojects/main/wallpapers $HOME/Pictures
-
 # Section: GRC Colors Setup
 log "Setting up GRC colors..."
 git clone https://github.com/garabik/grc.git $HOME/gitprojects/grc
@@ -112,7 +112,7 @@ flatpak install $(cat $HOME/dotfiles/flatpaks_list.bak)
 
 # Section: Cargo Installations
 log "Installing cargo packages..."
-cargo install cargo-update cargo-list kanata --version 1.6.0 binsider
+cargo install cargo-update cargo-list kanata binsider
 
 # Section: tgpt and Atuin Installation
 log "Installing tgpt and atuin..."
