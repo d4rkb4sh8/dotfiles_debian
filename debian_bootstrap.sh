@@ -36,7 +36,7 @@ git clone https://github.com/d4rkb4sh8/main.git $HOME/gitprojects/main
 git clone https://github.com/d4rkb4sh8/notes.git $HOME/gitprojects/notes
 git clone https://github.com/d4rkb4sh8/dotfiles.git $HOME/dotfiles
 cd $HOME/dotfiles && stow --adopt . && git restore .
-cp -r $HOME/gitprojects/main/wallpapers $HOME/Pictures
+cp -r $HOME/dotfiles/wallpapers $HOME/Pictures
 
 # Section: Flatpak and Snap Setup
 log "Setting up Flatpak and Snap..."
