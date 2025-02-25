@@ -84,7 +84,7 @@ panel-id='world'
 size=(870, 690)
 
 [org/gnome/control-center]
-last-panel='wifi'
+last-panel='default-apps'
 window-state=(980, 640, false)
 
 [org/gnome/desktop/app-folders]
@@ -224,6 +224,22 @@ strategy='exact'
 [org/gnome/evolution-data-server]
 migrated=true
 
+[org/gnome/file-roller/dialogs/extract]
+recreate-folders=true
+skip-newer=false
+
+[org/gnome/file-roller/listing]
+list-mode='as-folder'
+name-column-width=250
+show-path=false
+sort-method='name'
+sort-type='ascending'
+
+[org/gnome/file-roller/ui]
+sidebar-width=200
+window-height=480
+window-width=600
+
 [org/gnome/gnome-system-monitor]
 current-tab='resources'
 maximized=false
@@ -319,6 +335,7 @@ disabled-extensions=['system-monitor@gnome-shell-extensions.gcampax.github.com',
 enabled-extensions=['user-theme@gnome-shell-extensions.gcampax.github.com', 'blur-my-shell@aunetx', 'clipboard-indicator@tudmotu.com', 'mediacontrols@cliffniff.github.com', 'dash-to-panel@jderose9.github.com', 'quake-mode@repsac-by.github.com', 'GPaste@gnome-shell-extensions.gnome.org', 'AlphabeticalAppGrid@stuarthayhurst', 'arcmenu@arcmenu.com', 'quake-terminal@diegodario88.github.io', 'Vitals@CoreCoding.com', 'ubuntu-appindicators@ubuntu.com', 'tiling-assistant@leleat-on-github', 'appindicatorsupport@rgcjonas.gmail.com']
 favorite-apps=['mullvad-vpn.desktop', 'terminator.desktop', 'virtualbox.desktop', 'org.gnome.Nautilus.desktop', 'net.cozic.joplin_desktop.desktop', 'firefox-esr.desktop', 'org.onlyoffice.desktopeditors.desktop', 'com.discordapp.Discord.desktop', 'com.ktechpit.whatsie.desktop', 'shotwell.desktop', 'org.gnome.Software.desktop', 'org.gnome.World.PikaBackup.desktop']
 last-selected-power-profile='power-saver'
+remember-mount-password=true
 welcome-dialog-last-shown-version='43.9'
 
 [org/gnome/shell/extensions/appindicator]
@@ -349,7 +366,7 @@ menu-layout='Whisker'
 menu-separator-color='rgba(255,255,255,0.1)'
 multi-monitor=true
 prefs-visible-page=0
-recently-installed-apps=['de.haeckerfelix.Shortwave.desktop', 'balena-etcher.desktop', 'org.gnome.Dictionary.desktop', 'org.gnome.Polari.desktop', 'app.drey.Warp.desktop', 'com.github.qarmin.czkawka.desktop', 'com.neatdecisions.Detwinner.desktop', 'io.github.vikdevelop.SaveDesktop.desktop', 'org.chromium.Chromium.desktop', 'org.flameshot.Flameshot.desktop', 'com.uploadedlobster.peek.desktop', 'org.keepassxc.KeePassXC.desktop', 'opensnitch_ui.desktop', 'keepassxc_keepassxc.desktop', 'app.zen_browser.zen.desktop', 'ulauncher.desktop', 'virtualbox.desktop', 'org.gnome.Software.desktop', 'org.gnome.Evolution.desktop', 'mullvad-vpn.desktop', 'org.gnome.Cheese.desktop', 'guvcview.desktop', 'debian-xterm.desktop', 'debian-uxterm.desktop', 'cutecom.desktop', 'chirp.desktop', 'gnuradio-grc.desktop', 'dk.gqrx.gqrx.desktop', 're.rizin.cutter.desktop', 'rfdump.desktop', 'kali-fang.desktop', 'kali-mifare-classic-format.desktop', 'kali-sctpscan.desktop', 'kali-siparmyknife.desktop', 'kali-sfuzz.desktop', 'kali-truecrack.desktop', 'kali-mfcuk.desktop', 'kali-sipcrack.desktop', 'kali-hackrf_info.desktop', 'kali-ubertooth-util.desktop', 'kali-bettercap.desktop', 'kali-ohrwurm.desktop', 'kali-rtpinsertsound.desktop', 'kali-wifi-honey.desktop', 'kali-btscanner.desktop', 'kali-nfc-mfclassic.desktop', 'kali-blueranger.desktop', 'kali-cowpatty.desktop', 'kali-nfc-list.desktop', 'kali-crackle.desktop', 'kali-iaxflood.desktop', 'kali-airgeddon.desktop', 'kali-svreport.desktop', 'kali-beef-xss-stop.desktop', 'kali-enumiax.desktop', 'kali-protos-sip.desktop', 'kali-sipp.desktop', 'kali-rtpbreak.desktop', 'kali-asleap.desktop', 'kali-mfterm.desktop', 'kali-ettercap.desktop', 'kali-bluelog.desktop', 'kali-svmap.desktop', 'kali-beef-xss.desktop', 'kali-svcrack.desktop', 'kali-rtpflood.desktop', 'kali-mfoc.desktop', 'kali-inviteflood.desktop', 'kali-afl-fuzz.desktop', 'kali-mdk3.desktop', 'kali-eapmd5pass.desktop', 'kali-svcrash.desktop', 'kali-bluesnarfer.desktop', 'kali-rtpmixsound.desktop', 'kali-svwar.desktop', 'kali-heartleech.desktop', 'kali-regripper.desktop', 'kali-ollydbg.desktop', 'kali-shellter.desktop', 'thunar.desktop', 'org.xfce.mousepad.desktop', 'thunar-bulk-rename.desktop', 'org.pulseaudio.pavucontrol.desktop', 'ca.desrt.dconf-editor.desktop', 'sosumi_sosumi.desktop', 'csbooks_csbooks.desktop', 'start-tor-browser.desktop']
+recently-installed-apps=['de.haeckerfelix.Shortwave.desktop', 'balena-etcher.desktop', 'org.gnome.Dictionary.desktop', 'org.gnome.Polari.desktop', 'app.drey.Warp.desktop', 'com.github.qarmin.czkawka.desktop', 'com.neatdecisions.Detwinner.desktop', 'io.github.vikdevelop.SaveDesktop.desktop', 'org.chromium.Chromium.desktop', 'org.flameshot.Flameshot.desktop', 'com.uploadedlobster.peek.desktop', 'org.keepassxc.KeePassXC.desktop', 'opensnitch_ui.desktop', 'keepassxc_keepassxc.desktop', 'app.zen_browser.zen.desktop', 'ulauncher.desktop', 'virtualbox.desktop', 'org.gnome.Software.desktop', 'org.gnome.Evolution.desktop', 'mullvad-vpn.desktop', 'org.gnome.Cheese.desktop', 'guvcview.desktop', 'debian-xterm.desktop', 'debian-uxterm.desktop', 'cutecom.desktop', 'chirp.desktop', 'gnuradio-grc.desktop', 'dk.gqrx.gqrx.desktop', 're.rizin.cutter.desktop', 'rfdump.desktop', 'kali-fang.desktop', 'kali-mifare-classic-format.desktop', 'kali-sctpscan.desktop', 'kali-siparmyknife.desktop', 'kali-sfuzz.desktop', 'kali-truecrack.desktop', 'kali-mfcuk.desktop', 'kali-sipcrack.desktop', 'kali-hackrf_info.desktop', 'kali-ubertooth-util.desktop', 'kali-bettercap.desktop', 'kali-ohrwurm.desktop', 'kali-rtpinsertsound.desktop', 'kali-wifi-honey.desktop', 'kali-btscanner.desktop', 'kali-nfc-mfclassic.desktop', 'kali-blueranger.desktop', 'kali-cowpatty.desktop', 'kali-nfc-list.desktop', 'kali-crackle.desktop', 'kali-iaxflood.desktop', 'kali-airgeddon.desktop', 'kali-svreport.desktop', 'kali-beef-xss-stop.desktop', 'kali-enumiax.desktop', 'kali-protos-sip.desktop', 'kali-sipp.desktop', 'kali-rtpbreak.desktop', 'kali-asleap.desktop', 'kali-mfterm.desktop', 'kali-ettercap.desktop', 'kali-bluelog.desktop', 'kali-svmap.desktop', 'kali-beef-xss.desktop', 'kali-svcrack.desktop', 'kali-rtpflood.desktop', 'kali-mfoc.desktop', 'kali-inviteflood.desktop', 'kali-afl-fuzz.desktop', 'kali-mdk3.desktop', 'kali-eapmd5pass.desktop', 'kali-svcrash.desktop', 'kali-bluesnarfer.desktop', 'kali-rtpmixsound.desktop', 'kali-svwar.desktop', 'kali-heartleech.desktop', 'kali-regripper.desktop', 'kali-ollydbg.desktop', 'kali-shellter.desktop', 'thunar.desktop', 'org.xfce.mousepad.desktop', 'thunar-bulk-rename.desktop', 'org.pulseaudio.pavucontrol.desktop', 'ca.desrt.dconf-editor.desktop', 'sosumi_sosumi.desktop', 'csbooks_csbooks.desktop', 'start-tor-browser.desktop', 'org.gnome.World.Iotas.desktop']
 search-entry-border-radius=(true, 25)
 search-provider-open-windows=true
 search-provider-recent-files=true
@@ -450,11 +467,11 @@ locations=[<(uint32 2, <('Port-of-Spain', 'TTPP', true, [(0.18529579473782881, -
 locations=[<(uint32 2, <('Los Angeles', 'KCQT', true, [(0.59370283970450188, -2.0644336110828618)], [(0.59432360095955872, -2.063741622941031)])>)>, <(uint32 2, <('Mexico City', 'MMMX', true, [(0.33917564548646723, -1.7296212887263802)], [(0.33919020153242879, -1.7302951778038682)])>)>, <(uint32 2, <('New York', 'KNYC', true, [(0.71180344078725644, -1.2909618758762367)], [(0.71059804659265924, -1.2916478949920254)])>)>, <(uint32 2, <('Miami', 'KMIA', true, [(0.45013011811997866, -1.401785431362556)], [(0.44984580398482882, -1.3996433887715831)])>)>, <(uint32 2, <('Toronto', 'CYTZ', true, [(0.76154532446909495, -1.3857914260834978)], [(0.76212711252195475, -1.3860823201099277)])>)>, <(uint32 2, <('Panamá', 'MPHO', true, [(0.15562519745392522, -1.3892820845874863)], [(0.15649786207992239, -1.3881185259350592)])>)>, <(uint32 2, <('Rio de Janeiro', 'SBRJ', true, [(-0.39968039870670141, -0.75340046626198298)], [(-0.39968039870670141, -0.75456400746111763)])>)>, <(uint32 2, <('London', 'EGWU', true, [(0.89971722940307675, -0.007272211034407213)], [(0.89884456477707964, -0.0020362232784242244)])>)>, <(uint32 2, <('Paris', 'LFPB', true, [(0.85462956287765413, 0.042760566673861078)], [(0.8528842336256599, 0.040724343395436846)])>)>, <(uint32 2, <('Moscow', 'UUWW', true, [(0.97127572873484425, 0.65042604039431762)], [(0.97305983920281813, 0.65651530216830811)])>)>, <(uint32 2, <('New Delhi', 'VIDP', true, [(0.49858239547081096, 1.345939747314058)], [(0.49916416607037828, 1.3473941825396225)])>)>, <(uint32 2, <('Singapore', 'WSAP', true, [(0.023852838928353343, 1.8136879868485383)], [(0.022568084612667797, 1.8126262332513803)])>)>, <(uint32 2, <('Beijing', 'ZBAA', true, [(0.69696814214530467, 2.0295270260429752)], [(0.69689057971334611, 2.0313596217575696)])>)>, <(uint32 2, <('Tokyo', 'RJTI', true, [(0.62191898430954862, 2.4408429589140699)], [(0.62282074357417661, 2.4391218722853854)])>)>, <(uint32 2, <('Sydney', 'YSSY', true, [(-0.59253928105207498, 2.6386469349889961)], [(-0.59137572239964786, 2.6392287230418559)])>)>]
 
 [org/gnome/software]
-check-timestamp=int64 1740409116
+check-timestamp=int64 1740497856
 first-run=false
 flatpak-purge-timestamp=int64 1739843920
 install-timestamp=int64 1739273201
-online-updates-timestamp=int64 1740056500
+online-updates-timestamp=int64 1740497871
 update-notification-timestamp=int64 1739273572
 
 [org/gnome/system/location]
@@ -492,11 +509,12 @@ sort-column='name'
 sort-directories-first=false
 sort-order='ascending'
 type-format='category'
-window-position=(26, 23)
+window-position=(0, 7)
 window-size=(1231, 902)
 
 [org/yorba/shotwell/preferences/ui]
 display-basic-properties=true
+display-event-comments=false
 display-extended-properties=false
 display-photo-comments=false
 display-photo-ratings=true
@@ -504,6 +522,8 @@ display-photo-tags=true
 display-photo-titles=false
 display-search-bar=false
 display-sidebar=true
+event-photos-sort-ascending=true
+event-photos-sort-by=2
 events-sort-ascending=false
 library-photos-sort-ascending=false
 library-photos-sort-by=2
@@ -511,6 +531,6 @@ show-welcome-dialog=false
 sidebar-position=180
 
 [org/yorba/shotwell/preferences/window]
-library-height=768
+library-height=1007
 library-maximize=false
-library-width=1024
+library-width=1920
