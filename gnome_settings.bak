@@ -332,7 +332,7 @@ power-button-action='interactive'
 [org/gnome/shell]
 app-picker-layout=[{'snap-store_snap-store.desktop': <{'position': <0>}>, 'btop.desktop': <{'position': <1>}>, 'org.gnome.Calculator.desktop': <{'position': <2>}>, 'org.gnome.Calendar.desktop': <{'position': <3>}>, 'org.gnome.Cheese.desktop': <{'position': <4>}>, 'org.chromium.Chromium.desktop': <{'position': <5>}>, 'org.gnome.clocks.desktop': <{'position': <6>}>, 'org.gnome.Contacts.desktop': <{'position': <7>}>, 'csbooks_csbooks.desktop': <{'position': <8>}>, 'com.github.qarmin.czkawka.desktop': <{'position': <9>}>, 'com.neatdecisions.Detwinner.desktop': <{'position': <10>}>, 'simple-scan.desktop': <{'position': <11>}>, 'org.gnome.Evolution.desktop': <{'position': <12>}>, 'com.mattjakeman.ExtensionManager.desktop': <{'position': <13>}>, 'org.gnome.Extensions.desktop': <{'position': <14>}>, 'org.flameshot.Flameshot.desktop': <{'position': <15>}>, 'org.gnome.FontManager.desktop': <{'position': <16>}>, 'org.gnome.FontViewer.desktop': <{'position': <17>}>, 'gdebi.desktop': <{'position': <18>}>, 'io.github.realmazharhussain.GdmSettings.desktop': <{'position': <19>}>, 'org.gnome.GPaste.Ui.desktop': <{'position': <20>}>, 'org.gnome.GPaste.Preferences.desktop': <{'position': <21>}>, 'lstopo.desktop': <{'position': <22>}>, 'yelp.desktop': <{'position': <23>}>}, {'im-config.desktop': <{'position': <0>}>, 'lynis.desktop': <{'position': <1>}>, 'org.gnome.Maps.desktop': <{'position': <2>}>, 'org.gnome.Music.desktop': <{'position': <3>}>, 'com.github.jeromerobert.pdfarranger.desktop': <{'position': <4>}>, 'net.sourceforge.Pdfedit.desktop': <{'position': <5>}>, 'com.uploadedlobster.peek.desktop': <{'position': <6>}>, 'org.qbittorrent.qBittorrent.desktop': <{'position': <7>}>, 'org.gnome.Rhythmbox3.desktop': <{'position': <8>}>, 'org.gnome.Settings.desktop': <{'position': <9>}>, 'de.haeckerfelix.Shortwave.desktop': <{'position': <10>}>, 'software-properties-gtk.desktop': <{'position': <11>}>, 'sosumi_sosumi.desktop': <{'position': <12>}>, 'org.gnome.SoundRecorder.desktop': <{'position': <13>}>, 'synaptic.desktop': <{'position': <14>}>, 'gnome-system-monitor.desktop': <{'position': <15>}>, 'org.gnome.Terminal.desktop': <{'position': <16>}>, 'info.desktop': <{'position': <17>}>, 'org.gnome.TextEditor.desktop': <{'position': <18>}>, 'transmission-gtk.desktop': <{'position': <19>}>, 'ulauncher.desktop': <{'position': <20>}>, 'Utilities': <{'position': <21>}>, 'org.gnome.Totem.desktop': <{'position': <22>}>, 'vlc.desktop': <{'position': <23>}>}, {'app.drey.Warp.desktop': <{'position': <0>}>, 'org.gnome.Weather.desktop': <{'position': <1>}>, 'org.pwmt.zathura.desktop': <{'position': <2>}>, 'app.zen_browser.zen.desktop': <{'position': <3>}>}]
 disabled-extensions=['system-monitor@gnome-shell-extensions.gcampax.github.com', 'apps-menu@gnome-shell-extensions.gcampax.github.com']
-enabled-extensions=['user-theme@gnome-shell-extensions.gcampax.github.com', 'blur-my-shell@aunetx', 'clipboard-indicator@tudmotu.com', 'mediacontrols@cliffniff.github.com', 'dash-to-panel@jderose9.github.com', 'quake-mode@repsac-by.github.com', 'GPaste@gnome-shell-extensions.gnome.org', 'AlphabeticalAppGrid@stuarthayhurst', 'arcmenu@arcmenu.com', 'quake-terminal@diegodario88.github.io', 'Vitals@CoreCoding.com', 'ubuntu-appindicators@ubuntu.com', 'tiling-assistant@leleat-on-github', 'appindicatorsupport@rgcjonas.gmail.com']
+enabled-extensions=['user-theme@gnome-shell-extensions.gcampax.github.com', 'blur-my-shell@aunetx', 'clipboard-indicator@tudmotu.com', 'mediacontrols@cliffniff.github.com', 'dash-to-panel@jderose9.github.com', 'quake-mode@repsac-by.github.com', 'GPaste@gnome-shell-extensions.gnome.org', 'AlphabeticalAppGrid@stuarthayhurst', 'arcmenu@arcmenu.com', 'quake-terminal@diegodario88.github.io', 'Vitals@CoreCoding.com', 'ubuntu-appindicators@ubuntu.com', 'tiling-assistant@leleat-on-github', 'appindicatorsupport@rgcjonas.gmail.com', 'readingstrip@lupantano.gihthub']
 favorite-apps=['mullvad-vpn.desktop', 'terminator.desktop', 'virtualbox.desktop', 'org.gnome.Nautilus.desktop', 'net.cozic.joplin_desktop.desktop', 'firefox-esr.desktop', 'org.onlyoffice.desktopeditors.desktop', 'com.discordapp.Discord.desktop', 'com.ktechpit.whatsie.desktop', 'shotwell.desktop', 'org.gnome.Software.desktop', 'org.gnome.World.PikaBackup.desktop']
 last-selected-power-profile='power-saver'
 remember-mount-password=true
@@ -447,6 +447,16 @@ terminal-id='terminator.desktop'
 terminal-shortcut=['<Alt><Super>q']
 vertical-size=95
 
+[org/gnome/shell/extensions/readingstrip]
+color-focus='rgb(36,31,49)'
+color-strip='rgb(249,240,107)'
+enabled=false
+focusmode=true
+height=15.5
+opacity=5.0
+refresh=1
+vertical=false
+
 [org/gnome/shell/extensions/tiling-assistant]
 active-window-hint-color='rgb(53,132,228)'
 last-version-installed=48
@@ -482,8 +492,8 @@ font='Hack Nerd Font 12'
 use-system-font=false
 
 [org/gtk/gtk4/settings/color-chooser]
-custom-colors=[(0.098039217293262482, 0.098039217293262482, 0.098039217293262482, 1.0), (0.20784313976764679, 0.51764696836471558, 0.89411765336990356, 1.0), (0.94901961088180542, 0.94901961088180542, 0.94901961088180542, 1.0)]
-selected-color=(true, 0.098039217293262482, 0.098039217293262482, 0.098039217293262482, 1.0)
+custom-colors=[(0.28627452254295349, 0.32549020648002625, 0.37254902720451355, 1.0), (0.098039217293262482, 0.098039217293262482, 0.098039217293262482, 1.0), (0.20784313976764679, 0.51764696836471558, 0.89411765336990356, 1.0), (0.94901961088180542, 0.94901961088180542, 0.94901961088180542, 1.0)]
+selected-color=(true, 0.97647058963775635, 0.94117647409439087, 0.41960784792900085, 1.0)
 
 [org/gtk/gtk4/settings/file-chooser]
 date-format='regular'
