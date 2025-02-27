@@ -21,7 +21,7 @@ sudo apt autoremove -y && sudo apt autoclean -y
 # Section: Install APT Packages
 log "Installing APT packages..."
 APT_PACKAGES=(
-  apparmor-profiles apparmor-utils asciiart autoconf bat bison btop build-essential cmake cpufetch curl dconf-cli debian-goodies dict clamav
+  arping netdiscover apparmor-profiles apparmor-utils asciiart autoconf bat bison btop build-essential cmake cpufetch curl dconf-cli debian-goodies dict clamav
   dkms fail2ban fd-find figlet file flatpak firejail font-manager forensics-all fzf gawk gdebi gh git gir1.2-gtop-2.0 gnome-software-plugin-flatpak
   sd rsync gnome-shell-extension-manager gpaste-2 gpg gpgv2 gtk2-engines-murrine httpie imagemagick info linux-headers-$(uname -r) lm-sensors
   lolcat lynis mitmproxy most nala ncal net-tools npm openssl pass patchelf pipx plocate postgresql gir1.2-gtop-2.0 lm-sensors
