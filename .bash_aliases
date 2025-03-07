@@ -19,6 +19,7 @@ alias c='clear'
 
 alias cp='cp -vi'
 alias mv='mv -vi'
+alias rm='rm -rv'
 
 # Better copying
 alias cpv='rsync -avh --info=progress2'
