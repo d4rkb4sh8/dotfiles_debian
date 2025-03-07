@@ -1,4 +1,4 @@
-Your `bootstrap.sh` script is a comprehensive and automated setup script for configuring a Debian-based system. Below is a detailed explanation of each section of the script, formatted in Markdown:
+My `bootstrap.sh` script is a comprehensive and automated setup script for configuring a Debian-based system. Below is a detailed explanation of each section of the script, formatted in Markdown:
 
 # Debian Bootstrap Script Explanation
 
