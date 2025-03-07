@@ -32,7 +32,6 @@ sudo apt update -y && sudo apt full-upgrade -y && sudo apt install -y "${APT_PAC
 # Section: Git Projects and Dotfiles Setup
 log "Setting up gitprojects and dotfiles..."
 mkdir -p $HOME/gitprojects
-git clone https://github.com/d4rkb4sh8/main.git $HOME/gitprojects/main
 git clone https://github.com/d4rkb4sh8/notes.git $HOME/gitprojects/notes
 git clone https://github.com/d4rkb4sh8/dotfiles.git $HOME/dotfiles
 cd $HOME/dotfiles && stow --adopt . && git restore .

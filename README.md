@@ -28,7 +28,7 @@ This script automates the setup and configuration of a Debian-based system, inst
 - **Purpose**: Clone Git repositories and set up dotfiles.
 - **Commands**:
   - Create a `gitprojects` directory.
-  - Clone repositories for `main`, `notes`, and `dotfiles`.
+  - Clone repositories for `notes`, and `dotfiles`.
   - Use `stow` to manage dotfiles and copy wallpapers.
 
 ### 5. **Flatpak and Snap Setup**
