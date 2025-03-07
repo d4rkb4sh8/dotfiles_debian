@@ -1,7 +1,0 @@
-- hosts: "*"
-  become: yes
-  tasks:
-    - name: brew
-      brew:
-        update: yes
-        upgrade: "yes"
