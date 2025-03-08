@@ -27,7 +27,6 @@ game-music-emu
 gcc
 gettext
 giflib
-gitleaks
 glib
 gmp
 gnutls
