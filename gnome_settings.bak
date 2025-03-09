@@ -84,7 +84,7 @@ panel-id='world'
 size=(870, 690)
 
 [org/gnome/control-center]
-last-panel='wifi'
+last-panel='datetime'
 window-state=(980, 640, false)
 
 [org/gnome/desktop/app-folders]
@@ -109,8 +109,8 @@ translate=true
 [org/gnome/desktop/background]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/h4ck3r/.local/share/backgrounds/2025-02-19-08-53-36-wallpaper_002.jpg'
-picture-uri-dark='file:///home/h4ck3r/.local/share/backgrounds/2025-02-19-08-53-36-wallpaper_002.jpg'
+picture-uri='file:///home/h4ck3r/.local/share/backgrounds/2025-03-09-00-46-37-wallpaper_002.jpg'
+picture-uri-dark='file:///home/h4ck3r/.local/share/backgrounds/2025-03-09-00-46-37-wallpaper_002.jpg'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -195,7 +195,7 @@ report-technical-problems=true
 [org/gnome/desktop/screensaver]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/h4ck3r/.local/share/backgrounds/2025-02-19-08-53-36-wallpaper_002.jpg'
+picture-uri='file:///home/h4ck3r/.local/share/backgrounds/2025-03-09-00-46-37-wallpaper_002.jpg'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -331,7 +331,7 @@ name='ulauncher-toggle'
 power-button-action='interactive'
 
 [org/gnome/shell]
-app-picker-layout=[{'snap-store_snap-store.desktop': <{'position': <0>}>, 'btop.desktop': <{'position': <1>}>, 'org.gnome.Calculator.desktop': <{'position': <2>}>, 'org.gnome.Calendar.desktop': <{'position': <3>}>, 'org.gnome.Cheese.desktop': <{'position': <4>}>, 'org.chromium.Chromium.desktop': <{'position': <5>}>, 'org.gnome.clocks.desktop': <{'position': <6>}>, 'org.gnome.Contacts.desktop': <{'position': <7>}>, 'csbooks_csbooks.desktop': <{'position': <8>}>, 'com.github.qarmin.czkawka.desktop': <{'position': <9>}>, 'com.neatdecisions.Detwinner.desktop': <{'position': <10>}>, 'simple-scan.desktop': <{'position': <11>}>, 'org.gnome.Evolution.desktop': <{'position': <12>}>, 'com.mattjakeman.ExtensionManager.desktop': <{'position': <13>}>, 'org.gnome.Extensions.desktop': <{'position': <14>}>, 'org.flameshot.Flameshot.desktop': <{'position': <15>}>, 'org.gnome.FontManager.desktop': <{'position': <16>}>, 'org.gnome.FontViewer.desktop': <{'position': <17>}>, 'gdebi.desktop': <{'position': <18>}>, 'io.github.realmazharhussain.GdmSettings.desktop': <{'position': <19>}>, 'org.gnome.GPaste.Ui.desktop': <{'position': <20>}>, 'org.gnome.GPaste.Preferences.desktop': <{'position': <21>}>, 'lstopo.desktop': <{'position': <22>}>, 'yelp.desktop': <{'position': <23>}>}, {'im-config.desktop': <{'position': <0>}>, 'lynis.desktop': <{'position': <1>}>, 'org.gnome.Maps.desktop': <{'position': <2>}>, 'org.gnome.Music.desktop': <{'position': <3>}>, 'com.github.jeromerobert.pdfarranger.desktop': <{'position': <4>}>, 'net.sourceforge.Pdfedit.desktop': <{'position': <5>}>, 'com.uploadedlobster.peek.desktop': <{'position': <6>}>, 'org.qbittorrent.qBittorrent.desktop': <{'position': <7>}>, 'org.gnome.Rhythmbox3.desktop': <{'position': <8>}>, 'org.gnome.Settings.desktop': <{'position': <9>}>, 'de.haeckerfelix.Shortwave.desktop': <{'position': <10>}>, 'software-properties-gtk.desktop': <{'position': <11>}>, 'sosumi_sosumi.desktop': <{'position': <12>}>, 'org.gnome.SoundRecorder.desktop': <{'position': <13>}>, 'synaptic.desktop': <{'position': <14>}>, 'gnome-system-monitor.desktop': <{'position': <15>}>, 'org.gnome.Terminal.desktop': <{'position': <16>}>, 'info.desktop': <{'position': <17>}>, 'org.gnome.TextEditor.desktop': <{'position': <18>}>, 'transmission-gtk.desktop': <{'position': <19>}>, 'ulauncher.desktop': <{'position': <20>}>, 'Utilities': <{'position': <21>}>, 'org.gnome.Totem.desktop': <{'position': <22>}>, 'vlc.desktop': <{'position': <23>}>}, {'app.drey.Warp.desktop': <{'position': <0>}>, 'org.gnome.Weather.desktop': <{'position': <1>}>, 'org.pwmt.zathura.desktop': <{'position': <2>}>, 'app.zen_browser.zen.desktop': <{'position': <3>}>}]
+app-picker-layout=[{'btop.desktop': <{'position': <0>}>, 'org.gnome.Calculator.desktop': <{'position': <1>}>, 'org.gnome.Calendar.desktop': <{'position': <2>}>, 'org.gnome.Cheese.desktop': <{'position': <3>}>, 'org.gnome.clocks.desktop': <{'position': <4>}>, 'org.gnome.Contacts.desktop': <{'position': <5>}>, 'simple-scan.desktop': <{'position': <6>}>, 'org.gnome.Evolution.desktop': <{'position': <7>}>, 'com.mattjakeman.ExtensionManager.desktop': <{'position': <8>}>, 'org.gnome.Extensions.desktop': <{'position': <9>}>, 'org.gnome.FontManager.desktop': <{'position': <10>}>, 'org.gnome.FontViewer.desktop': <{'position': <11>}>, 'gdebi.desktop': <{'position': <12>}>, 'org.gnome.GPaste.Ui.desktop': <{'position': <13>}>, 'org.gnome.GPaste.Preferences.desktop': <{'position': <14>}>, 'lstopo.desktop': <{'position': <15>}>, 'yelp.desktop': <{'position': <16>}>}, {'im-config.desktop': <{'position': <0>}>, 'lynis.desktop': <{'position': <1>}>, 'org.gnome.Maps.desktop': <{'position': <2>}>, 'org.gnome.Music.desktop': <{'position': <3>}>, 'balena-etcher.desktop': <{'position': <4>}>, 'org.gnome.Rhythmbox3.desktop': <{'position': <5>}>, 'org.gnome.Settings.desktop': <{'position': <6>}>, 'software-properties-gtk.desktop': <{'position': <7>}>, 'org.gnome.SoundRecorder.desktop': <{'position': <8>}>, 'synaptic.desktop': <{'position': <9>}>, 'gnome-system-monitor.desktop': <{'position': <10>}>, 'org.gnome.Terminal.desktop': <{'position': <11>}>, 'info.desktop': <{'position': <12>}>, 'org.gnome.TextEditor.desktop': <{'position': <13>}>, 'transmission-gtk.desktop': <{'position': <14>}>, 'ulauncher.desktop': <{'position': <15>}>, 'Utilities': <{'position': <16>}>, 'org.gnome.Totem.desktop': <{'position': <17>}>, 'vlc.desktop': <{'position': <18>}>}, {'org.gnome.Weather.desktop': <{'position': <0>}>, 'org.pwmt.zathura.desktop': <{'position': <1>}>}]
 disabled-extensions=['system-monitor@gnome-shell-extensions.gcampax.github.com', 'apps-menu@gnome-shell-extensions.gcampax.github.com']
 enabled-extensions=['user-theme@gnome-shell-extensions.gcampax.github.com', 'blur-my-shell@aunetx', 'clipboard-indicator@tudmotu.com', 'mediacontrols@cliffniff.github.com', 'dash-to-panel@jderose9.github.com', 'quake-mode@repsac-by.github.com', 'GPaste@gnome-shell-extensions.gnome.org', 'AlphabeticalAppGrid@stuarthayhurst', 'arcmenu@arcmenu.com', 'quake-terminal@diegodario88.github.io', 'Vitals@CoreCoding.com', 'ubuntu-appindicators@ubuntu.com', 'tiling-assistant@leleat-on-github', 'appindicatorsupport@rgcjonas.gmail.com', 'readingstrip@lupantano.gihthub']
 favorite-apps=['mullvad-vpn.desktop', 'terminator.desktop', 'virtualbox.desktop', 'org.gnome.Nautilus.desktop', 'net.cozic.joplin_desktop.desktop', 'firefox-esr.desktop', 'org.onlyoffice.desktopeditors.desktop', 'com.discordapp.Discord.desktop', 'com.ktechpit.whatsie.desktop', 'shotwell.desktop', 'org.gnome.Software.desktop', 'org.gnome.World.PikaBackup.desktop']
@@ -478,7 +478,7 @@ locations=[<(uint32 2, <('Port-of-Spain', 'TTPP', true, [(0.18529579473782881, -
 locations=[<(uint32 2, <('Los Angeles', 'KCQT', true, [(0.59370283970450188, -2.0644336110828618)], [(0.59432360095955872, -2.063741622941031)])>)>, <(uint32 2, <('Mexico City', 'MMMX', true, [(0.33917564548646723, -1.7296212887263802)], [(0.33919020153242879, -1.7302951778038682)])>)>, <(uint32 2, <('New York', 'KNYC', true, [(0.71180344078725644, -1.2909618758762367)], [(0.71059804659265924, -1.2916478949920254)])>)>, <(uint32 2, <('Miami', 'KMIA', true, [(0.45013011811997866, -1.401785431362556)], [(0.44984580398482882, -1.3996433887715831)])>)>, <(uint32 2, <('Toronto', 'CYTZ', true, [(0.76154532446909495, -1.3857914260834978)], [(0.76212711252195475, -1.3860823201099277)])>)>, <(uint32 2, <('Panamá', 'MPHO', true, [(0.15562519745392522, -1.3892820845874863)], [(0.15649786207992239, -1.3881185259350592)])>)>, <(uint32 2, <('Rio de Janeiro', 'SBRJ', true, [(-0.39968039870670141, -0.75340046626198298)], [(-0.39968039870670141, -0.75456400746111763)])>)>, <(uint32 2, <('London', 'EGWU', true, [(0.89971722940307675, -0.007272211034407213)], [(0.89884456477707964, -0.0020362232784242244)])>)>, <(uint32 2, <('Paris', 'LFPB', true, [(0.85462956287765413, 0.042760566673861078)], [(0.8528842336256599, 0.040724343395436846)])>)>, <(uint32 2, <('Moscow', 'UUWW', true, [(0.97127572873484425, 0.65042604039431762)], [(0.97305983920281813, 0.65651530216830811)])>)>, <(uint32 2, <('New Delhi', 'VIDP', true, [(0.49858239547081096, 1.345939747314058)], [(0.49916416607037828, 1.3473941825396225)])>)>, <(uint32 2, <('Singapore', 'WSAP', true, [(0.023852838928353343, 1.8136879868485383)], [(0.022568084612667797, 1.8126262332513803)])>)>, <(uint32 2, <('Beijing', 'ZBAA', true, [(0.69696814214530467, 2.0295270260429752)], [(0.69689057971334611, 2.0313596217575696)])>)>, <(uint32 2, <('Tokyo', 'RJTI', true, [(0.62191898430954862, 2.4408429589140699)], [(0.62282074357417661, 2.4391218722853854)])>)>, <(uint32 2, <('Sydney', 'YSSY', true, [(-0.59253928105207498, 2.6386469349889961)], [(-0.59137572239964786, 2.6392287230418559)])>)>]
 
 [org/gnome/software]
-check-timestamp=int64 1741309437
+check-timestamp=int64 1741541564
 first-run=false
 flatpak-purge-timestamp=int64 1739843920
 install-timestamp=int64 1739273201
