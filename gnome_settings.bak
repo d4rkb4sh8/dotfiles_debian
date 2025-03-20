@@ -84,7 +84,7 @@ panel-id='world'
 size=(870, 690)
 
 [org/gnome/control-center]
-last-panel='mouse'
+last-panel='user-accounts'
 window-state=(960, 640, false)
 
 [org/gnome/desktop/app-folders]
