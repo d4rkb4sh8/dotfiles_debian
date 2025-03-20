@@ -16,19 +16,7 @@ sudo sed -i '/^deb / s/$/ contrib non-free/' /etc/apt/sources.list
 # Section: Remove Bloatware
 log "Removing bloatware..."
 sudo apt purge -y audacity gimp gnome-games libreoffice*
-sudo apt autoremove -y && sudo apt autoclean -y
-
-# Section: Install APT Packages
-log "Installing APT packages..."
-APT_PACKAGES=(
-  arping netdiscover apparmor-profiles apparmor-utils asciiart autoconf bat bison btop build-essential cmake cpufetch curl dconf-cli debian-goodies dict clamav
-  cryptsetup-nuke-password dkms fail2ban fd-find figlet file flatpak firejail font-manager forensics-all fzf gawk gdebi gh git gir1.2-gtop-2.0 gnome-software-plugin-flatpak
-  sd rsync gnome-shell-extension-manager gpaste-2 gpg gpgv2 gtk2-engines-murrine httpie imagemagick info linux-headers-$(uname -r) lm-sensors
-  lolcat lynis mitmproxy most nala ncal net-tools npm openssl pass patchelf pipx plocate postgresql gir1.2-gtop-2.0 lm-sensors
-  hw-probe pandoc pkg-config speedtest-cli postgresql-contrib procps python-is-python3 rc rkhunter snapd stow tldr terminator tmux ufw uptimed thefuck vlc whois w3m wget wikipedia2text zathura
-)
-sudo apt update -y && sudo apt full-upgrade -y && sudo apt install -y "${APT_PACKAGES[@]}" && sudo apt autoremove -y && sudo apt autoclean -y
-
+#
 # Section: Git Projects and Dotfiles Setup
 log "Setting up gitprojects and dotfiles..."
 mkdir -p $HOME/gitprojects
@@ -36,6 +24,11 @@ git clone https://github.com/d4rkb4sh8/notes.git $HOME/gitprojects/notes
 git clone https://github.com/d4rkb4sh8/dotfiles.git $HOME/dotfiles
 cd $HOME/dotfiles && stow --adopt . && git restore .
 cp -r $HOME/dotfiles/wallpapers $HOME/Pictures
+
+# Section: Install APT Packages
+log "Installing APT packages..."
+sudo apt update -y && sudo apt full-upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y
+sudo apt install $(cat $HOME/dotfiles/apt_list.bak)
 
 # Section: Flatpak and Snap Setup
 log "Setting up Flatpak and Snap..."
