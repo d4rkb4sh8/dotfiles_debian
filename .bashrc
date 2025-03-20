@@ -108,4 +108,5 @@ eval "$(atuin init bash)"
 #starship prompt - shell prompt
 eval "$(starship init bash)"
 
+# Rust
 . "$HOME/.cargo/env"

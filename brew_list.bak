@@ -37,6 +37,7 @@ harfbuzz
 highway
 hwloc
 icu4c@76
+icu4c@77
 imath
 isl
 jack
@@ -152,6 +153,7 @@ tree-sitter
 unbound
 unibilium
 unzip
+utf8cpp
 util-linux
 vamp-plugin-sdk
 webp
