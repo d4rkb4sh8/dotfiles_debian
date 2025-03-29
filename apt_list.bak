@@ -34,6 +34,7 @@ autopoint
 autotools-dev
 avahi-autoipd
 avahi-daemon
+balena-etcher
 baobab
 base-files
 base-passwd
@@ -182,6 +183,7 @@ dwz
 e2fsprogs
 ed2k-hash
 edid-decode
+efibootmgr
 eject
 elfutils
 emacsen-common
@@ -225,7 +227,10 @@ firebird3.0-common
 firefox-esr
 firejail-profiles
 firejail
+firmware-iwlwifi
 firmware-linux-free
+firmware-misc-nonfree
+firmware-sof-signed
 flac
 flatpak
 folks-common
@@ -418,6 +423,8 @@ grilo-plugins-0.3
 groff-base
 grokevt
 grub-common
+grub-efi-amd64-bin
+grub-efi-amd64-signed
 grub-pc-bin
 grub-pc
 grub2-common
@@ -856,6 +863,8 @@ libgdbm-compat4
 libgdbm6
 libgdiplus
 libgdk-pixbuf-2.0-0
+libgdk-pixbuf-xlib-2.0-0
+libgdk-pixbuf2.0-0
 libgdk-pixbuf2.0-bin
 libgdk-pixbuf2.0-common
 libgdm1
@@ -1772,7 +1781,6 @@ linux-compiler-gcc-12-x86
 linux-headers-6.1.0-32-amd64
 linux-headers-6.1.0-32-common
 linux-headers-amd64
-linux-image-6.1.0-25-amd64
 linux-image-6.1.0-32-amd64
 linux-image-amd64
 linux-kbuild-6.1
@@ -1833,6 +1841,7 @@ mitmproxy
 mkdocs
 mobile-broadband-provider-info
 modemmanager
+mokutil
 mono-4.0-gac
 mono-gac
 mono-runtime-common
@@ -1841,6 +1850,7 @@ mono-runtime
 most
 mount
 mpg123
+mullvad-vpn
 mutter-common
 myrescue
 mysql-common
@@ -2568,6 +2578,10 @@ sgml-base
 sgml-data
 shared-mime-info
 shed
+shim-helpers-amd64-signed
+shim-signed-common
+shim-signed
+shim-unsigned
 shotwell-common
 shotwell
 simple-scan
@@ -2765,4 +2779,5 @@ zenity
 zip
 zlib1g-dev
 zlib1g
+zoxide
 zstd

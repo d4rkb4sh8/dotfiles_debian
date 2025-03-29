@@ -110,3 +110,6 @@ eval "$(starship init bash)"
 
 # Rust
 . "$HOME/.cargo/env"
+
+# zoxide
+eval "$(zoxide init bash)"

@@ -54,7 +54,7 @@
   l2 (tap-hold $tap-time $hold-time lmet (layer-toggle two))   
   l3 (tap-hold $tap-time $hold-time rmet (layer-toggle three)) 
   l4 (tap-hold $tap-time $hold-time rctl (layer-toggle four))
-  qtd (tap-hold $tap-time $hold-time A-f1 A-f1)
+  qtd (tap-hold $tap-time $hold-time C-A-q C-A-q)
   pum (tap-hold $tap-time $hold-time A-f2 A-f2)
   dsb (tap-hold $tap-time $hold-time C-M-down C-M-down) 
   isb (tap-hold $tap-time $hold-time C-M-up C-M-up)
