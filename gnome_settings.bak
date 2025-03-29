@@ -89,7 +89,7 @@ panel-id='world'
 size=(870, 690)
 
 [org/gnome/control-center]
-last-panel='sound'
+last-panel='default-apps'
 window-state=(1040, 733, false)
 
 [org/gnome/desktop/app-folders]
@@ -322,7 +322,7 @@ search-filter-time-type='last_modified'
 search-view='list-view'
 
 [org/gnome/nautilus/window-state]
-initial-size=(960, 1043)
+initial-size=(960, 1041)
 initial-size-file-chooser=(890, 550)
 maximized=false
 
@@ -387,7 +387,7 @@ app-picker-layout=[{'balena-etcher.desktop': <{'position': <0>}>, 'btop.desktop'
 disable-user-extensions=false
 disabled-extensions=['readingstrip@lupantano.gihthub', 'dash-to-dock@micxgx.gmail.com', 'ding@rastersoft.com', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'system-monitor@gnome-shell-extensions.gcampax.github.com', 'ubuntu-appindicators@ubuntu.com']
 enabled-extensions=['ProxySwitcher@flannaghan.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'tiling-assistant@leleat-on-github', 'AlphabeticalAppGrid@stuarthayhurst', 'appindicatorsupport@rgcjonas.gmail.com', 'arcmenu@arcmenu.com', 'quake-terminal@diegodario88.github.io', 'blur-my-shell@aunetx', 'clipboard-indicator@tudmotu.com', 'dash-to-panel@jderose9.github.com', 'mediacontrols@cliffniff.github.com', 'Vitals@CoreCoding.com', 'GPaste@gnome-shell-extensions.gnome.org', 'quake-mode@repsac-by.github.com']
-favorite-apps=['mullvad-vpn.desktop', 'terminator.desktop', 'org.gnome.Nautilus.desktop', 'firefox-esr.desktop', 'csbooks_csbooks.desktop', 'net.cozic.joplin_desktop.desktop', 'org.onlyoffice.desktopeditors.desktop', 'com.discordapp.Discord.desktop', 'com.ktechpit.whatsie.desktop', 'org.gnome.Software.desktop', 'snap-store_snap-store.desktop', 'org.gnome.World.PikaBackup.desktop']
+favorite-apps=['mullvad-vpn.desktop', 'virtualbox.desktop', 'terminator.desktop', 'org.gnome.Nautilus.desktop', 'firefox-esr.desktop', 'start-tor-browser.desktop', 'csbooks_csbooks.desktop', 'net.cozic.joplin_desktop.desktop', 'org.onlyoffice.desktopeditors.desktop', 'com.discordapp.Discord.desktop', 'com.ktechpit.whatsie.desktop', 'shotwell.desktop', 'org.gnome.Software.desktop', 'snap-store_snap-store.desktop', 'org.gnome.World.PikaBackup.desktop']
 last-selected-power-profile='power-saver'
 remember-mount-password=true
 welcome-dialog-last-shown-version='46.3.1'
@@ -421,7 +421,7 @@ menu-layout='Whisker'
 menu-separator-color='rgba(255,255,255,0.1)'
 multi-monitor=true
 prefs-visible-page=0
-recently-installed-apps=['org.gnome.clocks.desktop', 'org.gnome.Weather.desktop', 'ulauncher.desktop', 'virtualbox.desktop', 'mullvad-vpn.desktop', 'start-tor-browser.desktop', 'snap-store_snap-store.desktop', 'csbooks_csbooks.desktop', 'debian-xterm.desktop', 'debian-uxterm.desktop', 'cutecom.desktop', 'chirp.desktop', 'gnuradio-grc.desktop', 'dk.gqrx.gqrx.desktop', 'org.wireshark.Wireshark.desktop', 're.rizin.cutter.desktop', 'rfdump.desktop', 'kali-mifare-classic-format.desktop', 'kali-mfcuk.desktop', 'kali-hackrf_info.desktop', 'kali-ubertooth-util.desktop', 'kali-bettercap.desktop', 'kali-btscanner.desktop', 'kali-wifi-honey.desktop', 'kali-nfc-mfclassic.desktop', 'kali-heartleech.desktop', 'kali-blueranger.desktop', 'kali-cowpatty.desktop', 'kali-nfc-list.desktop', 'kali-airgeddon.desktop', 'kali-beef-xss-stop.desktop', 'kali-regripper.desktop', 'kali-asleap.desktop', 'kali-ollydbg.desktop', 'kali-mfterm.desktop', 'kali-shellter.desktop', 'kali-ettercap.desktop', 'kali-bluelog.desktop', 'kali-beef-xss.desktop', 'kali-mfoc.desktop', 'kali-mdk3.desktop', 'kali-bluesnarfer.desktop', 'org.gnome.Cheese.desktop', 'guvcview.desktop', 'com.github.themix_project.Oomox.desktop', 'terminator.desktop', 'com.ktechpit.whatsie.desktop', 'ranger.desktop', 'com.poweriso.PowerISO.desktop', 'chat.revolt.RevoltDesktop.desktop']
+recently-installed-apps=['org.gnome.clocks.desktop', 'org.gnome.Weather.desktop', 'ulauncher.desktop', 'virtualbox.desktop', 'mullvad-vpn.desktop', 'start-tor-browser.desktop', 'snap-store_snap-store.desktop', 'csbooks_csbooks.desktop', 'debian-xterm.desktop', 'debian-uxterm.desktop', 'cutecom.desktop', 'chirp.desktop', 'gnuradio-grc.desktop', 'dk.gqrx.gqrx.desktop', 'org.wireshark.Wireshark.desktop', 're.rizin.cutter.desktop', 'rfdump.desktop', 'kali-mifare-classic-format.desktop', 'kali-mfcuk.desktop', 'kali-hackrf_info.desktop', 'kali-ubertooth-util.desktop', 'kali-bettercap.desktop', 'kali-btscanner.desktop', 'kali-wifi-honey.desktop', 'kali-nfc-mfclassic.desktop', 'kali-heartleech.desktop', 'kali-blueranger.desktop', 'kali-cowpatty.desktop', 'kali-nfc-list.desktop', 'kali-airgeddon.desktop', 'kali-beef-xss-stop.desktop', 'kali-regripper.desktop', 'kali-asleap.desktop', 'kali-ollydbg.desktop', 'kali-mfterm.desktop', 'kali-shellter.desktop', 'kali-ettercap.desktop', 'kali-bluelog.desktop', 'kali-beef-xss.desktop', 'kali-mfoc.desktop', 'kali-mdk3.desktop', 'kali-bluesnarfer.desktop', 'org.gnome.Cheese.desktop', 'guvcview.desktop', 'com.github.themix_project.Oomox.desktop', 'terminator.desktop', 'com.ktechpit.whatsie.desktop', 'ranger.desktop', 'com.poweriso.PowerISO.desktop', 'chat.revolt.RevoltDesktop.desktop', 'cmatrix.desktop']
 search-entry-border-radius=(true, 25)
 search-provider-open-windows=true
 search-provider-recent-files=true

@@ -19,6 +19,7 @@ apparmor-utils
 apparmor
 appstream
 apt-config-icons
+apt-file
 apt-listchanges
 apt-utils
 apt
@@ -94,6 +95,7 @@ clang-15
 cli-common
 cmake-data
 cmake
+cmatrix
 colord-data
 colord
 console-setup-linux
@@ -1384,6 +1386,7 @@ libproxy1-plugin-gsettings
 libproxy1-plugin-networkmanager
 libproxy1-plugin-webkit
 libproxy1v5
+libproxychains3
 libpsl5
 libpst4
 libpulse-mainloop-glib0
@@ -1424,6 +1427,7 @@ libraw20
 libreadline8
 libreadonly-perl
 librecode0
+libregexp-assemble-perl
 libregexp-ipv6-perl
 libregexp-wildcards-perl
 libregfi1
@@ -1689,6 +1693,7 @@ libxatracker2
 libxau6
 libxaw7
 libxcb-composite0
+libxcb-cursor0
 libxcb-damage0
 libxcb-dri2-0
 libxcb-dri3-0
@@ -2331,6 +2336,7 @@ powermgmt-base
 powertop
 ppp
 procps
+proxychains
 psmisc
 publicsuffix
 python-apt-common
@@ -2560,6 +2566,7 @@ ruby-zip
 ruby3.1
 ruby
 rubygems-integration
+runit-helper
 rygel-playbin
 rygel-tracker
 rygel
@@ -2643,6 +2650,9 @@ tk8.6
 tk
 tldr
 tmux
+tor-geoipdb
+tor
+torsocks
 totem-common
 totem-plugins
 totem
@@ -2683,6 +2693,7 @@ vdpauinfo
 vim-common
 vim-tiny
 vinetto
+virtualbox-7.1
 vlc-bin
 vlc-data
 vlc-l10n
