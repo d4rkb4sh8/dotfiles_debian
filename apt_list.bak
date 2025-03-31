@@ -412,6 +412,14 @@ gnome-weather
 gnupg-l10n
 gnupg-utils
 gnupg
+golang-1.19-doc
+golang-1.19-go
+golang-1.19-src
+golang-1.19
+golang-doc
+golang-go
+golang-src
+golang
 gpart
 gpaste-2
 gpg-agent
