@@ -89,7 +89,7 @@ panel-id='world'
 size=(870, 690)
 
 [org/gnome/control-center]
-last-panel='keyboard'
+last-panel='multitasking'
 window-state=(1040, 733, false)
 
 [org/gnome/desktop/app-folders]
@@ -223,7 +223,7 @@ begin-resize=@as []
 close=['<Control>q']
 cycle-group=@as []
 cycle-group-backward=@as []
-maximize=['<Super>Up']
+maximize=@as []
 minimize=@as []
 move-to-workspace-1=['<Super><Shift>1']
 move-to-workspace-10=['<Super><Shift>0']
@@ -239,7 +239,7 @@ panel-run-dialog=@as []
 switch-to-workspace-left=['<Alt>F11']
 switch-to-workspace-right=['<Alt>F12']
 toggle-maximized=@as []
-unmaximize=['<Super>Down']
+unmaximize=@as []
 
 [org/gnome/desktop/wm/preferences]
 button-layout='close,minimize,maximize:appmenu'
@@ -304,13 +304,13 @@ col-26-width=0
 
 [org/gnome/mutter]
 center-new-windows=false
-dynamic-workspaces=false
-edge-tiling=true
+dynamic-workspaces=true
+edge-tiling=false
 overlay-key='Super_L'
 
 [org/gnome/mutter/keybindings]
-toggle-tiled-left=['<Super>Left']
-toggle-tiled-right=['<Super>Right']
+toggle-tiled-left=@as []
+toggle-tiled-right=@as []
 
 [org/gnome/nautilus/list-view]
 default-zoom-level='large'
@@ -387,7 +387,7 @@ power-button-action='interactive'
 app-picker-layout=[{'balena-etcher.desktop': <{'position': <0>}>, 'btop.desktop': <{'position': <1>}>, 'org.gnome.Calculator.desktop': <{'position': <2>}>, 'org.gnome.Calendar.desktop': <{'position': <3>}>, 'org.gnome.Cheese.desktop': <{'position': <4>}>, 'org.chromium.Chromium.desktop': <{'position': <5>}>, 'org.gnome.clocks.desktop': <{'position': <6>}>, 'org.gnome.Contacts.desktop': <{'position': <7>}>, 'com.github.qarmin.czkawka.desktop': <{'position': <8>}>, 'com.neatdecisions.Detwinner.desktop': <{'position': <9>}>, 'simple-scan.desktop': <{'position': <10>}>, 'org.gnome.Evolution.desktop': <{'position': <11>}>, 'com.mattjakeman.ExtensionManager.desktop': <{'position': <12>}>, 'org.gnome.Extensions.desktop': <{'position': <13>}>, 'org.flameshot.Flameshot.desktop': <{'position': <14>}>, 'org.gnome.FontManager.desktop': <{'position': <15>}>, 'org.gnome.FontViewer.desktop': <{'position': <16>}>, 'gdebi.desktop': <{'position': <17>}>, 'io.github.realmazharhussain.GdmSettings.desktop': <{'position': <18>}>, 'org.gnome.GPaste.Ui.desktop': <{'position': <19>}>, 'org.gnome.GPaste.Preferences.desktop': <{'position': <20>}>, 'lstopo.desktop': <{'position': <21>}>, 'yelp.desktop': <{'position': <22>}>, 'org.gnome.eog.desktop': <{'position': <23>}>}, {'im-config.desktop': <{'position': <0>}>, 'lynis.desktop': <{'position': <1>}>, 'org.gnome.Maps.desktop': <{'position': <2>}>, 'org.gnome.Music.desktop': <{'position': <3>}>, 'com.github.jeromerobert.pdfarranger.desktop': <{'position': <4>}>, 'net.sourceforge.Pdfedit.desktop': <{'position': <5>}>, 'com.uploadedlobster.peek.desktop': <{'position': <6>}>, 'org.qbittorrent.qBittorrent.desktop': <{'position': <7>}>, 'org.gnome.Rhythmbox3.desktop': <{'position': <8>}>, 'org.gnome.Settings.desktop': <{'position': <9>}>, 'de.haeckerfelix.Shortwave.desktop': <{'position': <10>}>, 'shotwell.desktop': <{'position': <11>}>, 'software-properties-gtk.desktop': <{'position': <12>}>, 'org.gnome.SoundRecorder.desktop': <{'position': <13>}>, 'synaptic.desktop': <{'position': <14>}>, 'gnome-system-monitor.desktop': <{'position': <15>}>, 'org.gnome.Terminal.desktop': <{'position': <16>}>, 'info.desktop': <{'position': <17>}>, 'org.gnome.TextEditor.desktop': <{'position': <18>}>, 'transmission-gtk.desktop': <{'position': <19>}>, 'Utilities': <{'position': <20>}>, 'org.gnome.Totem.desktop': <{'position': <21>}>, 'vlc.desktop': <{'position': <22>}>, 'app.drey.Warp.desktop': <{'position': <23>}>}, {'org.gnome.Weather.desktop': <{'position': <0>}>, 'org.pwmt.zathura.desktop': <{'position': <1>}>, 'app.zen_browser.zen.desktop': <{'position': <2>}>}]
 disable-user-extensions=false
 disabled-extensions=['readingstrip@lupantano.gihthub', 'dash-to-dock@micxgx.gmail.com', 'ding@rastersoft.com', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'system-monitor@gnome-shell-extensions.gcampax.github.com', 'ubuntu-appindicators@ubuntu.com']
-enabled-extensions=['ProxySwitcher@flannaghan.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'tiling-assistant@leleat-on-github', 'AlphabeticalAppGrid@stuarthayhurst', 'appindicatorsupport@rgcjonas.gmail.com', 'arcmenu@arcmenu.com', 'quake-terminal@diegodario88.github.io', 'blur-my-shell@aunetx', 'clipboard-indicator@tudmotu.com', 'dash-to-panel@jderose9.github.com', 'mediacontrols@cliffniff.github.com', 'Vitals@CoreCoding.com', 'GPaste@gnome-shell-extensions.gnome.org', 'quake-mode@repsac-by.github.com']
+enabled-extensions=['ProxySwitcher@flannaghan.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'tiling-assistant@leleat-on-github', 'AlphabeticalAppGrid@stuarthayhurst', 'appindicatorsupport@rgcjonas.gmail.com', 'arcmenu@arcmenu.com', 'quake-terminal@diegodario88.github.io', 'blur-my-shell@aunetx', 'clipboard-indicator@tudmotu.com', 'dash-to-panel@jderose9.github.com', 'mediacontrols@cliffniff.github.com', 'Vitals@CoreCoding.com', 'GPaste@gnome-shell-extensions.gnome.org', 'quake-mode@repsac-by.github.com', 'tilingshell@ferrarodomenico.com']
 favorite-apps=['mullvad-vpn.desktop', 'virtualbox.desktop', 'terminator.desktop', 'org.gnome.Nautilus.desktop', 'firefox-esr.desktop', 'start-tor-browser.desktop', 'csbooks_csbooks.desktop', 'net.cozic.joplin_desktop.desktop', 'org.onlyoffice.desktopeditors.desktop', 'com.discordapp.Discord.desktop', 'com.ktechpit.whatsie.desktop', 'Popcorn-Time.desktop', 'shotwell.desktop', 'org.gnome.Software.desktop', 'snap-store_snap-store.desktop', 'org.gnome.World.PikaBackup.desktop']
 last-selected-power-profile='power-saver'
 remember-mount-password=true
@@ -586,6 +586,17 @@ version=32
 active-window-hint-color='rgb(53,132,228)'
 last-version-installed=48
 overridden-settings={'org.gnome.mutter.edge-tiling': <@mb nothing>, 'org.gnome.desktop.wm.keybindings.maximize': <@mb nothing>, 'org.gnome.desktop.wm.keybindings.unmaximize': <@mb nothing>, 'org.gnome.mutter.keybindings.toggle-tiled-left': <@mb nothing>, 'org.gnome.mutter.keybindings.toggle-tiled-right': <@mb nothing>}
+
+[org/gnome/shell/extensions/tilingshell]
+enable-autotiling=true
+enable-screen-edges-windows-suggestions=true
+enable-snap-assistant-windows-suggestions=true
+enable-tiling-system-windows-suggestions=true
+last-version-name-installed='16.3'
+layouts-json='[{"id":"8863372","tiles":[{"x":0,"y":0,"width":0.5,"height":1,"groups":[1]},{"x":0.5,"y":0,"width":0.5000000000000011,"height":1,"groups":[1]}]},{"id":"8944283","tiles":[{"x":0,"y":0,"width":0.5,"height":1,"groups":[1]},{"x":0.5,"y":0,"width":0.5000000000000009,"height":0.49951969260326606,"groups":[2,1]},{"x":0.5,"y":0.49951969260326606,"width":0.5000000000000009,"height":0.5004803073967341,"groups":[2,1]}]},{"id":"9010801","tiles":[{"x":0,"y":0,"width":0.5,"height":0.494716618635927,"groups":[1,3]},{"x":0.5,"y":0,"width":0.5000000000000002,"height":0.494716618635927,"groups":[2,1]},{"x":0.5,"y":0.494716618635927,"width":0.5000000000000002,"height":0.5052833813640727,"groups":[2,1]},{"x":0,"y":0.494716618635927,"width":0.5,"height":0.5052833813640731,"groups":[3,1]}]}]'
+overridden-settings="{\"org.gnome.mutter.keybindings\":{\"toggle-tiled-right\":\"['<Super>Right']\",\"toggle-tiled-left\":\"['<Super>Left']\"},\"org.gnome.desktop.wm.keybindings\":{\"maximize\":\"['<Super>Up']\",\"unmaximize\":\"['<Super>Down']\"},\"org.gnome.mutter\":{\"edge-tiling\":\"true\"}}"
+quarter-tiling-threshold=uint32 26
+selected-layouts=[['8863372'], ['8863372']]
 
 [org/gnome/shell/extensions/user-theme]
 name=''
