@@ -22,7 +22,7 @@ quake-mode-width=97
 quake-mode-accelerator-1=['<Control><Alt>q']
 
 [com/github/repsac-by/quake-mode/apps]
-app-1='terminator.desktop'
+app-1='ghostty_ghostty.desktop'
 
 [com/mattjakeman/ExtensionManager]
 last-used-version='0.4.0'
@@ -94,7 +94,7 @@ panel-id='world'
 size=(870, 690)
 
 [org/gnome/control-center]
-last-panel='background'
+last-panel='keyboard'
 window-state=(1040, 733, false)
 
 [org/gnome/desktop/app-folders]
@@ -382,11 +382,11 @@ name='ulauncher-toggle'
 power-button-action='interactive'
 
 [org/gnome/shell]
-app-picker-layout=[{'balena-etcher.desktop': <{'position': <0>}>, 'btop.desktop': <{'position': <1>}>, 'org.gnome.Calculator.desktop': <{'position': <2>}>, 'org.gnome.Calendar.desktop': <{'position': <3>}>, 'org.gnome.Cheese.desktop': <{'position': <4>}>, 'org.chromium.Chromium.desktop': <{'position': <5>}>, 'org.gnome.clocks.desktop': <{'position': <6>}>, 'org.gnome.Contacts.desktop': <{'position': <7>}>, 'com.github.qarmin.czkawka.desktop': <{'position': <8>}>, 'com.neatdecisions.Detwinner.desktop': <{'position': <9>}>, 'simple-scan.desktop': <{'position': <10>}>, 'org.gnome.Evolution.desktop': <{'position': <11>}>, 'com.mattjakeman.ExtensionManager.desktop': <{'position': <12>}>, 'org.gnome.Extensions.desktop': <{'position': <13>}>, 'org.flameshot.Flameshot.desktop': <{'position': <14>}>, 'org.gnome.FontManager.desktop': <{'position': <15>}>, 'org.gnome.FontViewer.desktop': <{'position': <16>}>, 'gdebi.desktop': <{'position': <17>}>, 'io.github.realmazharhussain.GdmSettings.desktop': <{'position': <18>}>, 'org.gnome.GPaste.Ui.desktop': <{'position': <19>}>, 'org.gnome.GPaste.Preferences.desktop': <{'position': <20>}>, 'lstopo.desktop': <{'position': <21>}>, 'yelp.desktop': <{'position': <22>}>, 'org.gnome.eog.desktop': <{'position': <23>}>}, {'im-config.desktop': <{'position': <0>}>, 'lynis.desktop': <{'position': <1>}>, 'org.gnome.Maps.desktop': <{'position': <2>}>, 'org.gnome.Music.desktop': <{'position': <3>}>, 'com.github.jeromerobert.pdfarranger.desktop': <{'position': <4>}>, 'net.sourceforge.Pdfedit.desktop': <{'position': <5>}>, 'com.uploadedlobster.peek.desktop': <{'position': <6>}>, 'org.qbittorrent.qBittorrent.desktop': <{'position': <7>}>, 'org.gnome.Rhythmbox3.desktop': <{'position': <8>}>, 'org.gnome.Settings.desktop': <{'position': <9>}>, 'de.haeckerfelix.Shortwave.desktop': <{'position': <10>}>, 'shotwell.desktop': <{'position': <11>}>, 'software-properties-gtk.desktop': <{'position': <12>}>, 'org.gnome.SoundRecorder.desktop': <{'position': <13>}>, 'synaptic.desktop': <{'position': <14>}>, 'gnome-system-monitor.desktop': <{'position': <15>}>, 'org.gnome.Terminal.desktop': <{'position': <16>}>, 'info.desktop': <{'position': <17>}>, 'org.gnome.TextEditor.desktop': <{'position': <18>}>, 'transmission-gtk.desktop': <{'position': <19>}>, 'Utilities': <{'position': <20>}>, 'org.gnome.Totem.desktop': <{'position': <21>}>, 'vlc.desktop': <{'position': <22>}>, 'app.drey.Warp.desktop': <{'position': <23>}>}, {'org.gnome.Weather.desktop': <{'position': <0>}>, 'org.pwmt.zathura.desktop': <{'position': <1>}>, 'app.zen_browser.zen.desktop': <{'position': <2>}>}]
+app-picker-layout=[{'balena-etcher.desktop': <{'position': <0>}>, 'btop.desktop': <{'position': <1>}>, 'org.gnome.Calculator.desktop': <{'position': <2>}>, 'org.gnome.Calendar.desktop': <{'position': <3>}>, 'org.gnome.Cheese.desktop': <{'position': <4>}>, 'org.chromium.Chromium.desktop': <{'position': <5>}>, 'org.gnome.clocks.desktop': <{'position': <6>}>, 'cmatrix.desktop': <{'position': <7>}>, 'org.gnome.Contacts.desktop': <{'position': <8>}>, 'com.github.qarmin.czkawka.desktop': <{'position': <9>}>, 'com.neatdecisions.Detwinner.desktop': <{'position': <10>}>, 'com.discordapp.Discord.desktop': <{'position': <11>}>, 'simple-scan.desktop': <{'position': <12>}>, 'org.gnome.Evolution.desktop': <{'position': <13>}>, 'com.mattjakeman.ExtensionManager.desktop': <{'position': <14>}>, 'org.gnome.Extensions.desktop': <{'position': <15>}>, 'org.flameshot.Flameshot.desktop': <{'position': <16>}>, 'org.gnome.FontManager.desktop': <{'position': <17>}>, 'org.gnome.FontViewer.desktop': <{'position': <18>}>, 'gdebi.desktop': <{'position': <19>}>, 'io.github.realmazharhussain.GdmSettings.desktop': <{'position': <20>}>, 'org.gnome.GPaste.Ui.desktop': <{'position': <21>}>, 'org.gnome.GPaste.Preferences.desktop': <{'position': <22>}>}, {'lstopo.desktop': <{'position': <0>}>, 'yelp.desktop': <{'position': <1>}>, 'org.gnome.eog.desktop': <{'position': <2>}>, 'im-config.desktop': <{'position': <3>}>, 'lynis.desktop': <{'position': <4>}>, 'org.gnome.Maps.desktop': <{'position': <5>}>, 'mpv.desktop': <{'position': <6>}>, 'org.gnome.Music.desktop': <{'position': <7>}>, 'org.onlyoffice.desktopeditors.desktop': <{'position': <8>}>, 'com.github.jeromerobert.pdfarranger.desktop': <{'position': <9>}>, 'net.sourceforge.Pdfedit.desktop': <{'position': <10>}>, 'com.uploadedlobster.peek.desktop': <{'position': <11>}>, 'Popcorn-Time.desktop': <{'position': <12>}>, 'org.qbittorrent.qBittorrent.desktop': <{'position': <13>}>, 'chat.revolt.RevoltDesktop.desktop': <{'position': <14>}>, 'org.gnome.Rhythmbox3.desktop': <{'position': <15>}>, 'org.gnome.Settings.desktop': <{'position': <16>}>, 'de.haeckerfelix.Shortwave.desktop': <{'position': <17>}>, 'shotwell.desktop': <{'position': <18>}>, 'software-properties-gtk.desktop': <{'position': <19>}>, 'org.gnome.SoundRecorder.desktop': <{'position': <20>}>, 'synaptic.desktop': <{'position': <21>}>, 'gnome-system-monitor.desktop': <{'position': <22>}>, 'org.gnome.Terminal.desktop': <{'position': <23>}>}, {'terminator.desktop': <{'position': <0>}>, 'info.desktop': <{'position': <1>}>, 'org.gnome.TextEditor.desktop': <{'position': <2>}>, 'transmission-gtk.desktop': <{'position': <3>}>, 'Utilities': <{'position': <4>}>, 'org.gnome.Totem.desktop': <{'position': <5>}>, 'vlc.desktop': <{'position': <6>}>, 'app.drey.Warp.desktop': <{'position': <7>}>, 'org.gnome.Weather.desktop': <{'position': <8>}>, 'whatsie_whatsie.desktop': <{'position': <9>}>, 'org.pwmt.zathura.desktop': <{'position': <10>}>, 'app.zen_browser.zen.desktop': <{'position': <11>}>}]
 disable-user-extensions=false
 disabled-extensions=['readingstrip@lupantano.gihthub', 'ding@rastersoft.com', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'system-monitor@gnome-shell-extensions.gcampax.github.com', 'ubuntu-appindicators@ubuntu.com', 'tilingshell@ferrarodomenico.com', 'tiling-assistant@leleat-on-github', 'dash-to-dock@micxgx.gmail.com']
 enabled-extensions=['ProxySwitcher@flannaghan.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'AlphabeticalAppGrid@stuarthayhurst', 'appindicatorsupport@rgcjonas.gmail.com', 'arcmenu@arcmenu.com', 'quake-terminal@diegodario88.github.io', 'blur-my-shell@aunetx', 'clipboard-indicator@tudmotu.com', 'mediacontrols@cliffniff.github.com', 'Vitals@CoreCoding.com', 'GPaste@gnome-shell-extensions.gnome.org', 'quake-mode@repsac-by.github.com', 'cronomix@zagortenay333', 'openbar@neuromorph', 'dash-to-panel@jderose9.github.com']
-favorite-apps=['mullvad-vpn.desktop', 'virtualbox.desktop', 'terminator.desktop', 'org.gnome.Nautilus.desktop', 'firefox-esr.desktop', 'start-tor-browser.desktop', 'csbooks_csbooks.desktop', 'net.cozic.joplin_desktop.desktop', 'org.onlyoffice.desktopeditors.desktop', 'com.discordapp.Discord.desktop', 'whatsie_whatsie.desktop', 'Popcorn-Time.desktop', 'shotwell.desktop', 'org.gnome.Software.desktop', 'snap-store_snap-store.desktop', 'org.gnome.World.PikaBackup.desktop']
+favorite-apps=['mullvad-vpn.desktop', 'ghostty_ghostty.desktop', 'virtualbox.desktop', 'org.gnome.Nautilus.desktop', 'firefox-esr.desktop', 'start-tor-browser.desktop', 'csbooks_csbooks.desktop', 'net.cozic.joplin_desktop.desktop', 'org.gnome.Software.desktop', 'snap-store_snap-store.desktop', 'org.gnome.World.PikaBackup.desktop']
 last-selected-power-profile='power-saver'
 remember-mount-password=true
 welcome-dialog-last-shown-version='46.3.1'
@@ -403,14 +403,14 @@ custom-menu-button-icon-size=25.0
 distro-icon=1
 extra-categories=[(0, true), (1, true), (2, true), (3, false), (4, true)]
 highlight-search-result-terms=true
-left-panel-width=340
+left-panel-width=240
 menu-background-color='rgba(48,48,49,0.98)'
 menu-border-color='rgb(60,60,60)'
 menu-button-appearance='Icon'
 menu-button-fg-color=(true, 'rgb(246,245,244)')
 menu-button-icon='Distro_Icon'
 menu-foreground-color='rgb(223,223,223)'
-menu-height=750
+menu-height=600
 menu-hotkey-type='Custom'
 menu-item-active-bg-color='rgb(25,98,163)'
 menu-item-active-fg-color='rgb(255,255,255)'
@@ -420,7 +420,8 @@ menu-layout='Whisker'
 menu-separator-color='rgba(255,255,255,0.1)'
 multi-monitor=true
 prefs-visible-page=0
-recently-installed-apps=['org.gnome.clocks.desktop', 'org.gnome.Weather.desktop', 'ulauncher.desktop', 'start-tor-browser.desktop', 'snap-store_snap-store.desktop', 'csbooks_csbooks.desktop', 'debian-xterm.desktop', 'debian-uxterm.desktop', 'cutecom.desktop', 'chirp.desktop', 'gnuradio-grc.desktop', 'dk.gqrx.gqrx.desktop', 'org.wireshark.Wireshark.desktop', 're.rizin.cutter.desktop', 'rfdump.desktop', 'kali-mifare-classic-format.desktop', 'kali-mfcuk.desktop', 'kali-hackrf_info.desktop', 'kali-ubertooth-util.desktop', 'kali-bettercap.desktop', 'kali-btscanner.desktop', 'kali-wifi-honey.desktop', 'kali-nfc-mfclassic.desktop', 'kali-heartleech.desktop', 'kali-blueranger.desktop', 'kali-cowpatty.desktop', 'kali-nfc-list.desktop', 'kali-airgeddon.desktop', 'kali-beef-xss-stop.desktop', 'kali-regripper.desktop', 'kali-asleap.desktop', 'kali-ollydbg.desktop', 'kali-mfterm.desktop', 'kali-shellter.desktop', 'kali-ettercap.desktop', 'kali-bluelog.desktop', 'kali-beef-xss.desktop', 'kali-mfoc.desktop', 'kali-mdk3.desktop', 'kali-bluesnarfer.desktop', 'org.gnome.Cheese.desktop', 'guvcview.desktop', 'com.github.themix_project.Oomox.desktop', 'com.ktechpit.whatsie.desktop', 'ranger.desktop', 'com.poweriso.PowerISO.desktop', 'chat.revolt.RevoltDesktop.desktop', 'cmatrix.desktop', 'Popcorn-Time.desktop', 'whatsie_whatsie.desktop']
+recently-installed-apps=['org.gnome.clocks.desktop', 'org.gnome.Weather.desktop', 'ulauncher.desktop', 'debian-xterm.desktop', 'debian-uxterm.desktop', 'cutecom.desktop', 'chirp.desktop', 'gnuradio-grc.desktop', 'dk.gqrx.gqrx.desktop', 'org.wireshark.Wireshark.desktop', 're.rizin.cutter.desktop', 'rfdump.desktop', 'kali-mifare-classic-format.desktop', 'kali-mfcuk.desktop', 'kali-hackrf_info.desktop', 'kali-ubertooth-util.desktop', 'kali-bettercap.desktop', 'kali-btscanner.desktop', 'kali-wifi-honey.desktop', 'kali-nfc-mfclassic.desktop', 'kali-heartleech.desktop', 'kali-blueranger.desktop', 'kali-cowpatty.desktop', 'kali-nfc-list.desktop', 'kali-airgeddon.desktop', 'kali-beef-xss-stop.desktop', 'kali-regripper.desktop', 'kali-asleap.desktop', 'kali-ollydbg.desktop', 'kali-mfterm.desktop', 'kali-shellter.desktop', 'kali-ettercap.desktop', 'kali-bluelog.desktop', 'kali-beef-xss.desktop', 'kali-mfoc.desktop', 'kali-mdk3.desktop', 'kali-bluesnarfer.desktop', 'org.gnome.Cheese.desktop', 'guvcview.desktop', 'com.github.themix_project.Oomox.desktop', 'com.ktechpit.whatsie.desktop', 'ranger.desktop', 'com.poweriso.PowerISO.desktop', 'chat.revolt.RevoltDesktop.desktop', 'cmatrix.desktop', 'Popcorn-Time.desktop', 'whatsie_whatsie.desktop', 'mpv.desktop', 'ghostty_ghostty.desktop']
+right-panel-width=200
 search-entry-border-radius=(true, 25)
 search-provider-open-windows=true
 search-provider-recent-files=true
