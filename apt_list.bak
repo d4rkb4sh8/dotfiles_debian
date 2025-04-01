@@ -273,6 +273,7 @@ gcc
 gconf-service
 gconf2-common
 gcr
+gdb
 gdebi-core
 gdebi
 gdisk
@@ -608,6 +609,7 @@ libayatana-indicator3-7
 libb-hooks-endofscope-perl
 libb-hooks-op-check-perl
 libb-keywords-perl
+libbabeltrace1
 libbcg729-0
 libbdplus0
 libberkeleydb-perl
@@ -625,6 +627,7 @@ libblockdev-utils2
 libblockdev2
 libbluetooth3
 libbluray2
+libboost-regex1.74.0
 libbpf1
 libbrasero-media3-1
 libbrlapi0.8
@@ -639,6 +642,7 @@ libc-bin
 libc-dev-bin
 libc-devtools
 libc-l10n
+libc6-dbg
 libc6-dev
 libc6-i386
 libc6
@@ -736,6 +740,8 @@ libdconf1
 libde265-0
 libdebconfclient0
 libdebhelper-perl
+libdebuginfod-common
+libdebuginfod1
 libdecor-0-0
 libdecor-0-plugin-1-cairo
 libdee-1.0-4
@@ -1041,6 +1047,7 @@ libip4tc2
 libip6tc2
 libipc-run3-perl
 libipc-system-simple-perl
+libipt2
 libiptcdata0
 libisl23
 libisofs6
@@ -1517,6 +1524,8 @@ libsoup-3.0-common
 libsoup-gnome2.4-1
 libsoup2.4-1
 libsoup2.4-common
+libsource-highlight-common
+libsource-highlight4v5
 libsoxr0
 libspa-0.2-bluetooth
 libspa-0.2-modules
