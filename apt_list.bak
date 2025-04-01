@@ -2687,7 +2687,6 @@ ucf
 udev
 udisks2
 ufw
-ulauncher
 undbx
 unhide.rb
 unhide
@@ -2798,6 +2797,7 @@ xserver-xorg-video-vmware
 xserver-xorg
 xterm
 xwayland
+xxd
 xz-utils
 yara
 yelp-xsl
