@@ -2440,7 +2440,6 @@ python3-lazr.restfulclient
 python3-lazr.uri
 python3-ldap3
 python3-ldapdomaindump
-python3-levenshtein
 python3-lib2to3
 python3-libapparmor
 python3-livereload
@@ -2535,7 +2534,6 @@ python3-wadllib
 python3-watchdog
 python3-wcwidth
 python3-webencodings
-python3-websocket
 python3-websockets
 python3-werkzeug
 python3-wheel
@@ -2826,7 +2824,6 @@ xz-utils
 yara
 yelp-xsl
 yelp
-youtube-dl
 yt-dlp
 ytfzf
 zathura-pdf-poppler
