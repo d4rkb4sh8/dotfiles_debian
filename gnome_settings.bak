@@ -477,7 +477,7 @@ cache-only-favorites=true
 cache-size=10
 clear-on-boot=true
 history-size=100
-notify-on-copy=true
+notify-on-copy=false
 
 [org/gnome/shell/extensions/dash-to-dock]
 apply-custom-theme=true
@@ -789,7 +789,7 @@ radius-bottomleft=true
 radius-bottomright=true
 radius-topleft=true
 radius-topright=true
-reloadstyle=false
+reloadstyle=true
 removestyle=false
 set-fullscreen=true
 set-notifications=false
