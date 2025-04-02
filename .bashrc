@@ -93,6 +93,9 @@ source ~/.local/share/blesh/ble.sh
 #most - colorful output for man
 #export PAGER=most
 
+# Colorful manpages
+export MANPAGER='nvim +Man!'
+
 #highlight less
 # export LESSOPEN="| /usr/bin/highlight %s --out-format xterm256 --force"
 
