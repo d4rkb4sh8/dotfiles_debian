@@ -13,7 +13,7 @@
     
         #panel.openbar {
              background-color: rgba(33,53,63,0) !important; 
-      height: 35px !important;   border-radius: 16px 16px 16px 16px;   box-shadow: none;  margin: 0px 0px;  
+      height: 35px !important;   border-radius: 6px 6px 6px 6px;   box-shadow: none;  margin: 0px 0px;  
           padding: 0px 4px;       
            color: rgba(250,250,250,1) !important;  
             
@@ -41,7 +41,7 @@
         #panel.openbar .button-container {
              padding: 4px 1px;
           margin: 0px 0px;
-          border-radius: 16px;
+          border-radius: 6.4px;
            
         }
         #panel.openbar:windowmax .button-container {
@@ -49,12 +49,12 @@
         }
 
         #panel.openbar .panel-button {
-             margin: 0px; height: 35px !important;   border: 0px solid rgba(205,221,231,0.54);  border-top-width: 0px;  border-right-width: 0px;  border-bottom-width: 0px;  border-left-width: 0px;  
-           border-radius: 16px 16px 16px 16px; 
+             margin: 0px; height: 35px !important;   border: 0px solid rgba(205,221,231,0.19);  border-top-width: 0.4px;  border-right-width: 0.4px;  border-bottom-width: 0.4px;  border-left-width: 0.4px;  
+           border-radius: 6px 6px 6px 6px; 
            color: rgba(250,250,250,1) !important; 
            background-color: rgba(33,53,63,0.95) !important; 
           
-           
+           box-shadow: 0px 0px 4px 0px rgba(205,221,231,0.55);  
             color: rgba(250,250,250,1);
             
         }
@@ -75,7 +75,7 @@
 
         #panel.openbar .panel-button:hover, #panel.openbar .panel-button:focus, 
         #panel.openbar .panel-button:active, #panel.openbar .panel-button:checked {
-             border: 3.5px solid rgba(0,178,229,0.5) !important;  box-shadow: none !important; 
+             border: 3.5px solid rgba(0,178,229,0.5) !important;  box-shadow: 0px 0px 4px 0px rgba(0,178,229,0.55); 
             color: rgba(255,255,255,1) !important;
             
         }
@@ -87,7 +87,7 @@
         #panel.openbar:overview .panel-button:hover, #panel.openbar:overview .panel-button:focus, 
         #panel.openbar:overview .panel-button:checked, #panel.openbar:overview .panel-button:active,
         #panel.openbar:overview .panel-button:overview {
-             border: 3.5px solid rgba(0,178,229,0.5) !important;  box-shadow: none !important;  
+             border: 3.5px solid rgba(0,178,229,0.5) !important;  box-shadow: 0px 0px 4px 0px rgba(0,178,229,0.55);  
             
             
         }
@@ -145,16 +145,16 @@
         }
         
         #panel.openbar .trilands:left-child {
-             border-radius: 16px 0px 0px 16px !important; 
+             border-radius: 6px 0px 0px 6px !important; 
         }
         #panel.openbar .trilands:right-child {
-             border-radius: 0px 16px 16px 0px !important; 
+             border-radius: 0px 6px 6px 0px !important; 
         }
         #panel.openbar .trilands:one-child {
-              border-radius: 16px 16px 16px 16px;  
+              border-radius: 6px 6px 6px 6px;  
         }
         #panel.openbar .trilands:mid-child {
-             border-radius: 0px !important; 
+             border-radius: 0px !important;  box-shadow: 0px 0px 4px 0px rgba(205,221,231,0.55); 
         }
         #panel.openbar:overview .trilands:mid-child {
             
@@ -163,7 +163,7 @@
             
         }
         #panel.openbar .trilands:mid-child:hover, #panel.openbar .trilands:mid-child:focus, #panel.openbar .trilands:mid-child:active, #panel.openbar .trilands:mid-child:checked {
-            
+             box-shadow: 0px 0px 4px 0px rgba(0,178,229,0.55); 
         }
         #panel.openbar:overview .trilands:mid-child:hover, #panel.openbar:overview .trilands:mid-child:focus, #panel.openbar:overview .trilands:mid-child:active, #panel.openbar:overview .trilands:mid-child:checked {
             
@@ -1161,9 +1161,9 @@
             background-color: rgba(230,230,230, 1) !important;
         } 
         .dash-background {
-            background-color: rgba(33,53,63,0.95) !important;
-            color: rgba(250,250,250,1) !important;
-            border: 1px solid rgba(205,221,231,0.54) !important;
+            background-color: rgba(26,31,43,0.95) !important;
+            color: rgba(230,230,230,1) !important;
+            border: 1px solid rgba(91,198,229,0.65) !important;
             box-shadow: 0 5px 10px 0 rgba(0,0,0,0.16) !important;
             border-radius: 100px !important;
         }
@@ -1172,11 +1172,11 @@
             border-radius: 100px !important;
         }
         .dash-separator {
-            background-color: rgba(205,221,231,0.54) !important;
+            background-color: rgba(91,198,229,0.65) !important;
             box-shadow: 1px 1px 0px rgba(25,25,25,0.1) !important;
         }
         .dash-item-container .app-well-app .overview-icon, .dash-item-container .overview-tile .overview-icon, .dash-item-container .show-apps .overview-icon {
-            color: rgba(250,250,250,1) !important;
+            color: rgba(230,230,230,1) !important;
             background-color: transparent !important;
         }
         .dash-item-container .overview-tile, .dash-item-container .overview-tile:hover, .dash-item-container .overview-tile.focused, .dash-item-container .overview-tile:active {
@@ -1191,7 +1191,7 @@
         .dash-item-container .app-well-app:hover .overview-icon, .dash-item-container .app-well-app.focused .overview-icon,
         .dash-item-container .overview-tile:hover .overview-icon, .dash-item-container .overview-tile.focused .overview-icon,
         .dash-item-container .show-apps:hover .overview-icon, .dash-item-container .show-apps.focused .overview-icon {
-            background-color: rgba(78.63209288712594,88.63209288712594,93.63209288712594,0.95) !important; 
+            background-color: rgba(54.09004490392978,57.34004490392978,65.14004490392978,0.95) !important; 
         }
         .dash-label { /* app-icon tooltip */
             background-color: rgba(25.8,29.8,39.4, 0.9) !important;
@@ -1201,15 +1201,15 @@
         } 
         
         #dash StIcon { 
-            height: 48px !important; 
-            width: 48px !important; 
+            height: 34px !important; 
+            width: 34px !important; 
         }
         #dash .app-well-app-running-dot, #dash .app-grid-running-dot, #dash .show-apps-running-dot {
-            height: 3.2px;
-            width: 3.2px;
-            border-radius: 3.2px;
-            background-color: rgba(250,250,250,1) !important;
-            border: 2px solid rgba(250,250,250,1) !important;
+            height: 2.2666666666666666px;
+            width: 2.2666666666666666px;
+            border-radius: 2.2666666666666666px;
+            background-color: rgba(230,230,230,1) !important;
+            border: 2px solid rgba(230,230,230,1) !important;
         } 
         #dash StWidget.focused .app-well-app-running-dot, #dash StWidget.focused .app-grid-running-dot, #dash StWidget.focused .show-apps-running-dot {
             background-color: rgba(89,89,89, 1.0) !important;
@@ -1218,8 +1218,8 @@
         }
         
         /*.show-apps:hover .overview-icon, .show-apps:focus .overview-icon, .show-apps:selected .overview-icon {
-            color:rgba(250,250,250,1) !important;
-            background-color: rgba(78.63209288712594,88.63209288712594,93.63209288712594,0.95) !important;
+            color:rgba(230,230,230,1) !important;
+            background-color: rgba(54.09004490392978,57.34004490392978,65.14004490392978,0.95) !important;
         }*/
         
         .modal-dialog-linked-button:focus, .modal-dialog-linked-button:selected {
