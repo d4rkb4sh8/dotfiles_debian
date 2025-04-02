@@ -94,7 +94,7 @@ panel-id='world'
 size=(870, 690)
 
 [org/gnome/control-center]
-last-panel='user-accounts'
+last-panel='background'
 window-state=(1040, 733, false)
 
 [org/gnome/desktop/app-folders]
@@ -606,7 +606,7 @@ candy7=['0.95', '0.12', '0.67']
 candy8=['0.18', '0.76', '0.49']
 candy9=['0.93', '0.20', '0.23']
 candyalpha=1.0
-candybar=true
+candybar=false
 card-hint=10
 color-scheme='prefer-dark'
 count1=466488
