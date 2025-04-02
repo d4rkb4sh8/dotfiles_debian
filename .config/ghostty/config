@@ -50,3 +50,5 @@ keybind = shift+alt+l=resize_split:right,10
 # equalize all Splits
 keybind = ctrl+alt+e=equalize_splits
 
+
+
