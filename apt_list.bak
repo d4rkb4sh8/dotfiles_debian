@@ -1905,6 +1905,7 @@ ncurses-bin
 ncurses-term
 ndiff
 net-tools
+net.downloadhelper.coapp
 netbase
 netcat-traditional
 netdiscover
