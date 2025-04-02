@@ -1,4 +1,5 @@
-bootstrap*
+bootstrap.sh
+bootstrap2.sh
 custom_prompt_for_root_user_bashrc.md 
 fail2ban_instructions.md
 kanata_linux_instructions.md
