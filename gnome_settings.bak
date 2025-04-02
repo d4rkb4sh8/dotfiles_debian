@@ -94,7 +94,7 @@ panel-id='world'
 size=(870, 690)
 
 [org/gnome/control-center]
-last-panel='keyboard'
+last-panel='user-accounts'
 window-state=(1040, 733, false)
 
 [org/gnome/desktop/app-folders]
