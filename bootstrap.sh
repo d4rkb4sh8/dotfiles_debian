@@ -20,21 +20,19 @@ sudo apt purge -y audacity gimp gnome-games libreoffice*
 # Section: Git Projects and Dotfiles Setup
 log "Setting up gitprojects and dotfiles..."
 mkdir -p $HOME/gitprojects
-git clone https://github.com/d4rkb4sh8/notes.git $HOME/gitprojects/notes
 git clone https://github.com/d4rkb4sh8/dotfiles.git $HOME/dotfiles
 cd $HOME/dotfiles && stow --adopt . && git restore .
-cp -r $HOME/dotfiles/wallpapers $HOME/Pictures
 
 # Section: Install APT Packages
 log "Installing APT packages..."
 sudo apt update -y && sudo apt full-upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y
-sudo apt install $(cat $HOME/dotfiles/apt_list.bak)
+sudo apt install $(cat $HOME/dotfiles/backups/apt_list.bak)
 
 # Section: Flatpak and Snap Setup
 log "Setting up Flatpak and Snap..."
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 sudo snap install snapd snap-store
-snap install $(cat $HOME/dotfiles/snap_list.bak)
+snap install $(cat $HOME/dotfiles/backups/snap_list.bak)
 
 # Section: ble.sh Installation
 log "Installing ble.sh..."
@@ -68,7 +66,7 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 log "Increasing file descriptor limit for Homebrew..."
 ulimit -n 8192 # Increase the limit to 8192 (or higher if needed)
 
-brew install gcc $(cat $HOME/dotfiles/brew_list.bak)
+brew install gcc $(cat $HOME/dotfiles/backups/brew_list.bak)
 
 # Section: Rust Installation
 log "Installing Rust..."
@@ -107,7 +105,7 @@ sudo update-initramfs -u -k all
 
 # Section: Flatpak Applications Installation
 log "Installing Flatpak applications..."
-flatpak install $(cat $HOME/dotfiles/flatpaks_list.bak) -y
+flatpak install $(cat $HOME/dotfiles/backups/flatpaks_list.bak) -y
 
 source $HOME/.bashrc
 
@@ -131,7 +129,7 @@ sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt 
 # Section: Source .bashrc and Restore Gnome Settings
 log "Sourcing .bashrc and restoring Gnome settings..."
 source $HOME/.bashrc
-dconf load / <$HOME/dotfiles/gnome_settings.bak
+dconf load / <$HOME/dotfiles/backups/gnome_settings.bak
 
 # Section: AppArmor Enforcement
 log "Enforcing AppArmor profiles..."
