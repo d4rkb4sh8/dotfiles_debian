@@ -1,3 +1,4 @@
+```bash
 # terminal prompt for root
 PROMPT_COMMAND='PS1_CMD1=$(ip route get 1.1.1.1 | awk -F"src " '"'"'NR == 1{ split($2, a," ");print a[1]}'"'"')'; PS1='\[\e[91;1m\]\u\[\e[0m\]☠️ \[\e[96;1m\]\h\[\e[0m\] \[\e[93;3m\]\w\n\[\e[0;32;2m\]${PS1_CMD1}\[\e[0m\] \[\e[35;2m\]\t\[\e[0m\] \n\[\e[93;2m\]$?\[\e[0m\] \[\e[97;2;5m\]\$\[\e[0m\]: '
 
@@ -32,3 +33,4 @@ eval "$(atuin init bash)"
 
 # greet me
 echo "w3lc0m3 t0 th3 r00t 0f 4ll th1ng5! - m4ast3r y0ur cr4ft" | lolcat
+```
