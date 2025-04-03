@@ -114,5 +114,8 @@ eval "$(starship init bash)"
 # Rust
 . "$HOME/.cargo/env"
 
+# bash
+eval "$(navi widget bash)"
+
 # zoxide
 eval "$(zoxide init bash)"

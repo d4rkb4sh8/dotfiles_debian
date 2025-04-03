@@ -182,6 +182,7 @@ dosfstools
 dpkg-dev
 dpkg
 dsniff
+duf
 dwz
 e2fsprogs
 ed2k-hash
