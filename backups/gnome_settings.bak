@@ -160,7 +160,7 @@ show-battery-percentage=true
 automount=true
 
 [org/gnome/desktop/notifications]
-application-children=['gnome-power-panel', 'firefox-esr', 'org-gnome-extensions', 'ulauncher', 'org-gnome-nautilus', 'org-gnome-software']
+application-children=['gnome-power-panel', 'firefox-esr', 'org-gnome-extensions', 'ulauncher', 'org-gnome-nautilus', 'org-gnome-software', 'org-qbittorrent-qbittorrent']
 
 [org/gnome/desktop/notifications/application/com-discordapp-discord]
 application-id='com.discordapp.Discord.desktop'
@@ -188,6 +188,9 @@ application-id='org.gnome.Software.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-texteditor]
 application-id='org.gnome.TextEditor.desktop'
+
+[org/gnome/desktop/notifications/application/org-qbittorrent-qbittorrent]
+application-id='org.qbittorrent.qBittorrent.desktop'
 
 [org/gnome/desktop/notifications/application/ulauncher]
 application-id='ulauncher.desktop'
@@ -320,7 +323,7 @@ search-filter-time-type='last_modified'
 search-view='list-view'
 
 [org/gnome/nautilus/window-state]
-initial-size=(944, 1025)
+initial-size=(1367, 1025)
 initial-size-file-chooser=(890, 550)
 maximized=false
 
@@ -419,8 +422,9 @@ menu-item-hover-fg-color='rgb(255,255,255)'
 menu-layout='Whisker'
 menu-separator-color='rgba(255,255,255,0.1)'
 multi-monitor=true
+pop-folders-data={'Library Home': 'Library Home', 'Utilities': 'Utilities'}
 prefs-visible-page=0
-recently-installed-apps=['org.gnome.clocks.desktop', 'org.gnome.Weather.desktop', 'ulauncher.desktop', 'debian-xterm.desktop', 'debian-uxterm.desktop', 'cutecom.desktop', 'chirp.desktop', 'gnuradio-grc.desktop', 'dk.gqrx.gqrx.desktop', 'org.wireshark.Wireshark.desktop', 're.rizin.cutter.desktop', 'rfdump.desktop', 'kali-mifare-classic-format.desktop', 'kali-mfcuk.desktop', 'kali-hackrf_info.desktop', 'kali-ubertooth-util.desktop', 'kali-bettercap.desktop', 'kali-btscanner.desktop', 'kali-wifi-honey.desktop', 'kali-nfc-mfclassic.desktop', 'kali-heartleech.desktop', 'kali-blueranger.desktop', 'kali-cowpatty.desktop', 'kali-nfc-list.desktop', 'kali-airgeddon.desktop', 'kali-beef-xss-stop.desktop', 'kali-regripper.desktop', 'kali-asleap.desktop', 'kali-ollydbg.desktop', 'kali-mfterm.desktop', 'kali-shellter.desktop', 'kali-ettercap.desktop', 'kali-bluelog.desktop', 'kali-beef-xss.desktop', 'kali-mfoc.desktop', 'kali-mdk3.desktop', 'kali-bluesnarfer.desktop', 'org.gnome.Cheese.desktop', 'guvcview.desktop', 'com.github.themix_project.Oomox.desktop', 'com.ktechpit.whatsie.desktop', 'ranger.desktop', 'com.poweriso.PowerISO.desktop', 'chat.revolt.RevoltDesktop.desktop', 'cmatrix.desktop', 'mpv.desktop', 'io.github.jeffshee.Hidamari.desktop']
+recently-installed-apps=['org.gnome.clocks.desktop', 'org.gnome.Weather.desktop', 'ulauncher.desktop', 'debian-xterm.desktop', 'debian-uxterm.desktop', 'cutecom.desktop', 'chirp.desktop', 'gnuradio-grc.desktop', 'dk.gqrx.gqrx.desktop', 'org.wireshark.Wireshark.desktop', 're.rizin.cutter.desktop', 'rfdump.desktop', 'kali-mifare-classic-format.desktop', 'kali-mfcuk.desktop', 'kali-hackrf_info.desktop', 'kali-ubertooth-util.desktop', 'kali-bettercap.desktop', 'kali-btscanner.desktop', 'kali-wifi-honey.desktop', 'kali-nfc-mfclassic.desktop', 'kali-heartleech.desktop', 'kali-blueranger.desktop', 'kali-cowpatty.desktop', 'kali-nfc-list.desktop', 'kali-airgeddon.desktop', 'kali-beef-xss-stop.desktop', 'kali-regripper.desktop', 'kali-asleap.desktop', 'kali-ollydbg.desktop', 'kali-mfterm.desktop', 'kali-shellter.desktop', 'kali-ettercap.desktop', 'kali-bluelog.desktop', 'kali-beef-xss.desktop', 'kali-mfoc.desktop', 'kali-mdk3.desktop', 'kali-bluesnarfer.desktop', 'guvcview.desktop', 'com.github.themix_project.Oomox.desktop', 'com.ktechpit.whatsie.desktop', 'ranger.desktop', 'com.poweriso.PowerISO.desktop', 'chat.revolt.RevoltDesktop.desktop', 'cmatrix.desktop', 'mpv.desktop', 'io.github.jeffshee.Hidamari.desktop']
 right-panel-width=200
 search-entry-border-radius=(true, 25)
 search-provider-open-windows=true
@@ -794,7 +798,7 @@ radius-bottomleft=true
 radius-bottomright=true
 radius-topleft=true
 radius-topright=true
-reloadstyle=false
+reloadstyle=true
 removestyle=false
 set-fullscreen=true
 set-notifications=false
@@ -976,7 +980,7 @@ selected-color=(true, 0.5607843137254902, 0.94117647058823528, 0.643137254901960
 [org/gtk/settings/file-chooser]
 date-format='regular'
 location-mode='path-bar'
-show-hidden=true
+show-hidden=false
 show-size-column=true
 show-type-column=true
 sidebar-width=252
@@ -984,7 +988,7 @@ sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(26, 23)
+window-position=(344, 46)
 window-size=(1231, 902)
 
 [org/yorba/shotwell/preferences/export]
