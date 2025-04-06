@@ -104,7 +104,7 @@ panel-id='world'
 size=(870, 690)
 
 [org/gnome/control-center]
-last-panel='background'
+last-panel='bluetooth'
 window-state=(1040, 733, false)
 
 [org/gnome/desktop/app-folders]
@@ -1006,7 +1006,7 @@ sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(344, 46)
+window-position=(26, 23)
 window-size=(1231, 902)
 
 [org/yorba/shotwell/preferences/export]

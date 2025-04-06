@@ -79,7 +79,6 @@ ca-certificates-java
 ca-certificates-mono
 ca-certificates
 capstone-tool
-cava
 ccrypt
 cdrdao
 cewl
@@ -1040,7 +1039,6 @@ libimagequant0
 libimath-3-1-29
 libimobiledevice6
 libimport-into-perl
-libiniparser1
 libinput-bin
 libinput10
 libinstpatch-1.0-2

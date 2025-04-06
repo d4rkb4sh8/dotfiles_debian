@@ -11,6 +11,7 @@ bzip2
 ca-certificates
 cairo
 certifi
+chafa
 cheat
 cjson
 cointop
@@ -23,6 +24,7 @@ diff-so-fancy
 dust
 expat
 eza
+faad2
 fastfetch
 ffmpeg
 fftw
@@ -34,6 +36,7 @@ fribidi
 fzf
 game-music-emu
 gcc
+gdk-pixbuf
 gettext
 giflib
 gitleaks
@@ -57,6 +60,7 @@ jack
 jpeg-turbo
 jpeg-xl
 json-c
+kew
 krb5
 ladspa-sdk
 lame
@@ -66,6 +70,7 @@ leptonica
 libarchive
 libass
 libassuan
+libavif
 libb2
 libbluray
 libcap
@@ -83,10 +88,12 @@ libksba
 libmicrohttpd
 libmpc
 libnghttp2
+libnotify
 libogg
 libopenmpt
 libpng
 librist
+librsvg
 libsamplerate
 libsecret
 libsndfile
@@ -135,7 +142,6 @@ mpdecimal
 mpfr
 mpg123
 msgpack
-musikcube
 mutt
 navi
 ncurses
@@ -150,6 +156,7 @@ openjpeg
 openldap
 openssl@3
 opus
+opusfile
 orc
 p11-kit
 pango
@@ -167,6 +174,7 @@ rtmpdump
 rubberband
 scc
 sdl2
+shared-mime-info
 snappy
 speex
 speexdsp
