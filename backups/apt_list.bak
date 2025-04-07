@@ -1480,6 +1480,7 @@ libsane1
 libsasl2-2
 libsasl2-modules-db
 libsasl2-modules
+libsass1
 libsbc1
 libsdl-image1.2
 libsdl1.2debian
@@ -1726,7 +1727,6 @@ libxcb-cursor0
 libxcb-damage0
 libxcb-dri2-0
 libxcb-dri3-0
-libxcb-ewmh2
 libxcb-glx0
 libxcb-icccm4
 libxcb-image0
@@ -2616,6 +2616,7 @@ samba-libs
 samdump2
 sane-airscan
 sane-utils
+sassc
 scalpel
 scrounge-ntfs
 sd
@@ -2825,11 +2826,6 @@ xwayland
 xxd
 xz-utils
 yara
-yaru-theme-gnome-shell
-yaru-theme-gtk
-yaru-theme-icon
-yaru-theme-sound
-yaru-theme-unity
 yelp-xsl
 yelp
 yt-dlp

@@ -161,8 +161,8 @@ enable-animations=true
 font-antialiasing='grayscale'
 font-hinting='slight'
 font-name='Hack Nerd Font 11'
-gtk-theme='Yaru-prussiangreen-dark'
-icon-theme='Yaru-prussiangreen-dark'
+gtk-theme='Orchis-Dark-Compact'
+icon-theme='Tela-circle-dark'
 monospace-font-name='Hack Nerd Font Bold 10'
 show-battery-percentage=true
 
@@ -404,8 +404,8 @@ power-button-action='interactive'
 [org/gnome/shell]
 app-picker-layout=[{'balena-etcher.desktop': <{'position': <0>}>, 'btop.desktop': <{'position': <1>}>, 'org.gnome.Calculator.desktop': <{'position': <2>}>, 'org.gnome.Calendar.desktop': <{'position': <3>}>, 'org.gnome.Cheese.desktop': <{'position': <4>}>, 'org.chromium.Chromium.desktop': <{'position': <5>}>, 'org.gnome.clocks.desktop': <{'position': <6>}>, 'cmatrix.desktop': <{'position': <7>}>, 'org.gnome.Contacts.desktop': <{'position': <8>}>, 'com.github.qarmin.czkawka.desktop': <{'position': <9>}>, 'com.neatdecisions.Detwinner.desktop': <{'position': <10>}>, 'com.discordapp.Discord.desktop': <{'position': <11>}>, 'simple-scan.desktop': <{'position': <12>}>, 'org.gnome.Evolution.desktop': <{'position': <13>}>, 'com.mattjakeman.ExtensionManager.desktop': <{'position': <14>}>, 'org.gnome.Extensions.desktop': <{'position': <15>}>, 'org.flameshot.Flameshot.desktop': <{'position': <16>}>, 'org.gnome.FontManager.desktop': <{'position': <17>}>, 'org.gnome.FontViewer.desktop': <{'position': <18>}>, 'gdebi.desktop': <{'position': <19>}>, 'io.github.realmazharhussain.GdmSettings.desktop': <{'position': <20>}>, 'org.gnome.GPaste.Ui.desktop': <{'position': <21>}>, 'org.gnome.GPaste.Preferences.desktop': <{'position': <22>}>}, {'lstopo.desktop': <{'position': <0>}>, 'yelp.desktop': <{'position': <1>}>, 'org.gnome.eog.desktop': <{'position': <2>}>, 'im-config.desktop': <{'position': <3>}>, 'lynis.desktop': <{'position': <4>}>, 'org.gnome.Maps.desktop': <{'position': <5>}>, 'mpv.desktop': <{'position': <6>}>, 'org.gnome.Music.desktop': <{'position': <7>}>, 'org.onlyoffice.desktopeditors.desktop': <{'position': <8>}>, 'com.github.jeromerobert.pdfarranger.desktop': <{'position': <9>}>, 'net.sourceforge.Pdfedit.desktop': <{'position': <10>}>, 'com.uploadedlobster.peek.desktop': <{'position': <11>}>, 'Popcorn-Time.desktop': <{'position': <12>}>, 'org.qbittorrent.qBittorrent.desktop': <{'position': <13>}>, 'chat.revolt.RevoltDesktop.desktop': <{'position': <14>}>, 'org.gnome.Rhythmbox3.desktop': <{'position': <15>}>, 'org.gnome.Settings.desktop': <{'position': <16>}>, 'de.haeckerfelix.Shortwave.desktop': <{'position': <17>}>, 'shotwell.desktop': <{'position': <18>}>, 'software-properties-gtk.desktop': <{'position': <19>}>, 'org.gnome.SoundRecorder.desktop': <{'position': <20>}>, 'synaptic.desktop': <{'position': <21>}>, 'gnome-system-monitor.desktop': <{'position': <22>}>, 'org.gnome.Terminal.desktop': <{'position': <23>}>}, {'terminator.desktop': <{'position': <0>}>, 'info.desktop': <{'position': <1>}>, 'org.gnome.TextEditor.desktop': <{'position': <2>}>, 'transmission-gtk.desktop': <{'position': <3>}>, 'Utilities': <{'position': <4>}>, 'org.gnome.Totem.desktop': <{'position': <5>}>, 'vlc.desktop': <{'position': <6>}>, 'app.drey.Warp.desktop': <{'position': <7>}>, 'org.gnome.Weather.desktop': <{'position': <8>}>, 'whatsie_whatsie.desktop': <{'position': <9>}>, 'org.pwmt.zathura.desktop': <{'position': <10>}>, 'app.zen_browser.zen.desktop': <{'position': <11>}>}]
 disable-user-extensions=false
-disabled-extensions=['readingstrip@lupantano.gihthub', 'ding@rastersoft.com', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'system-monitor@gnome-shell-extensions.gcampax.github.com', 'ubuntu-appindicators@ubuntu.com', 'tilingshell@ferrarodomenico.com', 'tiling-assistant@leleat-on-github', 'mediacontrols@cliffniff.github.com', 'dash-to-dock@micxgx.gmail.com', 'arcmenu@arcmenu.com']
-enabled-extensions=['ProxySwitcher@flannaghan.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'AlphabeticalAppGrid@stuarthayhurst', 'appindicatorsupport@rgcjonas.gmail.com', 'quake-terminal@diegodario88.github.io', 'blur-my-shell@aunetx', 'clipboard-indicator@tudmotu.com', 'Vitals@CoreCoding.com', 'GPaste@gnome-shell-extensions.gnome.org', 'cronomix@zagortenay333', 'quake-mode@repsac-by.github.com', 'quick-settings-audio-panel@rayzeq.github.io', 'dash-to-panel@jderose9.github.com', 'openbar@neuromorph']
+disabled-extensions=['readingstrip@lupantano.gihthub', 'ding@rastersoft.com', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'system-monitor@gnome-shell-extensions.gcampax.github.com', 'ubuntu-appindicators@ubuntu.com', 'tilingshell@ferrarodomenico.com', 'tiling-assistant@leleat-on-github', 'mediacontrols@cliffniff.github.com', 'dash-to-dock@micxgx.gmail.com', 'arcmenu@arcmenu.com', 'openbar@neuromorph']
+enabled-extensions=['ProxySwitcher@flannaghan.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'AlphabeticalAppGrid@stuarthayhurst', 'appindicatorsupport@rgcjonas.gmail.com', 'quake-terminal@diegodario88.github.io', 'blur-my-shell@aunetx', 'clipboard-indicator@tudmotu.com', 'Vitals@CoreCoding.com', 'GPaste@gnome-shell-extensions.gnome.org', 'cronomix@zagortenay333', 'quake-mode@repsac-by.github.com', 'quick-settings-audio-panel@rayzeq.github.io', 'dash-to-panel@jderose9.github.com']
 favorite-apps=['mullvad-vpn.desktop', 'ghostty_ghostty.desktop', 'virtualbox.desktop', 'org.gnome.Nautilus.desktop', 'firefox-esr.desktop', 'net.cozic.joplin_desktop.desktop', 'csbooks_csbooks.desktop', 'com.discordapp.Discord.desktop', 'whatsie_whatsie.desktop', 'Popcorn-Time.desktop', 'org.gnome.Software.desktop', 'snap-store_snap-store.desktop', 'org.gnome.World.PikaBackup.desktop']
 last-selected-power-profile='power-saver'
 remember-mount-password=true
@@ -453,7 +453,7 @@ update-notifier-project-version=65
 
 [org/gnome/shell/extensions/blur-my-shell]
 brightness=0.40000000000000002
-hacks-level=3
+hacks-level=1
 noise-amount=0.0
 noise-lightness=0.0
 settings-version=2
@@ -463,9 +463,9 @@ brightness=0.59999999999999998
 sigma=30
 
 [org/gnome/shell/extensions/blur-my-shell/applications]
-blur=true
-enable-all=true
-opacity=220
+blur=false
+enable-all=false
+opacity=165
 whitelist=['terminator']
 
 [org/gnome/shell/extensions/blur-my-shell/coverflow-alt-tab]
@@ -496,7 +496,7 @@ style-components=3
 blur=true
 brightness=0.80000000000000004
 customize=false
-override-background=false
+override-background=true
 pipeline='pipeline_default'
 sigma=30
 static-blur=true
@@ -548,7 +548,7 @@ hotkeys-overlay-combo='TEMPORARILY'
 intellihide=false
 leftbox-padding=-1
 panel-anchors='{"0":"MIDDLE","CMN-0x00000000":"MIDDLE"}'
-panel-element-positions='{"CMN-0x00000000":[{"element":"showAppsButton","visible":true,"position":"stackedTL"},{"element":"activitiesButton","visible":false,"position":"stackedTL"},{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"stackedTL"},{"element":"centerBox","visible":true,"position":"centered"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"dateMenu","visible":true,"position":"stackedBR"},{"element":"systemMenu","visible":true,"position":"stackedBR"},{"element":"desktopButton","visible":false,"position":"stackedBR"}]}'
+panel-element-positions='{"0":[{"element":"showAppsButton","visible":true,"position":"stackedTL"},{"element":"activitiesButton","visible":false,"position":"stackedTL"},{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"stackedTL"},{"element":"centerBox","visible":true,"position":"stackedBR"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"dateMenu","visible":true,"position":"stackedBR"},{"element":"systemMenu","visible":true,"position":"stackedBR"},{"element":"desktopButton","visible":false,"position":"stackedBR"}],"CMN-0x00000000":[{"element":"showAppsButton","visible":true,"position":"stackedTL"},{"element":"activitiesButton","visible":false,"position":"stackedTL"},{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"stackedTL"},{"element":"centerBox","visible":true,"position":"centered"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"dateMenu","visible":true,"position":"stackedBR"},{"element":"systemMenu","visible":true,"position":"stackedBR"},{"element":"desktopButton","visible":false,"position":"stackedBR"}]}'
 panel-lengths='{"0":100}'
 panel-positions='{}'
 panel-sizes='{"0":39,"CMN-0x00000000":37}'
@@ -831,7 +831,7 @@ radius-bottomleft=true
 radius-bottomright=true
 radius-topleft=true
 radius-topright=true
-reloadstyle=true
+reloadstyle=false
 removestyle=false
 set-fullscreen=true
 set-notifications=false
@@ -961,7 +961,7 @@ window-border-color='rgb(153,193,241)'
 window-border-width=uint32 1
 
 [org/gnome/shell/extensions/user-theme]
-name='Yaru-dark'
+name='Orchis-Dark-Compact'
 
 [org/gnome/shell/keybindings]
 open-application-menu=@as []
