@@ -1498,6 +1498,11 @@ libserd-0-0
 libsereal-decoder-perl
 libsereal-encoder-perl
 libserf-1-1
+libsfml-audio2.5
+libsfml-graphics2.5
+libsfml-network2.5
+libsfml-system2.5
+libsfml-window2.5
 libsgutils2-1.46-2
 libshine3
 libshout3
@@ -2510,6 +2515,7 @@ python3-ruamel.yaml.clib
 python3-ruamel.yaml
 python3-setuptools-whl
 python3-setuptools
+python3-sfml
 python3-simplejson
 python3-six
 python3-smbc

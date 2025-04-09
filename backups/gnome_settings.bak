@@ -104,8 +104,14 @@ panel-id='world'
 size=(870, 690)
 
 [org/gnome/control-center]
-last-panel='background'
+last-panel='power'
 window-state=(1040, 733, false)
+
+[org/gnome/desktop/a11y]
+always-show-universal-access-status=false
+
+[org/gnome/desktop/a11y/applications]
+screen-keyboard-enabled=false
 
 [org/gnome/desktop/app-folders]
 folder-children=['Utilities', 'YaST', 'Pardus']
@@ -161,10 +167,11 @@ enable-animations=true
 font-antialiasing='grayscale'
 font-hinting='slight'
 font-name='Hack Nerd Font 11'
-gtk-theme='Orchis-Dark-Compact'
+gtk-theme='Adwaita-dark'
 icon-theme='Tela-circle-dark'
 monospace-font-name='Hack Nerd Font Bold 10'
 show-battery-percentage=true
+toolkit-accessibility=false
 
 [org/gnome/desktop/media-handling]
 automount=true
@@ -375,7 +382,7 @@ last-folder-path='/home/h4ck3r/keepassxc'
 last-folder-path='/home/h4ck3r/Downloads'
 
 [org/gnome/settings-daemon/plugins/color]
-night-light-enabled=true
+night-light-enabled=false
 night-light-schedule-automatic=false
 night-light-temperature=uint32 3410
 
@@ -464,6 +471,7 @@ sigma=30
 
 [org/gnome/shell/extensions/blur-my-shell/applications]
 blur=false
+customize=false
 enable-all=false
 opacity=165
 whitelist=['terminator']
@@ -518,8 +526,10 @@ notify-on-copy=true
 
 [org/gnome/shell/extensions/dash-to-dock]
 apply-custom-theme=true
+background-color='rgb(36,31,49)'
 background-opacity=0.80000000000000004
 click-action='focus-minimize-or-previews'
+custom-background-color=false
 custom-theme-shrink=true
 dash-max-icon-size=39
 disable-overview-on-startup=true
@@ -530,6 +540,7 @@ intellihide-mode='ALL_WINDOWS'
 preferred-monitor=-2
 preferred-monitor-by-connector='eDP-1'
 scroll-action='cycle-windows'
+transparency-mode='FIXED'
 
 [org/gnome/shell/extensions/dash-to-panel]
 animate-appicon-hover-animation-extent={'RIPPLE': 4, 'PLANK': 4, 'SIMPLE': 1}
@@ -961,7 +972,7 @@ window-border-color='rgb(153,193,241)'
 window-border-width=uint32 1
 
 [org/gnome/shell/extensions/user-theme]
-name='Orchis-Dark-Compact'
+name=''
 
 [org/gnome/shell/keybindings]
 open-application-menu=@as []
@@ -975,11 +986,11 @@ locations=[<(uint32 2, <('Port-of-Spain', 'TTPP', true, [(0.18529579473782881, -
 locations=[<(uint32 2, <('Beijing', 'ZBAA', true, [(0.69696814214530467, 2.0295270260429752)], [(0.69689057971334611, 2.0313596217575696)])>)>, <(uint32 2, <('Tokyo', 'RJTI', true, [(0.62191898430954862, 2.4408429589140699)], [(0.62282074357417661, 2.4391218722853854)])>)>, <(uint32 2, <('New Delhi', 'VIDP', true, [(0.49858239547081096, 1.345939747314058)], [(0.49916416607037828, 1.3473941825396225)])>)>, <(uint32 2, <('Sydney', 'YSSY', true, [(-0.59253928105207498, 2.6386469349889961)], [(-0.59137572239964786, 2.6392287230418559)])>)>, <(uint32 2, <('Los Angeles', 'KCQT', true, [(0.59370283970450188, -2.0644336110828618)], [(0.59432360095955872, -2.063741622941031)])>)>, <(uint32 2, <('Toronto', 'CYTZ', true, [(0.76154532446909495, -1.3857914260834978)], [(0.76212711252195475, -1.3860823201099277)])>)>, <(uint32 2, <('Mexico City', 'MMMX', true, [(0.33917564548646723, -1.7296212887263802)], [(0.33919020153242879, -1.7302951778038682)])>)>, <(uint32 2, <('Rio de Janeiro', 'SBRJ', true, [(-0.39968039870670141, -0.75340046626198298)], [(-0.39968039870670141, -0.75456400746111763)])>)>, <(uint32 2, <('New York', 'KNYC', true, [(0.71180344078725644, -1.2909618758762367)], [(0.71059804659265924, -1.2916478949920254)])>)>, <(uint32 2, <('London', 'EGWU', true, [(0.89971722940307675, -0.007272211034407213)], [(0.89884456477707964, -0.0020362232784242244)])>)>, <(uint32 2, <('Paris', 'LFPB', true, [(0.85462956287765413, 0.042760566673861078)], [(0.8528842336256599, 0.040724343395436846)])>)>]
 
 [org/gnome/software]
-check-timestamp=int64 1743948271
+check-timestamp=int64 1744158904
 first-run=false
 flatpak-purge-timestamp=int64 1743206554
 install-timestamp=int64 1741653043
-online-updates-timestamp=int64 1743862209
+online-updates-timestamp=int64 1744158917
 update-notification-timestamp=int64 1743862207
 
 [org/gnome/system/location]
