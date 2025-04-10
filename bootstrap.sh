@@ -119,8 +119,8 @@ curl -sSL https://raw.githubusercontent.com/aandrew-me/tgpt/main/install | bash 
 curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh
 
 # Section: Ollama Installation
-log "Installing Ollama..."
-curl -fsSL https://ollama.com/install.sh | sh
+#log "Installing Ollama..."
+#curl -fsSL https://ollama.com/install.sh | sh
 
 # Section: Final Update and Cleanup
 log "Final update and cleanup..."

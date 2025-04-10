@@ -100,6 +100,7 @@ colord-data
 colord
 console-setup-linux
 console-setup
+containerd.io
 coreutils
 cowpatty
 cpio

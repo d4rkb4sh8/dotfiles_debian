@@ -1,6 +1,0 @@
-binsider
-cargo-list
-cargo-install-update
-cargo-install-update-config
-dysk
-kanata
