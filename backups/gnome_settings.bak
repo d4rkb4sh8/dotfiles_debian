@@ -104,7 +104,7 @@ panel-id='world'
 size=(870, 690)
 
 [org/gnome/control-center]
-last-panel='power'
+last-panel='keyboard'
 window-state=(1040, 733, false)
 
 [org/gnome/desktop/a11y]
@@ -266,6 +266,7 @@ move-to-workspace-9=['<Super><Shift>9']
 panel-run-dialog=@as []
 switch-to-workspace-left=['<Alt>F11']
 switch-to-workspace-right=['<Alt>F12']
+toggle-fullscreen=['<Super>f']
 toggle-maximized=@as []
 
 [org/gnome/desktop/wm/preferences]
@@ -412,7 +413,7 @@ power-button-action='interactive'
 app-picker-layout=[{'balena-etcher.desktop': <{'position': <0>}>, 'btop.desktop': <{'position': <1>}>, 'org.gnome.Calculator.desktop': <{'position': <2>}>, 'org.gnome.Calendar.desktop': <{'position': <3>}>, 'org.gnome.Cheese.desktop': <{'position': <4>}>, 'org.chromium.Chromium.desktop': <{'position': <5>}>, 'org.gnome.clocks.desktop': <{'position': <6>}>, 'cmatrix.desktop': <{'position': <7>}>, 'org.gnome.Contacts.desktop': <{'position': <8>}>, 'com.github.qarmin.czkawka.desktop': <{'position': <9>}>, 'com.neatdecisions.Detwinner.desktop': <{'position': <10>}>, 'com.discordapp.Discord.desktop': <{'position': <11>}>, 'simple-scan.desktop': <{'position': <12>}>, 'org.gnome.Evolution.desktop': <{'position': <13>}>, 'com.mattjakeman.ExtensionManager.desktop': <{'position': <14>}>, 'org.gnome.Extensions.desktop': <{'position': <15>}>, 'org.flameshot.Flameshot.desktop': <{'position': <16>}>, 'org.gnome.FontManager.desktop': <{'position': <17>}>, 'org.gnome.FontViewer.desktop': <{'position': <18>}>, 'gdebi.desktop': <{'position': <19>}>, 'io.github.realmazharhussain.GdmSettings.desktop': <{'position': <20>}>, 'org.gnome.GPaste.Ui.desktop': <{'position': <21>}>, 'org.gnome.GPaste.Preferences.desktop': <{'position': <22>}>}, {'lstopo.desktop': <{'position': <0>}>, 'yelp.desktop': <{'position': <1>}>, 'org.gnome.eog.desktop': <{'position': <2>}>, 'im-config.desktop': <{'position': <3>}>, 'lynis.desktop': <{'position': <4>}>, 'org.gnome.Maps.desktop': <{'position': <5>}>, 'mpv.desktop': <{'position': <6>}>, 'org.gnome.Music.desktop': <{'position': <7>}>, 'org.onlyoffice.desktopeditors.desktop': <{'position': <8>}>, 'com.github.jeromerobert.pdfarranger.desktop': <{'position': <9>}>, 'net.sourceforge.Pdfedit.desktop': <{'position': <10>}>, 'com.uploadedlobster.peek.desktop': <{'position': <11>}>, 'Popcorn-Time.desktop': <{'position': <12>}>, 'org.qbittorrent.qBittorrent.desktop': <{'position': <13>}>, 'chat.revolt.RevoltDesktop.desktop': <{'position': <14>}>, 'org.gnome.Rhythmbox3.desktop': <{'position': <15>}>, 'org.gnome.Settings.desktop': <{'position': <16>}>, 'de.haeckerfelix.Shortwave.desktop': <{'position': <17>}>, 'shotwell.desktop': <{'position': <18>}>, 'software-properties-gtk.desktop': <{'position': <19>}>, 'org.gnome.SoundRecorder.desktop': <{'position': <20>}>, 'synaptic.desktop': <{'position': <21>}>, 'gnome-system-monitor.desktop': <{'position': <22>}>, 'org.gnome.Terminal.desktop': <{'position': <23>}>}, {'terminator.desktop': <{'position': <0>}>, 'info.desktop': <{'position': <1>}>, 'org.gnome.TextEditor.desktop': <{'position': <2>}>, 'transmission-gtk.desktop': <{'position': <3>}>, 'Utilities': <{'position': <4>}>, 'org.gnome.Totem.desktop': <{'position': <5>}>, 'vlc.desktop': <{'position': <6>}>, 'app.drey.Warp.desktop': <{'position': <7>}>, 'org.gnome.Weather.desktop': <{'position': <8>}>, 'whatsie_whatsie.desktop': <{'position': <9>}>, 'org.pwmt.zathura.desktop': <{'position': <10>}>, 'app.zen_browser.zen.desktop': <{'position': <11>}>}]
 disable-user-extensions=false
 disabled-extensions=['readingstrip@lupantano.gihthub', 'ding@rastersoft.com', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'system-monitor@gnome-shell-extensions.gcampax.github.com', 'ubuntu-appindicators@ubuntu.com', 'tilingshell@ferrarodomenico.com', 'tiling-assistant@leleat-on-github', 'mediacontrols@cliffniff.github.com', 'dash-to-dock@micxgx.gmail.com', 'arcmenu@arcmenu.com', 'openbar@neuromorph']
-enabled-extensions=['ProxySwitcher@flannaghan.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'AlphabeticalAppGrid@stuarthayhurst', 'appindicatorsupport@rgcjonas.gmail.com', 'quake-terminal@diegodario88.github.io', 'blur-my-shell@aunetx', 'clipboard-indicator@tudmotu.com', 'Vitals@CoreCoding.com', 'GPaste@gnome-shell-extensions.gnome.org', 'cronomix@zagortenay333', 'quake-mode@repsac-by.github.com', 'quick-settings-audio-panel@rayzeq.github.io', 'dash-to-panel@jderose9.github.com']
+enabled-extensions=['ProxySwitcher@flannaghan.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'AlphabeticalAppGrid@stuarthayhurst', 'appindicatorsupport@rgcjonas.gmail.com', 'quake-terminal@diegodario88.github.io', 'blur-my-shell@aunetx', 'clipboard-indicator@tudmotu.com', 'Vitals@CoreCoding.com', 'GPaste@gnome-shell-extensions.gnome.org', 'cronomix@zagortenay333', 'quake-mode@repsac-by.github.com', 'quick-settings-audio-panel@rayzeq.github.io', 'dash-to-panel@jderose9.github.com', 'notification-position@drugo.dev', 'notification-timeout@chlumskyvaclav.gmail.com']
 favorite-apps=['mullvad-vpn.desktop', 'ghostty_ghostty.desktop', 'virtualbox.desktop', 'org.gnome.Nautilus.desktop', 'firefox-esr.desktop', 'net.cozic.joplin_desktop.desktop', 'csbooks_csbooks.desktop', 'com.discordapp.Discord.desktop', 'whatsie_whatsie.desktop', 'Popcorn-Time.desktop', 'org.gnome.Software.desktop', 'snap-store_snap-store.desktop', 'org.gnome.World.PikaBackup.desktop']
 last-selected-power-profile='power-saver'
 remember-mount-password=true
@@ -605,6 +606,9 @@ mouse-action-right='SHOW_POPUP_MENU'
 mouse-action-scroll-down='NONE'
 mouse-action-scroll-up='NONE'
 mouse-actions=['toggle_play', 'toggle_info', 'none', 'none', 'none', 'none', 'none', 'none']
+
+[org/gnome/shell/extensions/notification-timeout]
+timeout=2000
 
 [org/gnome/shell/extensions/openbar]
 accent-color=['0', '0.75', '0.75']
@@ -986,7 +990,7 @@ locations=[<(uint32 2, <('Port-of-Spain', 'TTPP', true, [(0.18529579473782881, -
 locations=[<(uint32 2, <('Beijing', 'ZBAA', true, [(0.69696814214530467, 2.0295270260429752)], [(0.69689057971334611, 2.0313596217575696)])>)>, <(uint32 2, <('Tokyo', 'RJTI', true, [(0.62191898430954862, 2.4408429589140699)], [(0.62282074357417661, 2.4391218722853854)])>)>, <(uint32 2, <('New Delhi', 'VIDP', true, [(0.49858239547081096, 1.345939747314058)], [(0.49916416607037828, 1.3473941825396225)])>)>, <(uint32 2, <('Sydney', 'YSSY', true, [(-0.59253928105207498, 2.6386469349889961)], [(-0.59137572239964786, 2.6392287230418559)])>)>, <(uint32 2, <('Los Angeles', 'KCQT', true, [(0.59370283970450188, -2.0644336110828618)], [(0.59432360095955872, -2.063741622941031)])>)>, <(uint32 2, <('Toronto', 'CYTZ', true, [(0.76154532446909495, -1.3857914260834978)], [(0.76212711252195475, -1.3860823201099277)])>)>, <(uint32 2, <('Mexico City', 'MMMX', true, [(0.33917564548646723, -1.7296212887263802)], [(0.33919020153242879, -1.7302951778038682)])>)>, <(uint32 2, <('Rio de Janeiro', 'SBRJ', true, [(-0.39968039870670141, -0.75340046626198298)], [(-0.39968039870670141, -0.75456400746111763)])>)>, <(uint32 2, <('New York', 'KNYC', true, [(0.71180344078725644, -1.2909618758762367)], [(0.71059804659265924, -1.2916478949920254)])>)>, <(uint32 2, <('London', 'EGWU', true, [(0.89971722940307675, -0.007272211034407213)], [(0.89884456477707964, -0.0020362232784242244)])>)>, <(uint32 2, <('Paris', 'LFPB', true, [(0.85462956287765413, 0.042760566673861078)], [(0.8528842336256599, 0.040724343395436846)])>)>]
 
 [org/gnome/software]
-check-timestamp=int64 1744288339
+check-timestamp=int64 1744367809
 first-run=false
 flatpak-purge-timestamp=int64 1743206554
 install-timestamp=int64 1741653043
