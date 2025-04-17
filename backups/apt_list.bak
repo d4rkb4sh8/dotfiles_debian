@@ -2094,6 +2094,7 @@ ncurses-bin
 ncurses-term
 ndiff
 net-tools
+net.downloadhelper.coapp
 netbase
 netcat-openbsd
 netcat-traditional
@@ -2627,6 +2628,7 @@ python3-dnspython
 python3-docopt
 python3-dotenv
 python3-executing
+python3-fake-factory
 python3-flask
 python3-fonttools
 python3-fs
@@ -2643,6 +2645,7 @@ python3-httplib2
 python3-httpx
 python3-hyperframe
 python3-ibus-1.0
+python3-icu
 python3-idna
 python3-impacket
 python3-importlib-metadata
@@ -2693,6 +2696,7 @@ python3-olefile
 python3-openssl
 python3-packaging
 python3-paramiko
+python3-parsedatetime
 python3-parso
 python3-passlib
 python3-pexpect
@@ -2766,6 +2770,7 @@ python3-typer
 python3-typing-extensions
 python3-tz
 python3-ufolib2
+python3-unidecode
 python3-urllib3
 python3-urwid
 python3-userpath
