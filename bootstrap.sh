@@ -68,27 +68,10 @@ ulimit -n 8192 # Increase the limit to 8192 (or higher if needed)
 
 brew install gcc $(cat $HOME/dotfiles/backups/brew_list.bak)
 
-# Section: Rust Installation
-log "Installing Rust..."
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-
 # Section: Icon Theme Installation
 log "Installing Tela-circle-icons..."
 git clone https://github.com/vinceliuice/Tela-circle-icon-theme.git $HOME/Downloads/Tela-circle-icon-theme
 $HOME/Downloads/Tela-circle-icon-theme/install.sh
-
-# Section: GRC Colors Setup
-log "Setting up GRC colors..."
-cd $HOME/gitprojects
-git clone https://github.com/garabik/grc.git
-cd $HOME/gitprojects/grc
-sudo ./install.sh
-sudo cp /etc/profile.d/grc.sh /etc
-
-# Section: Starship Prompt Setup
-log "Setting up Starship..."
-curl -sS https://starship.rs/install.sh | sh
-starship preset nerd-font-symbols -o ~/.config/starship.toml
 
 # Section: GRUB Custom Theme Installation
 log "Installing Grub theme..."
@@ -113,14 +96,9 @@ source $HOME/.bashrc
 log "Installing cargo packages..."
 cargo install cargo-update cargo-list kanata binsider
 
-# Section: tgpt and Atuin Installation
-log "Installing tgpt and atuin..."
-curl -sSL https://raw.githubusercontent.com/aandrew-me/tgpt/main/install | bash -s /usr/local/bin
-curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh
-
 # Section: Ollama Installation
 #log "Installing Ollama..."
-#curl -fsSL https://ollama.com/install.sh | sh
+curl -fsSL https://ollama.com/install.sh | sh
 
 # Section: Final Update and Cleanup
 log "Final update and cleanup..."
