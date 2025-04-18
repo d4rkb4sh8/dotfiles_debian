@@ -82,7 +82,7 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys screen-brightness-dow
 export PATH=$PATH:/home/linuxbrew/.linuxbrew/bin/:/home/h4ck3r/.cargo/bin:home/h4ck3r/go/bin:/home/h4ck3r/.local/bin:/usr/bin:/usr/games:/usr/local/bin
 
 # preferred text editor
-#EDITOR=nano
+export EDITOR='nvim'
 
 #homebrew
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
@@ -102,15 +102,12 @@ export MANPAGER='nvim +Man!'
 # greet me
 echo "w3lc0m3 h4ck3r - let the games begin! - m4ast3r y0ur cr4ft" | lolcat
 
-
 [[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
 
 # Atuin
 eval "$(atuin init bash)"
 
-
 # Rust
-. "$HOME/.cargo/env"
 
 # bash
 eval "$(navi widget bash)"

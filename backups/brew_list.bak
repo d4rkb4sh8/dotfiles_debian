@@ -6,6 +6,7 @@ aria2
 aribb24
 assimp
 at-spi2-core
+atuin
 bandwhich
 berkeley-db@5
 binutils
@@ -90,6 +91,7 @@ jpeg-xl
 json-c
 json-glib
 jsoncpp
+kanata
 kew
 krb5
 ladspa-sdk
@@ -254,6 +256,7 @@ python@3.13
 qt
 rav1e
 readline
+ripgrep
 rtmpdump
 rubberband
 scc
@@ -267,6 +270,7 @@ spirv-tools
 sqlite
 srt
 srtp
+starship
 suite-sparse
 svt-av1
 systemd
