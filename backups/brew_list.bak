@@ -9,6 +9,7 @@ at-spi2-core
 atuin
 bandwhich
 berkeley-db@5
+binsider
 binutils
 boost
 brotli
@@ -67,6 +68,7 @@ gobject-introspection
 gpgme
 graphene
 graphite2
+grc
 gsettings-desktop-schemas
 gstreamer
 gtk+3
