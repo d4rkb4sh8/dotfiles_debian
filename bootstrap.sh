@@ -10,7 +10,7 @@ log() {
 
 # Section: Initial Setup
 log "Starting initial setup..."
-sudo apt install -y git gh curl gawk cmake
+sudo apt install -y git gh curl gawk cmake linux-headers-$(uname -r)
 sudo sed -i '/^deb / s/$/ contrib non-free/' /etc/apt/sources.list
 
 # Section: Remove Bloatware
@@ -91,10 +91,6 @@ log "Installing Flatpak applications..."
 flatpak install $(cat $HOME/dotfiles/backups/flatpaks_list.bak) -y
 
 source $HOME/.bashrc
-
-# Section: Cargo Installations
-log "Installing cargo packages..."
-cargo install cargo-update cargo-list kanata binsider
 
 # Section: Ollama Installation
 #log "Installing Ollama..."
