@@ -5,12 +5,16 @@
   always_split_with_profile = True
   link_single_click = True
 [keybindings]
+  go_up = <Alt>k
+  go_down = <Alt>j
+  go_left = <Alt>h
+  go_right = <Alt>l
   split_horiz = <Primary><Alt>minus
   split_vert = <Primary><Alt>backslash
-  resize_up = <Shift><Alt>Up
-  resize_down = <Shift><Alt>Down
-  resize_left = <Shift><Alt>Left
-  resize_right = <Shift><Alt>Right
+  resize_up = <Shift><Alt>k
+  resize_down = <Shift><Alt>j
+  resize_left = <Shift><Alt>h
+  resize_right = <Shift><Alt>l
   switch_to_tab_1 = <Alt>1
   switch_to_tab_2 = <Alt>2
   switch_to_tab_3 = <Alt>3
@@ -21,6 +25,7 @@
   switch_to_tab_8 = <Alt>8
   switch_to_tab_9 = <Alt>9
   switch_to_tab_10 = <Alt>0
+  layout_launcher = ""
 [profiles]
   [[default]]
     background_color = "#1c1b22"
