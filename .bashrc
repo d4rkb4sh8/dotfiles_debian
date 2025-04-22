@@ -78,7 +78,7 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys screen-brightness-up 
 gsettings set org.gnome.settings-daemon.plugins.media-keys screen-brightness-down "['<Ctrl><Super>Down']"
 
 #path
-export PATH=$PATH:/home/linuxbrew/.linuxbrew/bin/:/home/h4ck3r/.cargo/bin:home/h4ck3r/go/bin:/home/h4ck3r/.local/bin:/usr/bin:/usr/games:/usr/local/bin
+export PATH=$PATH:/home/linuxbrew/.linuxbrew/bin/:home/h4ck3r/go/bin:/home/h4ck3r/.local/bin:/usr/bin:/usr/games:/usr/local/bin
 
 # preferred text editor
 export EDITOR='nvim'
@@ -105,11 +105,6 @@ echo "w3lc0m3 h4ck3r - let the games begin! - m4ast3r y0ur cr4ft" | lolcat
 
 # Atuin
 eval "$(atuin init bash)"
-
-# Rust
-
-# bash
-eval "$(navi widget bash)"
 
 # zoxide
 eval "$(zoxide init bash)"
