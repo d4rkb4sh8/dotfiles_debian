@@ -71,7 +71,7 @@ if ! shopt -oq posix; then
 fi
 
 # colorize output
-GRC_ALIASES=true
+export GRC_ALIASES=true
 
 #Brightness control from keybaord
 gsettings set org.gnome.settings-daemon.plugins.media-keys screen-brightness-up "['<Ctrl><Super>Up']"
