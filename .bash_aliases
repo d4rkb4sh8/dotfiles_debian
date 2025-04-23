@@ -182,7 +182,7 @@ alias aidr2='ollama run deepseek-r1:7b'
 alias ait='tgpt'
 
 # cheat sheet
-#alias cheat='tldr'
+alias cheat='tldr'
 
 #zathura for pdf's
 alias pdf='zathura'

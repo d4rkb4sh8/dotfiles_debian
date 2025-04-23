@@ -20,7 +20,6 @@ ceres-solver
 certifi
 cgns
 chafa
-cheat
 cjson
 cointop
 ctop
@@ -282,6 +281,7 @@ tcl-tk
 tesseract
 tgpt
 theora
+tlrc
 tokyo-cabinet
 tree-sitter
 unbound

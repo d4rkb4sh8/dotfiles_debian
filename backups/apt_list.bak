@@ -175,7 +175,6 @@ ddrutility
 de4dot
 debconf-i18n
 debconf
-debhelper
 debian-archive-keyring
 debian-faq
 debian-goodies
@@ -220,6 +219,7 @@ dtach
 duf
 dwz
 e2fsprogs
+easy-rsa
 ed2k-hash
 edid-decode
 efibootmgr
@@ -228,7 +228,6 @@ elfutils
 emacsen-common
 enchant-2
 eog
-equivs
 erofs-utils
 eslint
 espeak-ng-data
@@ -299,6 +298,7 @@ fonts-liberation
 fonts-lyx
 fonts-noto-color-emoji
 fonts-noto-mono
+fonts-powerline
 fonts-quicksand
 fonts-symbola
 fonts-urw-base35
@@ -334,7 +334,6 @@ geocode-glib-common
 geoip-bin
 geoip-database
 gettext-base
-gettext
 gh
 ghostscript
 ghp-import
@@ -468,6 +467,7 @@ gnome-weather
 gnupg-l10n
 gnupg-utils
 gnupg
+gobject-introspection
 golang-1.19-doc
 golang-1.19-go
 golang-1.19-src
@@ -580,8 +580,6 @@ install-info
 installation-report
 intel-media-va-driver
 intel-microcode
-intltool-debian
-intltool
 inxi
 ipgrab
 ipp-usb
@@ -607,6 +605,9 @@ john
 jq
 kbd
 keyboard-configuration
+kitty-doc
+kitty-shell-integration
+kitty-terminfo
 klibc-utils
 kmod
 kpartx
@@ -690,6 +691,7 @@ libayatana-indicator3-7
 libb-hooks-endofscope-perl
 libb-hooks-op-check-perl
 libb-keywords-perl
+libb2-1
 libbabeltrace1
 libbcg729-0
 libbdplus0
@@ -717,6 +719,7 @@ libboost1.74-dev
 libbpf1
 libbrasero-media3-1
 libbrlapi0.8
+libbrotli-dev
 libbrotli1
 libbs2b0
 libbsd0
@@ -739,6 +742,7 @@ libcairo-gobject-perl
 libcairo-gobject2
 libcairo-perl
 libcairo-script-interpreter2
+libcairo2-dev
 libcairo2
 libcairomm-1.0-1v5
 libcamel-1.2-64
@@ -755,6 +759,7 @@ libcapstone4
 libcapture-tiny-perl
 libcbor0.8
 libcc1-0
+libccid
 libcddb2
 libcdio-cdda2
 libcdio-paranoia2
@@ -818,6 +823,7 @@ libdata-validate-domain-perl
 libdata-validate-ip-perl
 libdata-validate-uri-perl
 libdate-manip-perl
+libdatrie-dev
 libdatrie1
 libdav1d6
 libdaxctl1
@@ -837,6 +843,7 @@ libdebuginfod1
 libdecor-0-0
 libdecor-0-plugin-1-cairo
 libdee-1.0-4
+libdeflate-dev
 libdeflate0
 libdevel-callchecker-perl
 libdevel-size-perl
@@ -884,7 +891,9 @@ libedit2
 libeditorconfig0
 libefiboot1
 libefivar1
+libegl-dev
 libegl-mesa0
+libegl1-mesa-dev
 libegl1
 libelf1
 libemail-address-xs-perl
@@ -892,6 +901,7 @@ libenchant-2-2
 libencode-locale-perl
 libengine-gost-openssl1.1
 libengine-gost-openssl
+libepoxy-dev
 libepoxy0
 libept1.6.0
 liberror-perl
@@ -946,6 +956,7 @@ libfolks-eds26
 libfolks26
 libfont-afm-perl
 libfont-ttf-perl
+libfontconfig-dev
 libfontconfig1
 libfontembed1
 libfontenc1
@@ -953,8 +964,10 @@ libfreeaptx0
 libfreerdp-client2-2
 libfreerdp-server2-2
 libfreerdp2-2
+libfreetype-dev
 libfreetype6
 libfreezethaw-perl
+libfribidi-dev
 libfribidi0
 libfstrm0
 libftdi1-2
@@ -982,6 +995,7 @@ libgdbm-compat4
 libgdbm6
 libgdiplus
 libgdk-pixbuf-2.0-0
+libgdk-pixbuf-2.0-dev
 libgdk-pixbuf-xlib-2.0-0
 libgdk-pixbuf2.0-0
 libgdk-pixbuf2.0-bin
@@ -1000,6 +1014,7 @@ libgfxdr0
 libgif7
 libgirara-gtk3-3
 libgirepository-1.0-1
+libgirepository1.0-dev
 libgit2-1.5
 libgit2-dev
 libgit2-fixtures
@@ -1007,9 +1022,12 @@ libgit2-glib-1.0-0
 libgit2-glib-1.0-dev
 libgit2-glib-1.0-doc
 libgjs0g
+libgl-dev
 libgl1-mesa-dri
 libgl1
 libglapi-mesa
+libgles-dev
+libgles1
 libgles2
 libglib-object-introspection-perl
 libglib-perl
@@ -1021,7 +1039,10 @@ libglib2.0-dev
 libglibmm-2.4-1v5
 libglu1-mesa
 libglusterfs0
+libglvnd-core-dev
+libglvnd-dev
 libglvnd0
+libglx-dev
 libglx-mesa0
 libglx0
 libgme0
@@ -1057,7 +1078,9 @@ libgpod-common
 libgpod4
 libgprofng0
 libgraphene-1.0-0
+libgraphene-1.0-dev
 libgraphite2-3
+libgraphite2-dev
 libgrilo-0.3-0
 libgs-common
 libgs10-common
@@ -1110,6 +1133,8 @@ libgweather-4-0
 libgweather-4-common
 libgxps2
 libhandy-1-0
+libharfbuzz-dev
+libharfbuzz-gobject0
 libharfbuzz-icu0
 libharfbuzz-subset0
 libharfbuzz0b
@@ -1142,6 +1167,7 @@ libi2c0
 libibus-1.0-5
 libibverbs1
 libical3
+libice-dev
 libice6
 libicu-dev
 libicu72
@@ -1193,12 +1219,15 @@ libjavascriptcoregtk-4.0-18
 libjavascriptcoregtk-4.1-0
 libjavascriptcoregtk-6.0-1
 libjaylink0
+libjbig-dev
 libjbig0
 libjbig2dec0
 libjcat1
 libjemalloc2
 libjim0.81
+libjpeg-dev
 libjpeg-turbo-progs
+libjpeg62-turbo-dev
 libjpeg62-turbo
 libjq1
 libjs-async
@@ -1253,6 +1282,7 @@ libldap-2.5-0
 libldap-common
 libldb2
 libldm-1.0-0
+liblerc-dev
 liblerc4
 liblilv-0-0
 liblinear4
@@ -1288,6 +1318,7 @@ liblwp-mediatypes-perl
 liblwp-protocol-https-perl
 liblz1
 liblz4-1
+liblzma-dev
 liblzma5
 liblzo2-2
 libmaa4
@@ -1456,6 +1487,7 @@ libopenblas0
 libopencore-amrnb0
 libopencore-amrwb0
 libopenexr-3-1-30
+libopengl-dev
 libopengl0
 libopenh264-7
 libopenjp2-7
@@ -1480,6 +1512,7 @@ libpam-runtime
 libpam-systemd
 libpam0g
 libpango-1.0-0
+libpango1.0-dev
 libpangocairo-1.0-0
 libpangoft2-1.0-0
 libpangomm-1.4-1v5
@@ -1519,11 +1552,15 @@ libpipewire-0.3-0
 libpipewire-0.3-common
 libpipewire-0.3-modules
 libpixman-1-0
+libpixman-1-dev
+libpkcs11-helper1
 libpkgconf3
 libplacebo208
 libplist3
 libplymouth5
 libpmem1
+libpng-dev
+libpng-tools
 libpng16-16
 libpocketsphinx3
 libpocl2-common
@@ -1560,6 +1597,7 @@ libproxy1v5
 libproxychains3
 libpsl5
 libpst4
+libpthread-stubs0-dev
 libpulse-mainloop-glib0
 libpulse0
 libpwquality-common
@@ -1618,6 +1656,7 @@ librpm9
 librpmio9
 librsvg2-2
 librsvg2-common
+librsync2
 librtmp1
 librubberband2
 libruby3.1
@@ -1673,6 +1712,7 @@ libsigsegv2
 libsixel1
 libslang2
 libslirp0
+libsm-dev
 libsm6
 libsmartcols1
 libsmbclient
@@ -1765,10 +1805,13 @@ libtext-markdown-discount-perl
 libtext-wrapi18n-perl
 libtext-xslate-perl
 libthai-data
+libthai-dev
 libthai0
 libtheora0
 libtie-ixhash-perl
+libtiff-dev
 libtiff6
+libtiffxx6
 libtime-duration-perl
 libtime-moment-perl
 libtimedate-perl
@@ -1856,18 +1899,22 @@ libvorbisfile3
 libvpx7
 libvte-2.91-0
 libvte-2.91-common
+libvulkan-dev
 libvulkan1
 libwacom-common
 libwacom9
 libwavpack1
+libwayland-bin
 libwayland-client0
 libwayland-cursor0
+libwayland-dev
 libwayland-egl1
 libwayland-server0
 libwbclient0
 libwebkit2gtk-4.0-37
 libwebkit2gtk-4.1-0
 libwebkitgtk-6.0-4
+libwebp-dev
 libwebp7
 libwebpdemux2
 libwebpmux3
@@ -1890,6 +1937,7 @@ libwww-perl
 libwww-robotrules-perl
 libx11-6
 libx11-data
+libx11-dev
 libx11-protocol-perl
 libx11-xcb1
 libx264-164
@@ -1898,6 +1946,7 @@ libx86-1
 libx86emu3
 libxapian30
 libxatracker2
+libxau-dev
 libxau6
 libxaw7
 libxcb-composite0
@@ -1912,9 +1961,11 @@ libxcb-keysyms1
 libxcb-present0
 libxcb-randr0
 libxcb-render-util0
+libxcb-render0-dev
 libxcb-render0
 libxcb-res0
 libxcb-shape0
+libxcb-shm0-dev
 libxcb-shm0
 libxcb-sync1
 libxcb-util1
@@ -1923,18 +1974,29 @@ libxcb-xinerama0
 libxcb-xinput0
 libxcb-xkb1
 libxcb-xv0
+libxcb1-dev
 libxcb1
+libxcomposite-dev
 libxcomposite1
+libxcursor-dev
 libxcursor1
 libxcvt0
+libxdamage-dev
 libxdamage1
+libxdmcp-dev
 libxdmcp6
+libxext-dev
 libxext6
+libxfixes-dev
 libxfixes3
 libxfont2
+libxft-dev
 libxft2
+libxi-dev
 libxi6
+libxinerama-dev
 libxinerama1
+libxkbcommon-dev
 libxkbcommon-x11-0
 libxkbcommon0
 libxkbfile1
@@ -1958,7 +2020,9 @@ libxmuu1
 libxnvctrl0
 libxpm4
 libxpresent1
+libxrandr-dev
 libxrandr2
+libxrender-dev
 libxrender1
 libxres1
 libxs-parse-keyword-perl
@@ -1988,11 +2052,11 @@ libz3-dev
 libzbar0
 libzimg2
 libzmq5
+libzstd-dev
 libzstd1
 libzvbi-common
 libzvbi0
 libzxing2
-lintian
 linux-base
 linux-compiler-gcc-12-x86
 linux-headers-6.1.0-32-amd64
@@ -2507,8 +2571,13 @@ ocl-icd-libopencl1
 openjdk-17-jre-headless
 openjdk-17-jre
 openpace
+opensc-pkcs11
+opensc
 openssh-client
+openssh-server
+openssh-sftp-server
 openssl
+openvpn
 ophcrack-cli
 orca
 os-prober
@@ -2524,6 +2593,7 @@ packagekit
 packit
 pandoc-data
 pandoc
+pango1.0-tools
 parted
 pasco
 pass
@@ -2536,6 +2606,7 @@ pcapfix
 pcaputils
 pci.ids
 pciutils
+pcscd
 pdfcrack
 pecomato
 perl-base
@@ -2566,7 +2637,6 @@ plzip
 png-definitive-guide
 pngcheck
 pnscan
-po-debconf
 pocketsphinx-en-us
 pocl-opencl-icd
 polenum
@@ -2639,7 +2709,6 @@ python3-defusedxml
 python3-dev
 python3-distro-info
 python3-distro
-python3-distutils-extra
 python3-distutils
 python3-dnspython
 python3-docopt
@@ -2725,6 +2794,7 @@ python3-pip
 python3-pkg-resources
 python3-pluggy
 python3-ply
+python3-powerline
 python3-prompt-toolkit
 python3-protobuf
 python3-psutil
@@ -2950,6 +3020,7 @@ squashfs-tools-ng
 squashfs-tools
 ssdeep
 ssh-audit
+ssh
 ssl-cert
 ssldump
 sslscan
@@ -3002,7 +3073,6 @@ timgm6mb-soundfont
 tk8.6-blt2.5
 tk8.6
 tk
-tldr
 tmux
 tor-geoipdb
 tor
@@ -3078,6 +3148,7 @@ wamerican-large
 wamerican-small
 wamerican
 wapiti
+wayland-protocols
 wbrazilian
 wbritish-huge
 wbritish-insane
@@ -3132,6 +3203,8 @@ x11-session-utils
 x11-utils
 x11-xkb-utils
 x11-xserver-utils
+x11proto-core-dev
+x11proto-dev
 xauth
 xbitmaps
 xbrlapi
@@ -3158,6 +3231,7 @@ xkbset
 xml-core
 xmount
 xorg-docs-core
+xorg-sgml-doctools
 xorg
 xplot-xplot.org
 xserver-common
@@ -3179,6 +3253,7 @@ xserver-xorg-video-vesa
 xserver-xorg-video-vmware
 xserver-xorg
 xterm
+xtrans-dev
 xva-img
 xwayland
 xxd
