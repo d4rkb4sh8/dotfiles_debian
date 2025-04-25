@@ -19,7 +19,7 @@ unfocused-split-opacity = 0.50
 
 # MOUSE 
 mouse-hide-while-typing = true
-mouse-scroll-multiplier = 3
+mouse-scroll-multiplier = 1
 
 # WINDOWS DECORATIONS 
 window-decoration = true
