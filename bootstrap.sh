@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Exit immediately if a command exits with a non-zero status
-set -e
+#set -e
 
 # Function to log messages with a timestamp
 log() {
@@ -10,8 +10,9 @@ log() {
 
 # Section: Initial Setup
 log "Starting initial setup..."
-sudo apt install -y stow git gh curl gawk cmake linux-headers-$(uname -r)
 sudo sed -i '/^deb / s/$/ contrib non-free/' /etc/apt/sources.list
+sudo apt update -y && sudo apt upgrade -y
+sudo apt install -y stow git gh curl gawk cmake linux-headers-$(uname -r)
 
 # Section: Remove Bloatware
 log "Removing bloatware..."
@@ -26,12 +27,13 @@ cd $HOME/dotfiles && stow --adopt . && git restore .
 
 # Section: Install APT Packages
 log "Installing APT packages..."
-sudo apt update -y && sudo apt full-upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y
 sudo apt install $(cat $HOME/dotfiles/backups/apt_list.bak)
 
 # Section: Flatpak and Snap Setup
 log "Setting up Flatpak and Snap..."
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+flatpak install $(cat $HOME/dotfiles/backups/flatpaks_list.bak) -y
+
 sudo snap install snapd snap-store
 snap install $(cat $HOME/dotfiles/backups/snap_list.bak)
 
@@ -87,28 +89,18 @@ sudo sed -i '/^GRUB_CMDLINE_LINUX_DEFAULT=/a GRUB_CMDLINE_LINUX="rhgb quiet miti
 sudo update-grub
 sudo update-initramfs -u -k all
 
-# Section: Flatpak Applications Installation
-log "Installing Flatpak applications..."
-flatpak install $(cat $HOME/dotfiles/backups/flatpaks_list.bak) -y
-
-source $HOME/.bashrc
-
 # Section: Ollama Installation
 #log "Installing Ollama..."
-curl -fsSL https://ollama.com/install.sh | sh
+#curl -fsSL https://ollama.com/install.sh | sh
 
-# Section: Final Update and Cleanup
-log "Final update and cleanup..."
-sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y
+# Section: AppArmor Enforcement
+log "Enforcing AppArmor profiles..."
+sudo aa-enforce /etc/apparmor.d/*
 
 # Section: Source .bashrc and Restore Gnome Settings
 log "Sourcing .bashrc and restoring Gnome settings..."
 source $HOME/.bashrc
 dconf load / <$HOME/dotfiles/backups/gnome_settings.bak
-
-# Section: AppArmor Enforcement
-log "Enforcing AppArmor profiles..."
-sudo aa-enforce /etc/apparmor.d/*
 
 # Section: Display Completion Message and Reboot
 log "Displaying completion message and rebooting..."
