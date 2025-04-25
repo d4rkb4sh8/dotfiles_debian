@@ -183,7 +183,7 @@ print_failed "Homebrew" "${failed_brew[@]}"
 if [ ${#excluded_apt_packages[@]} -gt 0 ]; then
   log "The following packages were excluded and require manual installation:"
   printf ' - %s\n' "${excluded_apt_packages[@]}"
-  echo "Install them manually with: sudo apt install <package>"
+  echo "Install them manually"
   echo ""
 fi
 
