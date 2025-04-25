@@ -10,7 +10,7 @@ log() {
 
 # Section: Initial Setup
 log "Starting initial setup..."
-sudo apt install -y git gh curl gawk cmake linux-headers-$(uname -r)
+sudo apt install -y stow git gh curl gawk cmake linux-headers-$(uname -r)
 sudo sed -i '/^deb / s/$/ contrib non-free/' /etc/apt/sources.list
 
 # Section: Remove Bloatware
