@@ -316,7 +316,7 @@
 #: typing text. Disabled by default on macOS as getting it to work
 #: robustly with the ever-changing sea of bugs that is Cocoa is too
 #: much effort.
- url_color #e80ebd
+# url_color #0087bd
  url_style curly
 
 #: The color and style for highlighting URLs on mouse-over. url_style
@@ -692,7 +692,7 @@
 #: start_resizing_window. The cells value is used for horizontal
 #: resizing, and the lines value is used for vertical resizing.
 
- window_border_width 2pt
+ window_border_width 0.5pt
 
 #: The width of window borders. Can be either in pixels (px) or pts
 #: (pt). Values in pts will be rounded to the nearest number of pixels
@@ -707,7 +707,7 @@
 #: drawn. Note that setting a non-zero window_margin_width overrides
 #: this and causes all borders to be drawn.
 
- window_margin_width 5 
+ window_margin_width 5
 
 #: The window margin (in pts) (blank area outside the border). A
 #: single value sets all four sides. Two values set the vertical and
@@ -722,7 +722,7 @@
 #: set the vertical and horizontal sides. Three values set top,
 #: horizontal and bottom. Four values set top, right, bottom and left.
 
- window_padding_width 2
+# window_padding_width 0
 
 #: The window padding (in pts) (blank area between the text and the
 #: window border). A single value sets all four sides. Two values set
@@ -737,24 +737,24 @@
 #: this option. Using a value of center means the cell area will be
 #: placed centrally. A value of top-left means the padding will be
 #: only at the bottom and right edges.
-active_border_color #2469df
+# active_border_color #00ff00
 
 #: The color for the border of the active window. Set this to none to
 #: not draw borders around the active window.
-inactive_border_color #cccccc
+# inactive_border_color #cccccc
 
 #: The color for the border of inactive windows.
-bell_border_color #ff5a00
+# bell_border_color #ff5a00
 
 #: The color for the border of inactive windows in which a bell has
 #: occurred.
 
-inactive_text_alpha 0.7
+ inactive_text_alpha 0.8
 
 #: Fade the text in inactive windows by the specified amount (a number
 #: between zero and one, with zero being fully faded).
 
-hide_window_decorations no
+ hide_window_decorations no
 
 #: Hide the window decorations (title-bar and window borders) with
 #: yes. On macOS, titlebar-only can be used to only hide the titlebar.
@@ -1886,17 +1886,16 @@ hide_window_decorations no
 
 # Create a new window splitting the space used by the existing one so that
 # the two windows are placed one above the other
-map alt+ctrl+- launch --location=hsplit
+map alt+ctrl+- launch --location=vsplit
 
 # Create a new window splitting the space used by the existing one so that
 # the two windows are placed side by side
-map alt+ctrl+\ launch --location=vsplit
+map alt+ctrl+\ launch --location=hsplit
 
 # Create a new window splitting the space used by the existing one so that
 # the two windows are placed side by side if the existing window is wide or
 # one above the other if the existing window is tall.
 #map shift+alt+s launch --location=split
-enabled_layouts splits:split_axis=horizontal
 
 # Rotate the current split, changing its split axis from vertical to
 # horizontal or vice versa
@@ -1927,7 +1926,7 @@ map alt+j neighboring_window down
 # Set the bias of the split containing the currently focused window. The
 # currently focused window will take up the specified percent of its parent
 # window's size.
-#map ctrl+. layout_action bias 80
+map ctrl+. layout_action bias 80
 
 #: Visually swap window with another
 
@@ -2002,9 +2001,9 @@ map alt+j neighboring_window down
 
 
 #: You can also create shortcuts to switch to specific layouts::
-# enabled_layouts tall:bias=50;full_size=1;mirrored=false
-#map ctrl+alt+t goto_layout tall
-#map ctrl+alt+s goto_layout stack
+
+map ctrl+alt+t goto_layout tall
+map ctrl+alt+s goto_layout stack
 
 #: Similarly, to switch back to the previous layout::
 
@@ -2272,10 +2271,6 @@ map alt+j neighboring_window down
 #::      # Run a command at a shell prompt (like typing the command and pressing Enter)
 #::      map ctrl+alt+a send_text normal,application some command with arguments\r
 
-#cursor_trail 3
-#cursor_trail_decay 0.1 0.4
-#Cursor trail feature
-
 #: Open kitty Website
 
 # map shift+cmd+/ open_url https://sw.kovidgoyal.net/kitty/
@@ -2289,6 +2284,6 @@ include colors.conf
 
 
 # BEGIN_KITTY_THEME
-# Adwaita dark
+# Bluloco Dark
 include current-theme.conf
 # END_KITTY_THEME
