@@ -13,10 +13,10 @@ window-is-maximized=false
 window-width=1082
 
 [com/github/repsac-by/quake-mode]
-quake-mode-height=97
+quake-mode-height=90
 quake-mode-hide-from-overview=true
 quake-mode-tray=false
-quake-mode-width=97
+quake-mode-width=90
 
 [com/github/repsac-by/quake-mode/accelerators]
 quake-mode-accelerator-1=['<Control><Alt>q']
@@ -434,7 +434,7 @@ app-picker-layout=[{'balena-etcher.desktop': <{'position': <0>}>, 'btop.desktop'
 disable-user-extensions=false
 disabled-extensions=['readingstrip@lupantano.gihthub', 'ding@rastersoft.com', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'system-monitor@gnome-shell-extensions.gcampax.github.com', 'ubuntu-appindicators@ubuntu.com', 'tilingshell@ferrarodomenico.com', 'tiling-assistant@leleat-on-github', 'mediacontrols@cliffniff.github.com', 'dash-to-dock@micxgx.gmail.com', 'arcmenu@arcmenu.com', 'openbar@neuromorph']
 enabled-extensions=['ProxySwitcher@flannaghan.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'AlphabeticalAppGrid@stuarthayhurst', 'appindicatorsupport@rgcjonas.gmail.com', 'quake-terminal@diegodario88.github.io', 'blur-my-shell@aunetx', 'clipboard-indicator@tudmotu.com', 'Vitals@CoreCoding.com', 'GPaste@gnome-shell-extensions.gnome.org', 'cronomix@zagortenay333', 'quake-mode@repsac-by.github.com', 'dash-to-panel@jderose9.github.com', 'notification-position@drugo.dev', 'notification-timeout@chlumskyvaclav.gmail.com', 'quick-settings-tweaks@qwreey', 'quick-settings-audio-panel@rayzeq.github.io']
-favorite-apps=['kitty.desktop', 'virtualbox.desktop', 'org.gnome.Nautilus.desktop', 'net.cozic.joplin_desktop.desktop', 'firefox-esr.desktop', 'com.discordapp.Discord.desktop', 'org.gnome.Software.desktop', 'snap-store_snap-store.desktop', 'org.gnome.World.PikaBackup.desktop']
+favorite-apps=['kitty.desktop', 'virtualbox.desktop', 'org.gnome.Nautilus.desktop', 'net.cozic.joplin_desktop.desktop', 'firefox-esr.desktop', 'org.onlyoffice.desktopeditors.desktop', 'com.discordapp.Discord.desktop', 'org.gnome.Software.desktop', 'snap-store_snap-store.desktop', 'org.gnome.World.PikaBackup.desktop']
 last-selected-power-profile='power-saver'
 remember-mount-password=true
 welcome-dialog-last-shown-version='46.3.1'
