@@ -1069,7 +1069,7 @@ sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(26, 23)
+window-position=(345, 81)
 window-size=(1231, 902)
 
 [org/yorba/shotwell/preferences/export]
