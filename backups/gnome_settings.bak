@@ -108,7 +108,7 @@ panel-id='world'
 size=(870, 690)
 
 [org/gnome/control-center]
-last-panel='display'
+last-panel='default-apps'
 window-state=(1920, 1048, false)
 
 [org/gnome/desktop/a11y]
@@ -182,7 +182,7 @@ toolkit-accessibility=false
 automount=true
 
 [org/gnome/desktop/notifications]
-application-children=['gnome-power-panel', 'firefox-esr', 'org-gnome-extensions', 'ulauncher', 'org-gnome-nautilus', 'org-gnome-software', 'org-qbittorrent-qbittorrent', 'org-gnome-fileroller', 'org-gnome-settings']
+application-children=['gnome-power-panel', 'firefox-esr', 'org-gnome-extensions', 'ulauncher', 'org-gnome-nautilus', 'org-gnome-software', 'org-qbittorrent-qbittorrent', 'org-gnome-fileroller', 'org-gnome-settings', 'org-gnome-evolution', 'virtualboxvm', 'virtualbox', 'org-gnome-evolution-alarm-notify', 'kitty']
 
 [org/gnome/desktop/notifications/application/com-discordapp-discord]
 application-id='com.discordapp.Discord.desktop'
@@ -198,6 +198,9 @@ application-id='gnome-power-panel.desktop'
 
 [org/gnome/desktop/notifications/application/kitty]
 application-id='kitty.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-evolution-alarm-notify]
+application-id='org.gnome.Evolution-alarm-notify.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-evolution]
 application-id='org.gnome.Evolution.desktop'
@@ -225,6 +228,12 @@ application-id='org.qbittorrent.qBittorrent.desktop'
 
 [org/gnome/desktop/notifications/application/ulauncher]
 application-id='ulauncher.desktop'
+
+[org/gnome/desktop/notifications/application/virtualbox]
+application-id='virtualbox.desktop'
+
+[org/gnome/desktop/notifications/application/virtualboxvm]
+application-id='virtualboxvm.desktop'
 
 [org/gnome/desktop/notifications/application/xdg-desktop-portal-gnome]
 application-id='xdg-desktop-portal-gnome.desktop'
@@ -306,11 +315,73 @@ show-sidebar=false
 sidebar-page='thumbnails'
 sidebar-size=148
 sizing-mode='free'
-window-ratio=(1.5686274509803921, 1.3143939393939394)
-zoom=0.84089642763137817
+window-ratio=(3.1372549019607843, 1.3232323232323233)
+zoom=0.70710676908493042
 
 [org/gnome/evolution-data-server]
 migrated=true
+
+[org/gnome/evolution-data-server/calendar]
+reminders-past=['060b919ca88112a0b7dd2bdfcbde1c92b5aac124\n28b28d150633f4a54307f06ebf98e2416cc914d6\t20250503T190000\n1746311400\n1746313200\n1746320400\nBEGIN:VEVENT\r\nDTSTART;TZID=America/Puerto_Rico:20250503T190000\r\nDTEND;TZID=America/Puerto_Rico:20250503T210000\r\nRRULE:FREQ=WEEKLY;BYDAY=FR,SA\r\nDTSTAMP:20250503T165648Z\r\nORGANIZER;CN=Nancy Florence:mailto:info@nancyflorence.com\r\nUID:5jbntfl6fpfdrb7fejq2eqp595_R20250503T230000@google.com\r\nATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;\r\n CN=Nancy Florence;X-NUM-GUESTS=0:mailto:info@nancyflorence.com\r\nATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;\r\n CN=stefanmrobertson@gmail.com;X-NUM-GUESTS=0:mailto:\r\n stefanmrobertson@gmail.com\r\nCREATED:20240603T183555Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nLAST-MODIFIED:20250503T165648Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for LOCATION \r\n property. Removing entire property:\r\nSEQUENCE:6\r\nSTATUS:CONFIRMED\r\nSUMMARY:Date Night 🩷\r\nTRANSP:OPAQUE\r\nX-EVOLUTION-CALDAV-ETAG:63881974608\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-PT30M\r\nX-EVOLUTION-ALARM-UID:28b28d150633f4a54307f06ebf98e2416cc914d6\r\nEND:VALARM\r\nEND:VEVENT\r\n', '060b919ca88112a0b7dd2bdfcbde1c92b5aac124\n2e87607a72153f1581f633505d3261dc5b26db99\t20250503T150000\n1746297000\n1746298800\n1746309600\nBEGIN:VEVENT\r\nDTSTART;TZID=America/Guyana:20250503T150000\r\nDTEND;TZID=America/Guyana:20250503T180000\r\nDTSTAMP:20250503T165648Z\r\nORGANIZER;CN=Nancy Florence:mailto:info@nancyflorence.com\r\nUID:4lveu8t7fn38m22ouuloncueg0@google.com\r\nATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;\r\n CN=Nancy Florence;X-NUM-GUESTS=0:mailto:info@nancyflorence.com\r\nATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;\r\n CN=stefanmrobertson@gmail.com;X-NUM-GUESTS=0:mailto:\r\n stefanmrobertson@gmail.com\r\nCREATED:20250427T222150Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nLAST-MODIFIED:20250503T165648Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for LOCATION \r\n property. Removing entire property:\r\nSEQUENCE:0\r\nSTATUS:CONFIRMED\r\nSUMMARY:Micah’s birthday party\r\nTRANSP:OPAQUE\r\nX-MICROSOFT-CDO-OWNERAPPTID:519017132\r\nX-MICROSOFT-CDO-REPLYTIME:20250503T165643Z\r\nX-EVOLUTION-CALDAV-ETAG:63881974608\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-PT30M\r\nX-EVOLUTION-ALARM-UID:2e87607a72153f1581f633505d3261dc5b26db99\r\nEND:VALARM\r\nEND:VEVENT\r\n']
+
+[org/gnome/evolution]
+default-mail-account='13222b10504e0fb219d7fb243248ad049ec42092'
+default-mail-identity='e2d5bcc9e9c5fa8c0aedc685097d45034946911a'
+version='3.46.4'
+
+[org/gnome/evolution/calendar]
+allow-direct-summary-edit=false
+confirm-purge=true
+date-navigator-pane-position=159
+primary-calendar='060b919ca88112a0b7dd2bdfcbde1c92b5aac124'
+primary-memos='system-memo-list'
+primary-tasks='system-task-list'
+tag-vpane-position=0.0011778563015312216
+time-divisions=30
+timezone='America/Port_of_Spain'
+use-24hour-format=true
+use-system-timezone=false
+week-start-day-name='monday'
+work-day-friday=true
+work-day-monday=true
+work-day-saturday=true
+work-day-sunday=true
+work-day-thursday=true
+work-day-tuesday=true
+work-day-wednesday=true
+working-days=127
+
+[org/gnome/evolution/mail]
+browser-close-on-reply-policy='ask'
+composer-inherit-theme-colors=true
+composer-magic-smileys=true
+composer-outlook-filenames=true
+composer-unicode-smileys=true
+forward-style-name='attached'
+image-loading-policy='never'
+junk-check-custom-header=true
+junk-empty-on-exit-days=0
+junk-lookup-addressbook=false
+paned-size=1691401
+reply-style-name='quoted'
+send-recv-all-on-start=true
+to-do-bar-width=1150000
+trash-empty-on-exit-days=0
+
+[org/gnome/evolution/plugin/autocontacts]
+addressbook-source='system-address-book'
+gaim-addressbook-source='system-address-book'
+
+[org/gnome/evolution/shell]
+default-component-id='tasks'
+folder-bar-width=327
+
+[org/gnome/evolution/shell/window]
+height=1001
+maximized=false
+width=1920
+x=27
+y=24
 
 [org/gnome/file-roller/dialogs/extract]
 recreate-folders=true
@@ -372,7 +443,7 @@ search-filter-time-type='last_modified'
 search-view='list-view'
 
 [org/gnome/nautilus/window-state]
-initial-size=(1920, 1048)
+initial-size=(948, 1032)
 initial-size-file-chooser=(890, 550)
 maximized=false
 
@@ -402,6 +473,9 @@ last-folder-path='/media/h4ck3r/Backups'
 
 [org/gnome/portal/filechooser/org.keepassxc.KeePassXC]
 last-folder-path='/home/h4ck3r/keepass'
+
+[org/gnome/portal/filechooser/org.qbittorrent.qBittorrent]
+last-folder-path='/home/h4ck3r/dotfiles/qb_themes'
 
 [org/gnome/portal/filechooser/snap.keepassxc]
 last-folder-path='/home/h4ck3r/keepassxc'
@@ -441,7 +515,7 @@ app-picker-layout=[{'balena-etcher.desktop': <{'position': <0>}>, 'btop.desktop'
 disable-user-extensions=false
 disabled-extensions=['readingstrip@lupantano.gihthub', 'ding@rastersoft.com', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'system-monitor@gnome-shell-extensions.gcampax.github.com', 'ubuntu-appindicators@ubuntu.com', 'tilingshell@ferrarodomenico.com', 'tiling-assistant@leleat-on-github', 'mediacontrols@cliffniff.github.com']
 enabled-extensions=['ProxySwitcher@flannaghan.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'AlphabeticalAppGrid@stuarthayhurst', 'appindicatorsupport@rgcjonas.gmail.com', 'quake-terminal@diegodario88.github.io', 'blur-my-shell@aunetx', 'clipboard-indicator@tudmotu.com', 'Vitals@CoreCoding.com', 'GPaste@gnome-shell-extensions.gnome.org', 'cronomix@zagortenay333', 'quake-mode@repsac-by.github.com', 'notification-position@drugo.dev', 'notification-timeout@chlumskyvaclav.gmail.com', 'quick-settings-tweaks@qwreey', 'quick-settings-audio-panel@rayzeq.github.io', 'dash-to-dock@micxgx.gmail.com', 'arcmenu@arcmenu.com', 'dash-to-panel@jderose9.github.com', 'openbar@neuromorph', 'just-perfection-desktop@just-perfection', 'forge@jmmaranan.com']
-favorite-apps=['kitty.desktop', 'virtualbox.desktop', 'org.gnome.Nautilus.desktop', 'net.cozic.joplin_desktop.desktop', 'firefox-esr.desktop', 'org.onlyoffice.desktopeditors.desktop', 'com.discordapp.Discord.desktop', 'shotwell.desktop', 'org.gnome.Software.desktop', 'snap-store_snap-store.desktop', 'org.gnome.World.PikaBackup.desktop', 'io.gitlab.adhami3310.Impression.desktop']
+favorite-apps=['mullvad-vpn.desktop', 'kitty.desktop', 'virtualbox.desktop', 'org.gnome.Nautilus.desktop', 'net.cozic.joplin_desktop.desktop', 'firefox-esr.desktop', 'org.gnome.Evolution.desktop', 'org.onlyoffice.desktopeditors.desktop', 'com.discordapp.Discord.desktop', 'shotwell.desktop', 'org.gnome.Software.desktop', 'snap-store_snap-store.desktop', 'org.gnome.World.PikaBackup.desktop', 'io.gitlab.adhami3310.Impression.desktop']
 last-selected-power-profile='power-saver'
 remember-mount-password=true
 welcome-dialog-last-shown-version='46.3.1'
@@ -621,7 +695,7 @@ check-x11wayland=true
 
 [org/gnome/shell/extensions/forge]
 css-last-update=uint32 37
-css-updated='1746279488258'
+css-updated='1746315332740'
 window-gap-hidden-on-single=true
 
 [org/gnome/shell/extensions/forge/keybindings]
@@ -1101,7 +1175,7 @@ use-system-font=false
 
 [org/gtk/gtk4/settings/color-chooser]
 custom-colors=[(0.20784313976764679, 0.30980393290519714, 0.4117647111415863, 1.0), (0.14117647707462311, 0.14117647707462311, 0.14117647707462311, 1.0), (0.92549020051956177, 0.36862745881080627, 0.36862745881080627, 1.0), (0.098039217293262482, 0.098039217293262482, 0.098039217293262482, 1.0), (0.94901961088180542, 0.94901961088180542, 0.94901961088180542, 1.0)]
-selected-color=(true, 1.0, 1.0, 1.0, 1.0)
+selected-color=(true, 0.60000002384185791, 0.75686275959014893, 0.94509804248809814, 1.0)
 
 [org/gtk/gtk4/settings/file-chooser]
 date-format='regular'
@@ -1131,7 +1205,7 @@ sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(26, 23)
+window-position=(345, 67)
 window-size=(1231, 902)
 
 [org/yorba/shotwell/preferences/export]
@@ -1161,9 +1235,9 @@ show-welcome-dialog=false
 sidebar-position=180
 
 [org/yorba/shotwell/preferences/window]
-library-height=743
+library-height=995
 library-maximize=false
-library-width=1440
+library-width=629
 
 [system/proxy]
 mode='none'
