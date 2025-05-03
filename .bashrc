@@ -103,6 +103,10 @@ echo "w3lc0m3 h4ck3r - let the games begin! - m4ast3r y0ur cr4ft" | lolcat
 
 [[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
 
+# carapace - completion
+export CARAPACE_BRIDGES='bash,inshellisense' # optional
+source <(carapace _carapace)
+
 # Atuin
 eval "$(atuin init bash)"
 
