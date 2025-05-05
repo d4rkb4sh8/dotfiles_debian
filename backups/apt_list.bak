@@ -2122,6 +2122,7 @@ ncurses-bin
 ncurses-term
 ndiff
 net-tools
+net.downloadhelper.coapp
 netbase
 netcat-openbsd
 netcat-traditional
