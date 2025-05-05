@@ -611,10 +611,6 @@ john-data
 jq
 kbd
 keyboard-configuration
-kitty
-kitty-doc
-kitty-shell-integration
-kitty-terminfo
 klibc-utils
 kmod
 kpartx
@@ -698,7 +694,6 @@ libayatana-indicator3-7
 libb-hooks-endofscope-perl
 libb-hooks-op-check-perl
 libb-keywords-perl
-libb2-1
 libbabeltrace1
 libbcg729-0
 libbdplus0
@@ -1630,7 +1625,6 @@ librpm9
 librpmio9
 librsvg2-2
 librsvg2-common
-librsync2
 librtmp1
 librubberband2
 libruby
