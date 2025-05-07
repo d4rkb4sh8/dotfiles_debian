@@ -69,6 +69,8 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+# Terminal
+export TERM=xterm-256color
 
 # colorize output
 export GRC_ALIASES=true
