@@ -1,0 +1,115 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.gnome-forge-revived" path="/org/gnome/shell/extensions/gnome-forge-revived/">
+    <key name="gap-size" type="i">
+      <default>8</default>
+      <summary>Gap size between windows</summary>
+      <description>The size of the gap between tiled windows in pixels</description>
+    </key>
+
+    <key name="default-layout" type="s">
+      <default>"grid"</default>
+      <summary>Default window layout</summary>
+      <description>The default layout to use for window tiling (grid, columns, rows, maximized, centered)</description>
+    </key>
+
+    <key name="excluded-apps" type="as">
+      <default>[]</default>
+      <summary>Excluded applications</summary>
+      <description>List of application IDs or WM_CLASS values to exclude from tiling</description>
+    </key>
+
+    <!-- Key bindings -->
+    <key name="gnome-forge-revived-toggle-floating" type="as">
+      <default><![CDATA[['<Super>f']]]></default>
+      <summary>Toggle floating mode for window</summary>
+    </key>
+
+    <key name="gnome-forge-revived-maximize-window" type="as">
+      <default><![CDATA[['<Super>m']]]></default>
+      <summary>Maximize current window</summary>
+    </key>
+
+    <key name="gnome-forge-revived-focus-left" type="as">
+      <default><![CDATA[['<Super>h']]]></default>
+      <summary>Focus window to the left</summary>
+    </key>
+
+    <key name="gnome-forge-revived-focus-right" type="as">
+      <default><![CDATA[['<Super>l']]]></default>
+      <summary>Focus window to the right</summary>
+    </key>
+
+    <key name="gnome-forge-revived-focus-up" type="as">
+      <default><![CDATA[['<Super>k']]]></default>
+      <summary>Focus window above</summary>
+    </key>
+
+    <key name="gnome-forge-revived-focus-down" type="as">
+      <default><![CDATA[['<Super>j']]]></default>
+      <summary>Focus window below</summary>
+    </key>
+
+    <key name="gnome-forge-revived-layout-grid" type="as">
+      <default><![CDATA[['<Super>g']]]></default>
+      <summary>Switch to grid layout</summary>
+    </key>
+
+    <key name="gnome-forge-revived-layout-columns" type="as">
+      <default><![CDATA[['<Super>c']]]></default>
+      <summary>Switch to columns layout</summary>
+    </key>
+
+    <key name="gnome-forge-revived-layout-rows" type="as">
+      <default><![CDATA[['<Super>r']]]></default>
+      <summary>Switch to rows layout</summary>
+    </key>
+
+    <!-- Workspace movement keys -->
+    <key name="gnome-forge-revived-move-to-workspace-1" type="as">
+      <default><![CDATA[['<Super><Shift>1']]]></default>
+      <summary>Move window to workspace 1</summary>
+    </key>
+
+    <key name="gnome-forge-revived-move-to-workspace-2" type="as">
+      <default><![CDATA[['<Super><Shift>2']]]></default>
+      <summary>Move window to workspace 2</summary>
+    </key>
+
+    <key name="gnome-forge-revived-move-to-workspace-3" type="as">
+      <default><![CDATA[['<Super><Shift>3']]]></default>
+      <summary>Move window to workspace 3</summary>
+    </key>
+
+    <key name="gnome-forge-revived-move-to-workspace-4" type="as">
+      <default><![CDATA[['<Super><Shift>4']]]></default>
+      <summary>Move window to workspace 4</summary>
+    </key>
+
+    <key name="gnome-forge-revived-move-to-workspace-5" type="as">
+      <default><![CDATA[['<Super><Shift>5']]]></default>
+      <summary>Move window to workspace 5</summary>
+    </key>
+
+    <key name="gnome-forge-revived-move-to-workspace-6" type="as">
+      <default><![CDATA[['<Super><Shift>6']]]></default>
+      <summary>Move window to workspace 6</summary>
+    </key>
+
+    <key name="gnome-forge-revived-move-to-workspace-7" type="as">
+      <default><![CDATA[['<Super><Shift>7']]]></default>
+      <summary>Move window to workspace 7</summary>
+    </key>
+
+    <key name="gnome-forge-revived-move-to-workspace-8" type="as">
+      <default><![CDATA[['<Super><Shift>8']]]></default>
+      <summary>Move window to workspace 8</summary>
+    </key>
+
+    <key name="gnome-forge-revived-move-to-workspace-9" type="as">
+      <default><![CDATA[['<Super><Shift>9']]]></default>
+      <summary>Move window to workspace 9</summary>
+    </key>
+  </schema>
+</schemalist>
