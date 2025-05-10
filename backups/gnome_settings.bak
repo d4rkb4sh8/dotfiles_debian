@@ -452,7 +452,7 @@ search-filter-time-type='last_modified'
 search-view='list-view'
 
 [org/gnome/nautilus/window-state]
-initial-size=(1920, 1051)
+initial-size=(948, 1035)
 initial-size-file-chooser=(890, 550)
 maximized=false
 
@@ -530,8 +530,8 @@ power-button-action='interactive'
 [org/gnome/shell]
 app-picker-layout=[{'balena-etcher.desktop': <{'position': <0>}>, 'btop.desktop': <{'position': <1>}>, 'org.gnome.Calculator.desktop': <{'position': <2>}>, 'org.gnome.Calendar.desktop': <{'position': <3>}>, 'org.gnome.Cheese.desktop': <{'position': <4>}>, 'org.gnome.clocks.desktop': <{'position': <5>}>, 'cmatrix.desktop': <{'position': <6>}>, 'org.gnome.Contacts.desktop': <{'position': <7>}>, 'simple-scan.desktop': <{'position': <8>}>, 'org.gnome.Evolution.desktop': <{'position': <9>}>, 'com.mattjakeman.ExtensionManager.desktop': <{'position': <10>}>, 'org.gnome.Extensions.desktop': <{'position': <11>}>, 'org.gnome.FontManager.desktop': <{'position': <12>}>, 'org.gnome.FontViewer.desktop': <{'position': <13>}>, 'gdebi.desktop': <{'position': <14>}>, 'org.gnome.GPaste.Ui.desktop': <{'position': <15>}>, 'org.gnome.GPaste.Preferences.desktop': <{'position': <16>}>}, {'lstopo.desktop': <{'position': <0>}>, 'yelp.desktop': <{'position': <1>}>, 'org.gnome.eog.desktop': <{'position': <2>}>, 'im-config.desktop': <{'position': <3>}>, 'lynis.desktop': <{'position': <4>}>, 'org.gnome.Maps.desktop': <{'position': <5>}>, 'mpv.desktop': <{'position': <6>}>, 'org.gnome.Music.desktop': <{'position': <7>}>, 'org.gnome.Rhythmbox3.desktop': <{'position': <8>}>, 'org.gnome.Settings.desktop': <{'position': <9>}>, 'shotwell.desktop': <{'position': <10>}>, 'software-properties-gtk.desktop': <{'position': <11>}>, 'org.gnome.SoundRecorder.desktop': <{'position': <12>}>, 'synaptic.desktop': <{'position': <13>}>, 'gnome-system-monitor.desktop': <{'position': <14>}>, 'org.gnome.Terminal.desktop': <{'position': <15>}>, 'ulauncher.desktop': <{'position': <16>}>, 'chromium.desktop': <{'position': <17>}>, 'mc.desktop': <{'position': <18>}>}, {'terminator.desktop': <{'position': <0>}>, 'info.desktop': <{'position': <1>}>, 'org.gnome.TextEditor.desktop': <{'position': <2>}>, 'transmission-gtk.desktop': <{'position': <3>}>, 'Utilities': <{'position': <4>}>, 'org.gnome.Totem.desktop': <{'position': <5>}>, 'vlc.desktop': <{'position': <6>}>, 'org.gnome.Weather.desktop': <{'position': <7>}>, 'org.pwmt.zathura.desktop': <{'position': <8>}>, 'mcedit.desktop': <{'position': <9>}>, 'system-config-printer.desktop': <{'position': <10>}>}]
 disable-user-extensions=false
-disabled-extensions=['readingstrip@lupantano.gihthub', 'ding@rastersoft.com', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'system-monitor@gnome-shell-extensions.gcampax.github.com', 'ubuntu-appindicators@ubuntu.com', 'tiling-assistant@leleat-on-github', 'mediacontrols@cliffniff.github.com', 'dash-to-panel@jderose9.github.com', 'tilingshell@ferrarodomenico.com']
-enabled-extensions=['ProxySwitcher@flannaghan.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'AlphabeticalAppGrid@stuarthayhurst', 'appindicatorsupport@rgcjonas.gmail.com', 'quake-terminal@diegodario88.github.io', 'blur-my-shell@aunetx', 'clipboard-indicator@tudmotu.com', 'Vitals@CoreCoding.com', 'GPaste@gnome-shell-extensions.gnome.org', 'cronomix@zagortenay333', 'quake-mode@repsac-by.github.com', 'notification-position@drugo.dev', 'notification-timeout@chlumskyvaclav.gmail.com', 'quick-settings-tweaks@qwreey', 'quick-settings-audio-panel@rayzeq.github.io', 'dash-to-dock@micxgx.gmail.com', 'arcmenu@arcmenu.com', 'openbar@neuromorph', 'just-perfection-desktop@just-perfection', 'BingWallpaper@ineffable-gmail.com', 'forge@jmmaranan.com', 'eye-extended@als.kz']
+disabled-extensions=['readingstrip@lupantano.gihthub', 'ding@rastersoft.com', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'system-monitor@gnome-shell-extensions.gcampax.github.com', 'ubuntu-appindicators@ubuntu.com', 'tiling-assistant@leleat-on-github', 'mediacontrols@cliffniff.github.com', 'dash-to-panel@jderose9.github.com', 'tilingshell@ferrarodomenico.com', 'eye-extended@als.kz']
+enabled-extensions=['ProxySwitcher@flannaghan.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'AlphabeticalAppGrid@stuarthayhurst', 'appindicatorsupport@rgcjonas.gmail.com', 'quake-terminal@diegodario88.github.io', 'blur-my-shell@aunetx', 'clipboard-indicator@tudmotu.com', 'Vitals@CoreCoding.com', 'GPaste@gnome-shell-extensions.gnome.org', 'cronomix@zagortenay333', 'quake-mode@repsac-by.github.com', 'notification-position@drugo.dev', 'notification-timeout@chlumskyvaclav.gmail.com', 'quick-settings-tweaks@qwreey', 'quick-settings-audio-panel@rayzeq.github.io', 'dash-to-dock@micxgx.gmail.com', 'arcmenu@arcmenu.com', 'openbar@neuromorph', 'just-perfection-desktop@just-perfection', 'BingWallpaper@ineffable-gmail.com', 'forge@jmmaranan.com']
 favorite-apps=['mullvad-vpn.desktop', 'kitty.desktop', 'virtualbox.desktop', 'org.gnome.Nautilus.desktop', 'net.cozic.joplin_desktop.desktop', 'firefox-esr.desktop', 'start-tor-browser.desktop', 'org.gnome.Evolution.desktop', 'org.onlyoffice.desktopeditors.desktop', 'com.discordapp.Discord.desktop', 'whatsie_whatsie.desktop', 'shotwell.desktop', 'org.gnome.Software.desktop', 'snap-store_snap-store.desktop', 'org.gnome.World.PikaBackup.desktop', 'io.gitlab.adhami3310.Impression.desktop']
 last-selected-power-profile='power-saver'
 remember-mount-password=true
@@ -1045,7 +1045,7 @@ radius-bottomleft=true
 radius-bottomright=true
 radius-topleft=true
 radius-topright=true
-reloadstyle=false
+reloadstyle=true
 removestyle=false
 set-fullscreen=true
 set-notifications=false
@@ -1227,7 +1227,7 @@ show-type-column=true
 sidebar-width=140
 sort-column='name'
 sort-directories-first=true
-sort-order='ascending'
+sort-order='descending'
 type-format='category'
 window-size=(861, 376)
 
