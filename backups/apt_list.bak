@@ -2001,6 +2001,7 @@ libzstd1
 libzvbi-common
 libzvbi0
 libzxing2
+links2
 lintian
 linux-base
 linux-compiler-gcc-12-x86

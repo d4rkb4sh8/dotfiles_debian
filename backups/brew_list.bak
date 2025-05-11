@@ -48,6 +48,7 @@ gmp
 gnupg
 gnutls
 gpgme
+graphicsmagick
 graphite2
 grc
 harfbuzz
@@ -206,6 +207,7 @@ tbb
 tesseract
 tgpt
 theora
+timg
 tree-sitter
 ueberzugpp
 unbound
