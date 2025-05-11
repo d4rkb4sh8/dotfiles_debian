@@ -164,6 +164,7 @@ nlohmann-json
 npth
 nspr
 nss
+onefetch
 open-mpi
 opencore-amr
 openexr
