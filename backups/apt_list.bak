@@ -2005,14 +2005,11 @@ links2
 lintian
 linux-base
 linux-compiler-gcc-12-x86
-linux-headers-6.1.0-32-amd64
-linux-headers-6.1.0-32-common
 linux-headers-6.1.0-33-amd64
 linux-headers-6.1.0-33-common
 linux-headers-6.1.0-34-amd64
 linux-headers-6.1.0-34-common
 linux-headers-amd64
-linux-image-6.1.0-32-amd64
 linux-image-6.1.0-33-amd64
 linux-image-6.1.0-34-amd64
 linux-image-amd64
