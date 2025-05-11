@@ -176,6 +176,7 @@ alias lta='eza -a --tree --level=2 --icons'
 alias ip='ip -c'
 
 # ai  assistant
+# alias aic='ollama run cogito:3b'
 # alias aidv2='ollama run deepseek-coder-v2'
 # alias aidr1='ollama run deepseek-r1:1.5b'
 # alias aidr2='ollama run deepseek-r1:7b'
