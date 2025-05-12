@@ -377,15 +377,15 @@ addressbook-source='system-address-book'
 gaim-addressbook-source='system-address-book'
 
 [org/gnome/evolution/shell]
-default-component-id='tasks'
+default-component-id='mail'
 folder-bar-width=327
 
 [org/gnome/evolution/shell/window]
-height=1001
+height=1004
 maximized=false
 width=1920
-x=27
-y=24
+x=28
+y=25
 
 [org/gnome/file-roller/dialogs/extract]
 recreate-folders=true
@@ -452,7 +452,7 @@ search-filter-time-type='last_modified'
 search-view='list-view'
 
 [org/gnome/nautilus/window-state]
-initial-size=(948, 1035)
+initial-size=(948, 513)
 initial-size-file-chooser=(890, 550)
 maximized=false
 
@@ -1045,7 +1045,7 @@ radius-bottomleft=true
 radius-bottomright=true
 radius-topleft=true
 radius-topright=true
-reloadstyle=false
+reloadstyle=true
 removestyle=false
 set-fullscreen=true
 set-notifications=false
@@ -1063,7 +1063,7 @@ smbgoverride=true
 success-color=['0.15', '0.635', '0.41']
 traffic-light=true
 trigger-autotheme=false
-trigger-reload=true
+trigger-reload=false
 vpad=1.3
 warning-color=['0.96', '0.83', '0.17']
 width-bottom=true
