@@ -10,6 +10,7 @@ alias make10mb='truncate -s 10m ./10MB.dat' # make10mb:     Creates a file of 10
 alias bat='batcat --color=always'
 alias ff='fastfetch'
 alias c='clear'
+alias e='exit'
 alias fzf='fzf --preview "batcat --color=always {}"'
 #   -------------------------------
 #  2. SAVE COPYING
