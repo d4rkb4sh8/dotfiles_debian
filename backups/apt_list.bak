@@ -564,6 +564,7 @@ ibus-gtk
 ibus-gtk3
 ibus-gtk4
 ibverbs-providers
+icc-profiles-free
 icoutils
 icu-devtools
 ieee-data
@@ -1261,6 +1262,7 @@ libldap-2.5-0
 libldap-common
 libldb2
 libldm-1.0-0
+liblept5
 liblerc4
 liblilv-0-0
 liblinear4
@@ -1764,6 +1766,7 @@ libtcl8.6
 libtdb1
 libteamdctl0
 libterm-readkey-perl
+libtesseract5
 libtevent0
 libtext-charwidth-perl
 libtext-engine-0.1-0
@@ -2582,6 +2585,7 @@ plymouth-label
 plzip
 png-definitive-guide
 pngcheck
+pngquant
 pnscan
 po-debconf
 pocketsphinx-en-us
@@ -2641,6 +2645,7 @@ python3-chardet
 python3-charset-normalizer
 python3-click
 python3-colorama
+python3-coloredlogs
 python3-configobj
 python3-contourpy
 python3-cryptography
@@ -2654,6 +2659,7 @@ python3-debian
 python3-debianbts
 python3-decorator
 python3-defusedxml
+python3-deprecation
 python3-dev
 python3-distro
 python3-distro-info
@@ -2678,10 +2684,12 @@ python3-html5lib
 python3-httpcore
 python3-httplib2
 python3-httpx
+python3-humanfriendly
 python3-hyperframe
 python3-ibus-1.0
 python3-icu
 python3-idna
+python3-img2pdf
 python3-impacket
 python3-importlib-metadata
 python3-iniconfig
@@ -2734,8 +2742,10 @@ python3-paramiko
 python3-parsedatetime
 python3-parso
 python3-passlib
+python3-pdfminer
 python3-pexpect
 python3-pickleshare
+python3-pikepdf
 python3-pil
 python3-pil.imagetk
 python3-pip
@@ -2770,7 +2780,10 @@ python3-pythran
 python3-pyxattr
 python3-pyyaml-env-tag
 python3-regex
+python3-renderpm
 python3-reportbug
+python3-reportlab
+python3-reportlab-accel
 python3-requests
 python3-requests-toolbelt
 python3-rfc3986
@@ -3011,6 +3024,9 @@ tcpreplay
 tcptrace
 tcpxtract
 terser
+tesseract-ocr
+tesseract-ocr-eng
+tesseract-ocr-osd
 testdisk
 testssl.sh
 thefuck
@@ -3049,6 +3065,7 @@ unhide
 unhide.rb
 uni2ascii
 unicode-data
+unpaper
 unrar-free
 unzip
 update-inetd
