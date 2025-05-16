@@ -120,3 +120,8 @@ eval "$(zoxide init bash)"
 
 #starship prompt - shell prompt
 eval "$(starship init bash)"
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/home/h4ck3r/.lmstudio/bin"
+# End of LM Studio CLI section
+

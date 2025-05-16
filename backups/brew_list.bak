@@ -23,6 +23,7 @@ cli11
 cmake
 cryptography
 curl
+curlie
 dav1d
 dbus
 dust
