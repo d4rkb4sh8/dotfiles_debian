@@ -112,6 +112,9 @@ echo "w3lc0m3 h4ck3r - let the games begin! - m4ast3r y0ur cr4ft" | lolcat
 export CARAPACE_BRIDGES='bash,inshellisense' # optional
 source <(carapace _carapace)
 
+# Bat theme
+export BAT_THEME=TwoDark
+
 # Atuin
 eval "$(atuin init bash)"
 
@@ -120,8 +123,3 @@ eval "$(zoxide init bash)"
 
 #starship prompt - shell prompt
 eval "$(starship init bash)"
-
-# Added by LM Studio CLI (lms)
-export PATH="$PATH:/home/h4ck3r/.lmstudio/bin"
-# End of LM Studio CLI section
-
