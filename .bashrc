@@ -91,8 +91,8 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 #ble.sh
 source ~/.local/share/blesh/ble.sh
 
-# fzf
-source ~/.config/fzf/.fzfrc
+# fzf completion
+eval "$(fzf --bash)"
 
 #most - colorful output for man
 #export PAGER=most
