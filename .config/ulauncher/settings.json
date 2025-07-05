@@ -3,10 +3,10 @@
     "clear-previous-query": true,
     "disable-desktop-filters": true,
     "grab-mouse-pointer": false,
-    "hotkey-show-app": "<Primary>space",
+    "hotkey-show-app": "<Alt>space",
     "render-on-screen": "mouse-pointer-monitor",
     "show-indicator-icon": true,
     "show-recent-apps": "10",
     "terminal-command": "",
-    "theme-name": "orchis-dark"
+    "theme-name": "adwaita"
 }

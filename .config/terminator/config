@@ -1,7 +1,7 @@
 [global_config]
   inactive_color_offset = 0.4013605442176871
   enabled_plugins = LaunchpadBugURLHandler, LaunchpadCodeURLHandler, APTURLHandler, TerminatorThemes
-  suppress_multiple_term_dialog = True
+  ask_before_closing = never
   always_split_with_profile = True
   link_single_click = True
 [keybindings]
@@ -28,12 +28,12 @@
   layout_launcher = ""
 [profiles]
   [[default]]
-    background_color = "#1c1b22"
+    background_color = "#282828"
     background_darkness = 0.91
     background_type = transparent
     cursor_bg_color = "#708284"
     font = Hack Nerd Font 13
-    foreground_color = "#ffffff"
+    foreground_color = "#ebdbb2"
     scrollback_infinite = True
     palette = "#7d8b8f:#b23a52:#789b6a:#b9ac4a:#2a7fac:#bd4f5a:#44a799:#d2d8d9:#888888:#f24840:#80c470:#ffeb62:#4196ff:#fc5275:#53cdbd:#d2d8d9"
     use_system_font = False
