@@ -11,8 +11,8 @@ sudo groupadd uinput
 ### 2. Add your user to the input and the uinput group
 
 ```bash
-sudo usermod -aG input $USER
-sudo usermod -aG uinput $USER
+sudo usermod -aG input h4ck3r
+sudo usermod -aG uinput h4ck3r
 ```
 
 Make sure that it's effective by running `groups`. You might have to logout and login.
